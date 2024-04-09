@@ -179,6 +179,8 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
  *  this AI should attack the kart in opposite team which is chasing the ball,
  *  if not go for the closest kart found by \ref findClosestKart.
  */
+
+#include <fstream>
 void SoccerAI::findTarget()
 {
     findClosestKart(true/*consider_difficulty*/, false/*find_sta*/);
@@ -187,6 +189,11 @@ void SoccerAI::findTarget()
     {
         m_target_point = determineBallAimingPosition();
         m_target_node  = m_world->getBallNode();
+
+        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+        log_file << "BotIndex: " << m_kart <<" Target: " << "ball" << '\n';
+        log_file.close();
+
         return;
     }
 
@@ -207,11 +214,19 @@ void SoccerAI::findTarget()
         const AbstractKart* kart = m_world->getKart(id);
         m_target_point = kart->getXYZ();
         m_target_node  = m_world->getSectorForKart(kart);
+
+        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+        log_file << "BotIndex: " << m_kart <<" Target: " << "ballchaser" << '\n';
+        log_file.close();
     }
     else
     {
         m_target_point = m_closest_kart_point;
         m_target_node  = m_closest_kart_node;
+
+        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+        log_file << "BotIndex: " << m_kart <<" Target: " << "closestKart" << '\n';
+        log_file.close();
     }
 
 }   // findTarget

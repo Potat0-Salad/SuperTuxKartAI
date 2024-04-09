@@ -182,6 +182,8 @@ float AIBaseController::normalizeAngle(float angle)
  *  \param angle Steering angle.
  *  \param dt Time step.
  */
+
+ #include <fstream>
 void AIBaseController::setSteering(float angle, float dt)
 {
     float steer_fraction = angle / m_kart->getMaxSteerAngle();
@@ -213,6 +215,12 @@ void AIBaseController::setSteering(float angle, float dt)
         m_controls->setSteer( (old_steer-max_steer_change < steer_fraction)
                                ? steer_fraction : old_steer-max_steer_change );
     }
+
+    // Logging the steer value to a file
+    std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+    log_file << "BotIndex: " << m_kart <<" Steer value: " << m_controls->getSteer() << '\n';
+    log_file.close();
+
 }   // setSteering
 
 // ------------------------------------------------------------------------
@@ -347,3 +355,4 @@ void AIBaseController::rewindTo(BareNetworkString *buffer)
     // Skip the same number of bytes as PlayerController.
     buffer->skip(2 + 2 + 1);
 }   // rewindTo
+
