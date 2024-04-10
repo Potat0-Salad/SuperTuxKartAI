@@ -218,9 +218,8 @@ void AIBaseController::setSteering(float angle, float dt)
 
     // Logging the steer value to a file
     std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-    log_file << "BotIndex: " << m_kart <<" Steer value: " << m_controls->getSteer() << '\n';
+    log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Steer value: " << m_controls->getSteer() << '\n';
     log_file.close();
-
 }   // setSteering
 
 // ------------------------------------------------------------------------

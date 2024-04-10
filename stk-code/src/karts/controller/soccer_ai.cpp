@@ -191,7 +191,8 @@ void SoccerAI::findTarget()
         m_target_node  = m_world->getBallNode();
 
         std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-        log_file << "BotIndex: " << m_kart <<" Target: " << "ball" << '\n';
+        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "BALL" << '\n';
+        log_file << "Ball Position: " << m_world->getBallNode() << '\n';
         log_file.close();
 
         return;
@@ -205,6 +206,10 @@ void SoccerAI::findTarget()
         m_kart->getAttachment()->getType() != Attachment::ATTACH_SWATTER)
     {
         tryCollectItem(&m_target_point , &m_target_node);
+        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "ITEM" << '\n';
+        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Item Position: " << m_target_node << '\n';
+        log_file.close();
     }
     else if (m_world->getAttacker(m_cur_team) == (signed)m_kart
         ->getWorldKartId())
@@ -216,7 +221,7 @@ void SoccerAI::findTarget()
         m_target_node  = m_world->getSectorForKart(kart);
 
         std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-        log_file << "BotIndex: " << m_kart <<" Target: " << "ballchaser" << '\n';
+        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "BALLCHASER" << '\n';
         log_file.close();
     }
     else
@@ -225,7 +230,7 @@ void SoccerAI::findTarget()
         m_target_node  = m_closest_kart_node;
 
         std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-        log_file << "BotIndex: " << m_kart <<" Target: " << "closestKart" << '\n';
+        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "CLOSESTKART" << '\n';
         log_file.close();
     }
 
