@@ -27,6 +27,8 @@
 #include "tracks/arena_graph.hpp"
 #include "tracks/track.hpp"
 
+#include <fstream>
+
 #ifdef AI_DEBUG
 #include "irrlicht.h"
 #endif
@@ -122,6 +124,9 @@ void SoccerAI::update(int ticks)
 
     if (m_world->isGoalPhase())
     {
+            std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+            log_file << "G";
+            log_file.close();
         resetAfterStop();
         m_controls->setBrake(false);
         m_controls->setAccel(0.0f);
@@ -169,6 +174,12 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
     m_closest_kart_node = m_world->getSectorForKart(m_closest_kart);
     m_closest_kart_point = m_closest_kart->getXYZ();
 
+    std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+    log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Position: " << m_world->getSectorForKart(m_kart) << '\n';
+    log_file << "BotIndex: " << m_kart->getWorldKartId() <<" ClosestKartIndex: " << m_closest_kart->getWorldKartId();
+    log_file << " ClosestKartPos: " << m_closest_kart_node << '\n';
+    log_file.close();
+
 }   // findClosestKart
 
 //-----------------------------------------------------------------------------
@@ -180,7 +191,6 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
  *  if not go for the closest kart found by \ref findClosestKart.
  */
 
-#include <fstream>
 void SoccerAI::findTarget()
 {
     findClosestKart(true/*consider_difficulty*/, false/*find_sta*/);
@@ -208,7 +218,7 @@ void SoccerAI::findTarget()
         tryCollectItem(&m_target_point , &m_target_node);
         std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
         log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "ITEM" << '\n';
-        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Item Position: " << m_target_node << '\n';
+        log_file << "Item Position: " << m_target_node << '\n';
         log_file.close();
     }
     else if (m_world->getAttacker(m_cur_team) == (signed)m_kart
