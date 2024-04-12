@@ -126,6 +126,7 @@ void SoccerAI::update(int ticks)
     {
             std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
             log_file << "G";
+            
             log_file.close();
         resetAfterStop();
         m_controls->setBrake(false);
