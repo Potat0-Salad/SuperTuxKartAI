@@ -1618,11 +1618,20 @@ int handleCmdLine(bool has_server_config, bool has_parent_process)
         else if (t->isSoccer())
         {
             //if it's soccer, don't create AI karts
-            const std::vector<std::string> l;
+
+            RaceManager::get()->setNumBlueAI(1);
+            RaceManager::get()->setNumRedAI(2);
+
+            std::vector<std::string> l;
+            l.push_back("kiki");
+            l.push_back("tux");
+            l.push_back("puffy");
+
             RaceManager::get()->setDefaultAIKartList(l);
             // Add 1 for the player kart
-            RaceManager::get()->setNumKarts(1);
+            RaceManager::get()->setNumKarts(4);
             RaceManager::get()->setMinorMode(RaceManager::MINOR_MODE_SOCCER);
+            RaceManager::get()->setMaxGoal(1);
         }
     }   // --track
 
