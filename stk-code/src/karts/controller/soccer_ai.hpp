@@ -19,6 +19,8 @@
 #ifndef HEADER_SOCCER_AI_HPP
 #define HEADER_SOCCER_AI_HPP
 
+#include <queue>
+
 #include "karts/controller/arena_ai.hpp"
 
 #include "LinearMath/btTransform.h"
@@ -41,6 +43,37 @@ private:
     irr::scene::ISceneNode *m_red_sphere;
     irr::scene::ISceneNode *m_blue_sphere;
 #endif
+
+    enum class TargetEncode : int {
+        Ball = 0,
+        Powerup = 1,
+        OppChaser = 2,
+        ClosestOpp = 3
+    };
+
+    struct DataInstance {
+        int kart_id;
+        Vec3 ball_pos;
+        Vec3 kart_pos;
+        btVector3 kart_vel;
+        int kart_speed;
+        float kart_steer;
+        float kart_accel;
+        bool kart_brake;
+        TargetEncode target_encoded;
+        Vec3 target_pos;
+    };
+
+    std::queue<DataInstance> dataQueue;
+
+    const float RECORD_SAMPLE_RATE = 5.0;
+    const int SECONDS_BEFORE_GOAL = 30;
+
+    /** Keeps track of the scorer's team score. */
+    int old_cur_score = 0;
+
+    /** Keeps track of the opponent team score. */
+    int old_opp_score = 0;
 
     /** Keep a pointer to world. */
     SoccerWorld *m_world;
@@ -65,6 +98,8 @@ private:
      *  to determine point for aiming with ball */
     btTransform m_front_transform;
 
+    void writeBufToDisk();
+    void updateDataBuf();
     // ------------------------------------------------------------------------
     Vec3  determineBallAimingPosition();
     // ------------------------------------------------------------------------
@@ -103,6 +138,14 @@ public:
                 ~SoccerAI();
     virtual void update (int ticks) OVERRIDE;
     virtual void reset() OVERRIDE;
+
+    std::queue<DataInstance>& getAIData() {return dataQueue;}
+
+    void clearAIData(){
+        while (!dataQueue.empty()) {
+            dataQueue.pop();
+        }
+    }
 
 };
 

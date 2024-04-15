@@ -16,6 +16,10 @@
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
+#include <iostream>
+#include <fstream>
+#include <cmath>
+
 #include "karts/controller/soccer_ai.hpp"
 
 #include "items/attachment.hpp"
@@ -26,8 +30,6 @@
 #include "modes/soccer_world.hpp"
 #include "tracks/arena_graph.hpp"
 #include "tracks/track.hpp"
-
-#include <fstream>
 
 #ifdef AI_DEBUG
 #include "irrlicht.h"
@@ -104,6 +106,123 @@ void SoccerAI::reset()
 
 }   // reset
 
+void SoccerAI::updateDataBuf(){
+    //inside controller
+
+    /** Pointer to the kart that is controlled by this controller. */
+    // AbstractKart *m_kart;
+
+    // /** A pointer to the main controller, from which the kart takes
+    // its commands. */
+    // KartControl  *m_controls;
+
+    /**
+     * Currently getting the following
+     * Kart ID
+     * Ball position
+     * Kart position
+     * Kart speed
+     * Kart Velocity
+     * 
+     * 
+     * Kart controls:
+     * Steer
+     * 
+     * 
+     * todo:
+     * powerups
+     * 
+     */
+
+    TargetEncode target_encoded;
+
+    if(m_target_node == m_world->getBallNode()){
+        target_encoded = TargetEncode::Ball;
+    }
+    else if(m_target_node == m_world->getSectorForKart(m_world->getKart(m_world->getBallChaser(m_opp_team)))){
+        target_encoded = TargetEncode::OppChaser;
+    }
+    else if (m_target_node == m_closest_kart_node){
+        target_encoded = TargetEncode::ClosestOpp;
+    }
+    else{
+        target_encoded = TargetEncode::Powerup;
+    }
+
+    DataInstance dataPoint;
+    dataPoint.kart_id = m_kart->getWorldKartId();
+    dataPoint.ball_pos = m_world->getBallPosition();
+    dataPoint.kart_pos = m_kart->getXYZ();
+    dataPoint.kart_speed = m_kart->getSpeed();
+    dataPoint.kart_steer = m_controls->getSteer();
+    dataPoint.kart_accel = m_controls->getAccel();
+    dataPoint.kart_brake = m_controls->getBrake();
+    dataPoint.target_encoded = target_encoded;
+    dataPoint.target_pos = m_target_point;
+
+    dataQueue.push(dataPoint);
+
+    /**
+     * Printing
+     * 
+     */
+
+    // std::cout << "  The ball position at this time: (" << dataPoint.ball_pos.getX() << ", " << dataPoint.ball_pos.getY() << ", " << dataPoint.ball_pos.getZ() << ")" << std::endl;
+    // std::cout << "  pos: (" << dataPoint.kart_pos.getX() << ", " << dataPoint.kart_pos.getY() << ", " << dataPoint.kart_pos.getZ() << ")" << std::endl;
+    // std::cout << "  speed: " << dataPoint.kart_speed << std::endl;
+    // std::cout << "  velocity: (" << dataPoint.kart_vel.getX() << ", " << dataPoint.kart_vel.getY() << ", " << dataPoint.kart_vel.getZ() << ")" << std::endl;
+    // std::cout << "  steer: " << dataPoint.kart_steer  << std::endl;
+    // // std::cout << "  nitro: " << k_control.getNitro()  << std::endl;
+    // // Controller* k_controller = kart->getController();
+    // std::cout << "  closest kart: " << m_closest_kart->getWorldKartId() << std::endl;
+    // std::cout << "  target node: " << m_target_node << std::endl;
+    // if(dataPoint.target_encoded == TargetEncode::Ball){
+    //     std::cout << "  targeting the ball" << std::endl;
+    // }
+    // else if(dataPoint.target_encoded == TargetEncode::OppChaser){
+    //     std::cout << "  targeting the opp ball chaser" << std::endl;
+    // }
+    // else if (dataPoint.target_encoded == TargetEncode::ClosestOpp){
+    //     std::cout << "  targeting the closeset kart" << std::endl;
+    // }
+    // else{
+    //     std::cout << "  targeting the powerup OR NOT idk" << std::endl;
+    // }
+    // std::cout << "  target pos: (" << dataPoint.target_pos.getX() << ", " << dataPoint.target_pos.getY() << ", " << dataPoint.target_pos.getZ() << ")" << std::endl;
+
+}
+
+void SoccerAI::writeBufToDisk(){
+    std::ofstream outputFile("/Users/marcel/Desktop/project/goal_ticks.csv", std::ios::app);
+
+    if(outputFile.is_open()){
+        for(int i = 0; i < SECONDS_BEFORE_GOAL/RECORD_SAMPLE_RATE; i++){
+            if(dataQueue.empty())
+                break;
+            
+            DataInstance dataPoint = dataQueue.front();
+            dataQueue.pop();
+
+            outputFile << dataPoint.kart_id << "," 
+                << dataPoint.ball_pos.getX() << "," 
+                << dataPoint.ball_pos.getZ() << "," 
+                << dataPoint.kart_pos.getX() << "," 
+                << dataPoint.kart_pos.getZ() << "," 
+                << dataPoint.kart_speed << "," 
+                << dataPoint.kart_steer << ","
+                << dataPoint.kart_accel << "," 
+                << dataPoint.kart_brake << "," 
+                << (int)dataPoint.target_encoded << "," 
+                << dataPoint.target_pos.getX() << ","
+                << dataPoint.target_pos.getZ() << std::endl;
+        }
+        outputFile.close();
+    }
+    else{
+        std::cerr << "Error opening the file." << std::endl;
+    }
+}
+
 //-----------------------------------------------------------------------------
 /** Update \ref m_front_transform for ball aiming functions, also make AI stop
  *  after goal.
@@ -122,12 +241,23 @@ void SoccerAI::update(int ticks)
     m_front_transform.setOrigin(m_kart->getFrontXYZ());
     m_front_transform.setBasis(m_kart->getTrans().getBasis());
 
+    //If score reset tick counter and write to disk
+
+    //Writes data to buffer every "RECORD_SAMPLE_RATE" seconds
+    if (m_world->getTime() != 0 && fmod(m_world->getTime(), RECORD_SAMPLE_RATE) == 0 && !m_world->isGoalPhase())
+        updateDataBuf();
+
     if (m_world->isGoalPhase())
     {
-            std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-            log_file << "G";
-            
-            log_file.close();
+        if(m_world->getScore(m_cur_team) > old_cur_score){
+            writeBufToDisk();
+            old_cur_score = m_world->getScore(m_cur_team);
+        }
+        else if(m_world->getScore(m_opp_team) > old_opp_score)
+            old_opp_score = m_world->getScore(m_opp_team);
+
+        clearAIData();
+
         resetAfterStop();
         m_controls->setBrake(false);
         m_controls->setAccel(0.0f);
@@ -144,6 +274,12 @@ void SoccerAI::update(int ticks)
  *  \param consider_difficulty If take current difficulty into account.
  *  \param find_sta If find \ref SpareTireAI only.
  */
+
+//USED TO PRINT TO STDOUTLOG
+// std::string toString(const Vec3& vec) {
+//     return "(" + std::to_string(vec.getX()) + ", " + std::to_string(vec.getY()) + ", " + std::to_string(vec.getZ()) + ")";
+// }
+
 void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
 {
     float distance = 99999.9f;
@@ -175,11 +311,9 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
     m_closest_kart_node = m_world->getSectorForKart(m_closest_kart);
     m_closest_kart_point = m_closest_kart->getXYZ();
 
-    std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-    log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Position: " << m_world->getSectorForKart(m_kart) << '\n';
-    log_file << "BotIndex: " << m_kart->getWorldKartId() <<" ClosestKartIndex: " << m_closest_kart->getWorldKartId();
-    log_file << " ClosestKartPos: " << m_closest_kart_node << '\n';
-    log_file.close();
+    //PRINT TO STDOUTLOG
+    // std::string m_closest_kart_point_1 = toString(m_closest_kart_point);
+    // Log::info("this is the closest kart point", m_closest_kart_point_1.c_str());
 
 }   // findClosestKart
 
@@ -200,12 +334,6 @@ void SoccerAI::findTarget()
     {
         m_target_point = determineBallAimingPosition();
         m_target_node  = m_world->getBallNode();
-
-        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "BALL" << '\n';
-        log_file << "Ball Position: " << m_world->getBallNode() << '\n';
-        log_file.close();
-
         return;
     }
 
@@ -217,10 +345,6 @@ void SoccerAI::findTarget()
         m_kart->getAttachment()->getType() != Attachment::ATTACH_SWATTER)
     {
         tryCollectItem(&m_target_point , &m_target_node);
-        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "ITEM" << '\n';
-        log_file << "Item Position: " << m_target_node << '\n';
-        log_file.close();
     }
     else if (m_world->getAttacker(m_cur_team) == (signed)m_kart
         ->getWorldKartId())
@@ -230,19 +354,11 @@ void SoccerAI::findTarget()
         const AbstractKart* kart = m_world->getKart(id);
         m_target_point = kart->getXYZ();
         m_target_node  = m_world->getSectorForKart(kart);
-
-        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "BALLCHASER" << '\n';
-        log_file.close();
     }
     else
     {
         m_target_point = m_closest_kart_point;
         m_target_node  = m_closest_kart_node;
-
-        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-        log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Target: " << "CLOSESTKART" << '\n';
-        log_file.close();
     }
 
 }   // findTarget
