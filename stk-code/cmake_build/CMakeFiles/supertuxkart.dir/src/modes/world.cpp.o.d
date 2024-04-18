@@ -1215,6 +1215,8 @@ CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o: \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_node.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/quad.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/soccer_ai.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/queue \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/deque \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/spare_tire_ai.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/test_ai.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/network_ai_controller.hpp \
@@ -1289,7 +1291,6 @@ CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o: \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/profiler.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stack \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/deque \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/translation.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/tinygettext/include/tinygettext/tinygettext.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/tinygettext/include/tinygettext/dictionary.hpp \

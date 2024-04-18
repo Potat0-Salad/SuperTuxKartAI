@@ -106,6 +106,11 @@ void SoccerAI::reset()
 
 }   // reset
 
+// USED TO PRINT TO STDOUTLOG
+std::string toString(const Vec3& vec) {
+    return "(" + std::to_string(vec.getX()) + ", " + std::to_string(vec.getY()) + ", " + std::to_string(vec.getZ()) + ")";
+}
+
 void SoccerAI::updateDataBuf(){
     //inside controller
 
@@ -119,14 +124,22 @@ void SoccerAI::updateDataBuf(){
     /**
      * Currently getting the following
      * Kart ID
-     * Ball position
-     * Kart position
+     * Ball position X
+     * Ball position Z
+     * Kart position X
+     * Kart position Z
+     * Kart Velocity X
+     * Kart Velocity Z
      * Kart speed
-     * Kart Velocity
+     * Kart steer
+     * Kart acceleration
+     * Kart brake
+     * Kart skid
+     * Target (encoded)
+     * Target X
+     * Target Z
      * 
      * 
-     * Kart controls:
-     * Steer
      * 
      * 
      * todo:
@@ -153,10 +166,12 @@ void SoccerAI::updateDataBuf(){
     dataPoint.kart_id = m_kart->getWorldKartId();
     dataPoint.ball_pos = m_world->getBallPosition();
     dataPoint.kart_pos = m_kart->getXYZ();
+    dataPoint.kart_vel = m_kart->getVelocity();
     dataPoint.kart_speed = m_kart->getSpeed();
     dataPoint.kart_steer = m_controls->getSteer();
     dataPoint.kart_accel = m_controls->getAccel();
     dataPoint.kart_brake = m_controls->getBrake();
+    dataPoint.kart_skid = m_controls->getSkidControl();
     dataPoint.target_encoded = target_encoded;
     dataPoint.target_pos = m_target_point;
 
@@ -208,13 +223,17 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << "," 
                 << dataPoint.kart_pos.getX() << "," 
                 << dataPoint.kart_pos.getZ() << "," 
-                << dataPoint.kart_speed << "," 
+                << dataPoint.kart_vel.getX() << "," 
+                << dataPoint.kart_vel.getZ() << ","
+                << dataPoint.kart_speed << ","
                 << dataPoint.kart_steer << ","
                 << dataPoint.kart_accel << "," 
-                << dataPoint.kart_brake << "," 
+                << dataPoint.kart_brake << ","
+                << (int)dataPoint.kart_skid << ","
                 << (int)dataPoint.target_encoded << "," 
                 << dataPoint.target_pos.getX() << ","
-                << dataPoint.target_pos.getZ() << std::endl;
+                << dataPoint.target_pos.getZ() << ","
+                << std::endl;
         }
         outputFile.close();
     }
@@ -256,6 +275,9 @@ void SoccerAI::update(int ticks)
         else if(m_world->getScore(m_opp_team) > old_opp_score)
             old_opp_score = m_world->getScore(m_opp_team);
 
+        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+        log_file << "G";
+
         clearAIData();
 
         resetAfterStop();
@@ -264,6 +286,10 @@ void SoccerAI::update(int ticks)
         AIBaseController::update(ticks);
         return;
     }
+
+    //LOG BALL POS
+    std::string ball = toString(m_world->getBallPosition());
+    Log::info("ball:", ball.c_str());
 
     ArenaAI::update(ticks);
 }   // update
@@ -294,6 +320,9 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
         if (kart->getWorldKartId() == m_kart->getWorldKartId())
             continue; // Skip the same kart
 
+        if (kart->getWorldKartId() == 3)
+            continue; // skip the player
+
         if (m_world->getKartTeam(kart
             ->getWorldKartId()) == m_world->getKartTeam(m_kart
             ->getWorldKartId()))
@@ -310,6 +339,10 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
     m_closest_kart = m_world->getKart(closest_kart_num);
     m_closest_kart_node = m_world->getSectorForKart(m_closest_kart);
     m_closest_kart_point = m_closest_kart->getXYZ();
+
+    std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+    log_file << "BotIndex: " << m_kart->getWorldKartId() << " ClosestKartIndex: " << m_closest_kart->getWorldKartId() << '\n';
+    log_file.close();
 
     //PRINT TO STDOUTLOG
     // std::string m_closest_kart_point_1 = toString(m_closest_kart_point);

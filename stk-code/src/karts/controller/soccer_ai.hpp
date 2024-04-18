@@ -25,6 +25,8 @@
 
 #include "LinearMath/btTransform.h"
 
+#include "kart_control.hpp"
+
 #undef BALL_AIM_DEBUG
 #ifdef BALL_AIM_DEBUG
 #include "graphics/irr_driver.hpp"
@@ -60,6 +62,7 @@ private:
         float kart_steer;
         float kart_accel;
         bool kart_brake;
+        KartControl::SkidControl kart_skid;
         TargetEncode target_encoded;
         Vec3 target_pos;
     };

@@ -215,11 +215,6 @@ void AIBaseController::setSteering(float angle, float dt)
         m_controls->setSteer( (old_steer-max_steer_change < steer_fraction)
                                ? steer_fraction : old_steer-max_steer_change );
     }
-
-    // Logging the steer value to a file
-    std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-    log_file << "BotIndex: " << m_kart->getWorldKartId() <<" Steer value: " << m_controls->getSteer() << '\n';
-    log_file.close();
 }   // setSteering
 
 // ------------------------------------------------------------------------
