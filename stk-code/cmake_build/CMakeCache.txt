@@ -217,7 +217,7 @@ CMAKE_OSX_ARCHITECTURES:STRING=
 
 //Minimum OS X version to target for deployment (at runtime); newer
 // APIs weak linked. Set to empty string for default value.
-CMAKE_OSX_DEPLOYMENT_TARGET:STRING=10.9
+CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
@@ -321,6 +321,9 @@ CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
 CURL_LIBRARY_RELEASE:FILEPATH=/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/lib/libcurl.dylib
+
+//The directory containing a CMake configuration file for Caffe2.
+Caffe2_DIR:PATH=/Users/marcel/desktop/pytorch/torch/share/cmake/Caffe2
 
 //Compile with debug symbols
 DEBUG_SYMBOLS:BOOL=OFF
@@ -455,7 +458,7 @@ PDFTOPS_CONVERTER:FILEPATH=PDFTOPS_CONVERTER-NOTFOUND
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+PKG_CONFIG_EXECUTABLE:FILEPATH=/Users/marcel/anaconda3/bin/pkg-config
 
 //Path to a library.
 PNG_LIBRARY_DEBUG:FILEPATH=PNG_LIBRARY_DEBUG-NOTFOUND
@@ -512,6 +515,12 @@ SuperTuxKart_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 SuperTuxKart_SOURCE_DIR:STATIC=/Users/marcel/desktop/SuperTuxKartAI/stk-code
+
+//Path to a library.
+TORCH_LIBRARY:FILEPATH=/Users/marcel/desktop/pytorch/torch/lib/libtorch.dylib
+
+//The directory containing a CMake configuration file for Torch.
+Torch_DIR:PATH=/Users/marcel/desktop/pytorch/torch/share/cmake/Torch
 
 //Use OpenSSL instead of MbedTLS for cryptography in STK.
 USE_CRYPTO_OPENSSL:BOOL=FALSE
@@ -582,6 +591,9 @@ angelscript_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 angelscript_SOURCE_DIR:STATIC=/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/angelscript/projects/cmake
 
+//Path to a library.
+c10_LIBRARY:FILEPATH=/Users/marcel/desktop/pytorch/torch/lib/libc10.dylib
+
 //Value Computed by CMake
 enet_BINARY_DIR:STATIC=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/lib/enet
 
@@ -594,6 +606,12 @@ enet_SOURCE_DIR:STATIC=/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/enet
 //Dependencies for the target
 graphics_engine_LIB_DEPENDS:STATIC=general;squish;general;/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/lib/libastcenc.dylib;
 
+//Path to a library.
+kineto_LIBRARY:FILEPATH=/Users/marcel/desktop/pytorch/torch/lib/libkineto.a
+
+//Path to a library.
+pkgcfg_lib_PC_CURL_curl:FILEPATH=/Users/marcel/anaconda3/lib/libcurl.dylib
+
 //Dependencies for the target
 stkirrlicht_LIB_DEPENDS:STATIC=general;/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/lib/libz.dylib;general;/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/lib/libpng.dylib;general;/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/lib/libjpeg.dylib;
 
@@ -605,6 +623,15 @@ tinygettext_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 tinygettext_SOURCE_DIR:STATIC=/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/tinygettext
+
+//Value Computed by CMake
+torchtest_BINARY_DIR:STATIC=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build
+
+//Value Computed by CMake
+torchtest_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+torchtest_SOURCE_DIR:STATIC=/Users/marcel/desktop/SuperTuxKartAI/stk-code
 
 //Dependencies for the target
 wiiuse_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/IOBluetooth.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework;general;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/Foundation.framework;
@@ -810,6 +837,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_OggVorbis:INTERNAL=[/Users/marcel/desktop/supertuxk
 FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/lib/libpng.dylib][/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/include][v1.6.38()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding Torch
+FIND_PACKAGE_MESSAGE_DETAILS_Torch:INTERNAL=[/Users/marcel/desktop/pytorch/torch/lib/libtorch.dylib][/Users/marcel/desktop/pytorch/torch/include;/Users/marcel/desktop/pytorch/torch/include/torch/csrc/api/include][v()]
 //Details about finding ZLIB
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/lib/libz.dylib][/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/include][c ][v1.2.12()]
 //Have function fcntl
@@ -864,6 +893,41 @@ OGGVORBIS_VORBISFILE_LIBRARY-ADVANCED:INTERNAL=1
 OGGVORBIS_VORBIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGGVORBIS_VORBIS_LIBRARY
 OGGVORBIS_VORBIS_LIBRARY-ADVANCED:INTERNAL=1
+PC_CURL_CFLAGS:INTERNAL=-I/Users/marcel/anaconda3/include
+PC_CURL_CFLAGS_I:INTERNAL=
+PC_CURL_CFLAGS_OTHER:INTERNAL=
+PC_CURL_FOUND:INTERNAL=1
+PC_CURL_INCLUDEDIR:INTERNAL=/Users/marcel/anaconda3/include
+PC_CURL_INCLUDE_DIRS:INTERNAL=/Users/marcel/anaconda3/include
+PC_CURL_LDFLAGS:INTERNAL=-L/Users/marcel/anaconda3/lib;-lcurl
+PC_CURL_LDFLAGS_OTHER:INTERNAL=
+PC_CURL_LIBDIR:INTERNAL=/Users/marcel/anaconda3/lib
+PC_CURL_LIBRARIES:INTERNAL=curl
+PC_CURL_LIBRARY_DIRS:INTERNAL=/Users/marcel/anaconda3/lib
+PC_CURL_LIBS:INTERNAL=
+PC_CURL_LIBS_L:INTERNAL=
+PC_CURL_LIBS_OTHER:INTERNAL=
+PC_CURL_LIBS_PATHS:INTERNAL=
+PC_CURL_MODULE_NAME:INTERNAL=libcurl
+PC_CURL_PREFIX:INTERNAL=/Users/marcel/anaconda3
+PC_CURL_STATIC_CFLAGS:INTERNAL=-I/Users/marcel/anaconda3/include
+PC_CURL_STATIC_CFLAGS_I:INTERNAL=
+PC_CURL_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_CURL_STATIC_INCLUDE_DIRS:INTERNAL=/Users/marcel/anaconda3/include
+PC_CURL_STATIC_LDFLAGS:INTERNAL=-L/Users/marcel/anaconda3/lib;-lcurl;-lnghttp2;-lssh2;-lssl;-lcrypto;-lssl;-lcrypto;-lgssapi_krb5;-lresolv;-lz
+PC_CURL_STATIC_LDFLAGS_OTHER:INTERNAL=
+PC_CURL_STATIC_LIBDIR:INTERNAL=
+PC_CURL_STATIC_LIBRARIES:INTERNAL=curl;nghttp2;ssh2;ssl;crypto;ssl;crypto;gssapi_krb5;resolv;z
+PC_CURL_STATIC_LIBRARY_DIRS:INTERNAL=/Users/marcel/anaconda3/lib
+PC_CURL_STATIC_LIBS:INTERNAL=
+PC_CURL_STATIC_LIBS_L:INTERNAL=
+PC_CURL_STATIC_LIBS_OTHER:INTERNAL=
+PC_CURL_STATIC_LIBS_PATHS:INTERNAL=
+PC_CURL_VERSION:INTERNAL=8.2.1
+PC_CURL_libcurl_INCLUDEDIR:INTERNAL=
+PC_CURL_libcurl_LIBDIR:INTERNAL=
+PC_CURL_libcurl_PREFIX:INTERNAL=
+PC_CURL_libcurl_VERSION:INTERNAL=
 //ADVANCED property for variable: PDFLATEX_COMPILER
 PDFLATEX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PDFTOPS_CONVERTER
@@ -890,4 +954,9 @@ ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY_RELEASE
 ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+__pkg_config_arguments_PC_CURL:INTERNAL=QUIET;libcurl
+__pkg_config_checked_PC_CURL:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_CURL_curl
+pkgcfg_lib_PC_CURL_curl-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=AsynchDNS;GSS-API;HSTS;HTTP2;HTTPS-proxy;IPv6;Kerberos;Largefile;NTLM;NTLM_WB;SPNEGO;SSL;TLS-SRP;UnixSockets;alt-svc;libz;threadsafe
 

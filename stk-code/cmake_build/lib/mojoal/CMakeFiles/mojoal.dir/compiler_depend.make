@@ -191,8 +191,10 @@ lib/mojoal/CMakeFiles/mojoal.dir/mojoal.c.o: /Users/marcel/desktop/SuperTuxKartA
   /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/SDL2/SDL_video.h \
   /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/SDL2/begin_code.h \
   /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/SDL2/close_code.h \
-  /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/samplerate.h
+  /opt/homebrew/include/samplerate.h
 
+
+/opt/homebrew/include/samplerate.h:
 
 /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/SDL2/close_code.h:
 
@@ -405,8 +407,6 @@ lib/mojoal/CMakeFiles/mojoal.dir/mojoal.c.o: /Users/marcel/desktop/SuperTuxKartA
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/secure/_stdio.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/stdlib.h:
-
-/Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/samplerate.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_clr.h:
 

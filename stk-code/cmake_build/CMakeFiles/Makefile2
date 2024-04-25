@@ -312,10 +312,10 @@ lib/wiiuse/src/clean: lib/wiiuse/src/CMakeFiles/wiiuse.dir/clean
 # Target rules for target CMakeFiles/supertuxkart.dir
 
 # All Build rule for target.
-CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletmath.dir/all
-CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletcollision.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletdynamics.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/enet/CMakeFiles/enet.dir/all
+CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletmath.dir/all
+CMakeFiles/supertuxkart.dir/all: lib/bullet/CMakeFiles/bulletcollision.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/libsquish/CMakeFiles/squish.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/graphics_engine/CMakeFiles/graphics_engine.dir/all
 CMakeFiles/supertuxkart.dir/all: lib/graphics_utils/CMakeFiles/graphics_utils.dir/all

@@ -7008,6 +7008,8 @@ bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/sr
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/build.make
+bin/supertuxkart.app/Contents/MacOS/supertuxkart: /Users/marcel/desktop/pytorch/torch/lib/libc10.dylib
+bin/supertuxkart.app/Contents/MacOS/supertuxkart: /Users/marcel/desktop/pytorch/torch/lib/libkineto.a
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: lib/bullet/libbulletdynamics.a
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: lib/bullet/libbulletcollision.a
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: lib/bullet/libbulletmath.a
@@ -7036,6 +7038,9 @@ bin/supertuxkart.app/Contents/MacOS/supertuxkart: ../dependencies-macosx/lib/lib
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: lib/tinygettext/libtinygettext.a
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: /opt/homebrew/lib/libshaderc_shared.dylib
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: lib/wiiuse/src/libwiiuse.a
+bin/supertuxkart.app/Contents/MacOS/supertuxkart: /Users/marcel/desktop/pytorch/torch/lib/libtorch.dylib
+bin/supertuxkart.app/Contents/MacOS/supertuxkart: /Users/marcel/desktop/pytorch/torch/lib/libtorch_cpu.dylib
+bin/supertuxkart.app/Contents/MacOS/supertuxkart: /Users/marcel/desktop/pytorch/torch/lib/libc10.dylib
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: ../dependencies-macosx/lib/libz.dylib
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: ../dependencies-macosx/lib/libpng.dylib
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: ../dependencies-macosx/lib/libjpeg.dylib

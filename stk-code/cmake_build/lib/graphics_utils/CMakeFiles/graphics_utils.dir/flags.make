@@ -6,7 +6,7 @@ C_DEFINES = -DDLOPEN_MOLTENVK -DENABLE_IPV6 -DSUPERTUXKART_VERSION=\"git\"
 
 C_INCLUDES = -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/graphics_engine/include -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/libsquish -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/enet/include -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/bullet/src -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/openssl@1.1/include/openssl -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/opt/harfbuzz/include/harfbuzz -I/opt/homebrew/include -I/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/include -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/simd_wrapper
 
-C_FLAGSarm64 = -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=10.9   -O3
+C_FLAGSarm64 = -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk   -O3
 
-C_FLAGS = -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=10.9   -O3
+C_FLAGS = -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk   -O3
 

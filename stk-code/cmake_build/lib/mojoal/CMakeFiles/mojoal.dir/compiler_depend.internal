@@ -192,5 +192,5 @@ lib/mojoal/CMakeFiles/mojoal.dir/mojoal.c.o
  /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/SDL2/SDL_video.h
  /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/SDL2/begin_code.h
  /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/SDL2/close_code.h
- /Users/marcel/desktop/supertuxkartai/stk-code/dependencies-macosx/include/samplerate.h
+ /opt/homebrew/include/samplerate.h
 

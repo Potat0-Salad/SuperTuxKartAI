@@ -6,7 +6,7 @@ C_DEFINES = -DDLOPEN_MOLTENVK -DENABLE_IPV6 -DHAS_FCNTL=1 -DHAS_GETADDRINFO=1 -D
 
 C_INCLUDES = -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/bullet/src -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/openssl@1.1/include/openssl -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/opt/harfbuzz/include/harfbuzz -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/enet/include
 
-C_FLAGSarm64 =  -arch arm64 -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=10.9   -Wno-error
+C_FLAGSarm64 =  -arch arm64 -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk   -Wno-error
 
-C_FLAGS =  -arch arm64 -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=10.9   -Wno-error
+C_FLAGS =  -arch arm64 -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk   -Wno-error
 

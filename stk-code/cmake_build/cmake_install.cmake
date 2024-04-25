@@ -42,6 +42,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./supertuxkart.app/Contents/MacOS/supertuxkart" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./supertuxkart.app/Contents/MacOS/supertuxkart")
     execute_process(COMMAND /Users/marcel/anaconda3/bin/install_name_tool
+      -delete_rpath "/Users/marcel/desktop/pytorch/torch/lib"
       -delete_rpath "/Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./supertuxkart.app/Contents/MacOS/supertuxkart")
   endif()

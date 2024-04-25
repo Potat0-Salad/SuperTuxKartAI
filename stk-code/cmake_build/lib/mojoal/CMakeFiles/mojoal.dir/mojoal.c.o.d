@@ -189,4 +189,4 @@ lib/mojoal/CMakeFiles/mojoal.dir/mojoal.c.o: \
   /Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/include/SDL2/SDL_version.h \
   /Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/include/SDL2/SDL_locale.h \
   /Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/include/SDL2/SDL_misc.h \
-  /Users/marcel/desktop/supertuxkartai/stk-code/cmake_build/../dependencies-macosx/include/samplerate.h
+  /opt/homebrew/include/samplerate.h

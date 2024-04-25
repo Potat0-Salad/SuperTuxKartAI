@@ -6,7 +6,7 @@ CXX_DEFINES = -DDLOPEN_MOLTENVK -DENABLE_IPV6 -DSUPERTUXKART_VERSION=\"git\"
 
 CXX_INCLUDES = -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/enet/include -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/bullet/src -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/openssl@1.1/include/openssl -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/opt/harfbuzz/include/harfbuzz -I/Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/libsquish
 
-CXX_FLAGSarm64 = -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=10.9
+CXX_FLAGSarm64 = -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk
 
-CXX_FLAGS = -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=10.9
+CXX_FLAGS = -O2 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk
 
