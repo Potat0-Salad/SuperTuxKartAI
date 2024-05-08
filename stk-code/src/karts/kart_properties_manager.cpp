@@ -38,6 +38,8 @@
 #include <stdexcept>
 #include <iostream>
 
+#include <random>    // Include the random header for std::default_random_engine
+
 #ifndef SERVER_ONLY
 #include <ge_main.hpp>
 #include <ge_vulkan_driver.hpp>
@@ -601,8 +603,8 @@ void KartPropertiesManager::getRandomKartList(int count,
 
             assert(random_kart_queue.size() > 0);
 
-            std::random_shuffle(random_kart_queue.begin(),
-                                random_kart_queue.end()   );
+            std::shuffle(random_kart_queue.begin(), random_kart_queue.end(), std::default_random_engine(std::random_device{}()));
+
         }
 
         while (count > 0 && random_kart_queue.size() > 0)

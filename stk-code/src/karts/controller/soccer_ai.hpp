@@ -69,8 +69,8 @@ private:
 
     std::queue<DataInstance> dataQueue;
 
-    const float RECORD_SAMPLE_RATE = 5.0;
-    const int SECONDS_BEFORE_GOAL = 30;
+    const float RECORD_SAMPLE_RATE = 1.0;
+    const int SECONDS_BEFORE_GOAL = 10;
 
     /** Keeps track of the scorer's team score. */
     int old_cur_score = 0;

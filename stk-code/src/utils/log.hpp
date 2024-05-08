@@ -91,7 +91,7 @@ public:
     /** A simple macro to define the various log functions.
      *  Note that an assert is added so that a debugger is triggered
      *  when debugging. */
-#define LOG(NAME, LEVEL)                                             \
+#define STKLOG(NAME, LEVEL)                                             \
     static void NAME(const char *component, const char *format, ...) \
     {                                                                \
         if(LEVEL < m_min_log_level) return;                          \
@@ -106,12 +106,12 @@ public:
             exit(1);                                                 \
         }                                                            \
     }
-    LOG(verbose, LL_VERBOSE);
-    LOG(debug,   LL_DEBUG);
-    LOG(info,    LL_INFO);
-    LOG(warn,    LL_WARN);
-    LOG(error,   LL_ERROR);
-    LOG(fatal,   LL_FATAL);
+    STKLOG(verbose, LL_VERBOSE);
+    STKLOG(debug,   LL_DEBUG);
+    STKLOG(info,    LL_INFO);
+    STKLOG(warn,    LL_WARN);
+    STKLOG(error,   LL_ERROR);
+    STKLOG(fatal,   LL_FATAL);
 
     static void openOutputFiles(const std::string &logout);
 

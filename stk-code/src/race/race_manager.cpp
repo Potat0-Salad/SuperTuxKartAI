@@ -66,6 +66,8 @@
 #include "utils/translation.hpp"
 #include "io/rich_presence.hpp"
 
+#include <random>    // Include the random header for std::default_random_engine
+
 #include <IrrlichtDevice.h>
 
 #ifdef __SWITCH__

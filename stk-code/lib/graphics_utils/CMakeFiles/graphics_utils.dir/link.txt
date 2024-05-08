@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libgraphics_utils.a CMakeFiles/graphics_utils.dir/mipmap/cpusimd.c.o CMakeFiles/graphics_utils.dir/mipmap/imgresize.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libgraphics_utils.a

@@ -177,7 +177,7 @@ void NewsManager::downloadNews()
                 // This message must be translated dynamically in the main menu.
                 // If it would be translated here, it wouldn't be translated
                 // if the language is changed in the menu!
-                error_message = N_("Error downloading news: '%s'.");
+                error_message = STKN_("Error downloading news: '%s'.");
                 const char *const curl_error = download_req->getDownloadErrorMessage();
                 error_message = StringUtils::insertValues(error_message, curl_error);
                 addons_manager->setErrorState();

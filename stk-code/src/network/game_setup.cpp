@@ -34,6 +34,8 @@
 #include "utils/stk_process.hpp"
 #include "utils/string_utils.hpp"
 
+#include <random>    // Include the random header for std::default_random_engine
+
 #include <algorithm>
 #include <fstream>
 #include <random>

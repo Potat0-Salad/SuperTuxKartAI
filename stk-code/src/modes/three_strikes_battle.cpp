@@ -40,6 +40,8 @@
 #include "utils/string_utils.hpp"
 #include "utils/translation.hpp"
 
+#include <random>    // Include the random header for std::default_random_engine
+
 #include <algorithm>
 #include <deque>
 #include <string>
@@ -684,8 +686,7 @@ void ThreeStrikesBattle::loadCustomModels()
             }
 
             // Find random nodes to pre-spawn spare tire karts
-            std::random_shuffle(sta_possible_nodes.begin(),
-                sta_possible_nodes.end());
+            std::shuffle(sta_possible_nodes.begin(), sta_possible_nodes.end(), std::default_random_engine(std::random_device{}()));
 
             // Compute a random kart list
             std::vector<std::string> sta_list;

@@ -556,6 +556,47 @@ if(APPLE AND NOT IOS)
     # build the executable and create an app bundle
     add_executable(supertuxkart MACOSX_BUNDLE ${STK_SOURCES})
 
+
+
+
+
+
+
+# Set the C++ standard to C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Find the Torch package
+set(CMAKE_PREFIX_PATH "${CMAKE_PREFIX_PATH};/Users/marcel/Desktop/pytorch")
+find_package(Torch REQUIRED)
+
+# Include PyTorch headers
+include_directories(${TORCH_INCLUDE_DIRS})
+
+# Link PyTorch libraries with the SuperTuxKart target
+target_link_libraries(supertuxkart "${TORCH_LIBRARIES}")
+
+# Add Torch-specific compile flags to the SuperTuxKart target
+target_compile_options(supertuxkart PRIVATE ${TORCH_CXX_FLAGS})
+
+# Require C++17 compiler features
+target_compile_features(supertuxkart PRIVATE cxx_std_17)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     find_library(IOKIT_LIBRARY IOKit)
     find_library(COCOA_LIBRARY Cocoa)
 
@@ -911,3 +952,10 @@ if(MINGW)
     install(DIRECTORY ${CMAKE_BINARY_DIR}/bin/ DESTINATION ${STK_INSTALL_BINARY_DIR}
             FILES_MATCHING PATTERN "*.dll")
 endif()
+
+
+
+
+
+
+

@@ -218,6 +218,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/marcel/desktop/SuperTuxKartAI/stk-code/src/main.cpp" "CMakeFiles/supertuxkart.dir/src/main.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/main.cpp.o.d"
   "/Users/marcel/desktop/SuperTuxKartAI/stk-code/src/main_android.cpp" "CMakeFiles/supertuxkart.dir/src/main_android.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/main_android.cpp.o.d"
   "/Users/marcel/desktop/SuperTuxKartAI/stk-code/src/main_loop.cpp" "CMakeFiles/supertuxkart.dir/src/main_loop.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/main_loop.cpp.o.d"
+  "/Users/marcel/desktop/SuperTuxKartAI/stk-code/src/model_manager.cpp" "CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o.d"
   "/Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/capture_the_flag.cpp" "CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o.d"
   "/Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/ctf_flag.cpp" "CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o.d"
   "/Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/cutscene_world.cpp" "CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o" "gcc" "CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o.d"

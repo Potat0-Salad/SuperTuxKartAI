@@ -30,6 +30,10 @@
 #include "tracks/arena_node.hpp"
 #include "tracks/track.hpp"
 
+#include "model_manager.hpp"
+#include "modes/soccer_world.hpp"
+
+
 #include <algorithm>
 
 ArenaAI::ArenaAI(AbstractKart *kart)
@@ -39,6 +43,7 @@ ArenaAI::ArenaAI(AbstractKart *kart)
     m_debug_sphere = NULL;
     m_debug_sphere_next = NULL;
     m_graph = ArenaGraph::get();
+    m_world = dynamic_cast<SoccerWorld*>(World::getWorld());
 }   // ArenaAI
 
 //-----------------------------------------------------------------------------
@@ -77,6 +82,9 @@ void ArenaAI::reset()
  *  the AI, e.g. steering, accelerating/braking, firing.
  *  \param ticks Number of physics time steps - should be 1.
  */
+
+int tick_counter = 0;
+
 void ArenaAI::update(int ticks)
 {
     if (!m_graph)
@@ -127,41 +135,76 @@ void ArenaAI::update(int ticks)
     if (gettingUnstuck(ticks))
         return;
 
-    findTarget();
+        std::vector<torch::Tensor> inputs;
+        std::vector<torch::Tensor> outputs;
 
-    // After found target, convert it to local coordinate, used for skidding or
-    // u-turn
-    if (!m_is_uturn)
-    {
-        m_target_point_lc = m_kart->getTrans().inverse()(m_target_point);
-        doSkiddingTest();
-        configSteering();
-    }
-    else
-    {
-        m_target_point_lc = m_kart->getTrans().inverse()(m_reverse_point);
-    }
-    useItems(dt);
+        tick_counter++;
+        // if(tick_counter >= 3){
+            //ML model    
+            // Add your input tensors to the vector
 
-    if (m_kart->getSpeed() > 15.0f && !m_is_uturn && m_turn_radius > 30.0f &&
-        !ignorePathFinding())
-    {
-        // Only use nitro when turn angle is big (180 - angle)
-        m_controls->setNitro(true);
-    }
+            //forward staight
+            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
+                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, 1,
+                            0, 0));
+            //reverse staight
+            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
+                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, -1,
+                            0, 0));
+            //forward left
+            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
+                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, 1,
+                            0, 0));
+            //forward right
+            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
+                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, 1,
+                            0, 0));
+            //reverse left
+            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
+                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, -1,
+                            0, 0));
+            //reverse right
+            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
+                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, -1,
+                            0, 0));
 
-    if (m_is_uturn)
-    {
-        resetAfterStop();
-        doUTurn(dt);
-    }
-    else
-    {
-        configSpeed();
-        setSteering(m_steering_angle, dt);
-    }
+            outputs = evaluate_actions(inputs);
 
-    AIBaseController::update(ticks);
+
+            // Identify the best overall input based on the model's evaluations
+            int best_input_index = -1;
+            float highest_score = -std::numeric_limits<float>::infinity();
+
+            for (size_t i = 0; i < outputs.size(); ++i) {
+                auto scores = torch::softmax(outputs[i], 1); // Apply softmax if your model outputs logits
+                auto max_result = scores.max(1); // Get the maximum result along dimension 1
+                auto max_values = std::get<0>(max_result); // Correctly access the max values tensor
+                auto max_indices = std::get<1>(max_result); // Correctly access the indices tensor (if needed)
+                float score = max_values.item<float>(); // Access the maximum value as a float
+
+                if (score > highest_score) {
+                    highest_score = score;
+                    best_input_index = i;
+                }
+            }
+
+            // Apply controls based on the best input index
+            if (best_input_index != -1) {
+                // Assuming inputs are structured as [batch, features] and the 8th and 9th feature positions are for steering and acceleration
+                torch::Tensor steerTensor = inputs[best_input_index][0][7]; // Steering value
+                torch::Tensor accelTensor = inputs[best_input_index][0][8]; // Acceleration value
+
+                float steer_value = steerTensor.item<float>();
+                float accel_value = accelTensor.item<float>();
+
+                m_controls->setAccel(accel_value);
+                m_controls->setSteer(steer_value);
+            }
+        // }
+
+
+
+    // AIBaseController::update(ticks);
 
 }   // update
 

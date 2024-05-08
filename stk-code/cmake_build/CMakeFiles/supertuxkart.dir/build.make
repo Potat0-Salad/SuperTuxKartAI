@@ -3013,10 +3013,24 @@ CMakeFiles/supertuxkart.dir/src/main_loop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/supertuxkart.dir/src/main_loop.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/main_loop.cpp -o CMakeFiles/supertuxkart.dir/src/main_loop.cpp.s
 
+CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
+CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/model_manager.cpp
+CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building CXX object CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/model_manager.cpp
+
+CMakeFiles/supertuxkart.dir/src/model_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/supertuxkart.dir/src/model_manager.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/model_manager.cpp > CMakeFiles/supertuxkart.dir/src/model_manager.cpp.i
+
+CMakeFiles/supertuxkart.dir/src/model_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/supertuxkart.dir/src/model_manager.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/model_manager.cpp -o CMakeFiles/supertuxkart.dir/src/model_manager.cpp.s
+
 CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/capture_the_flag.cpp
 CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/capture_the_flag.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.i: cmake_force
@@ -3030,7 +3044,7 @@ CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/ctf_flag.cpp
 CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/ctf_flag.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.i: cmake_force
@@ -3044,7 +3058,7 @@ CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/cutscene_world.cpp
 CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/cutscene_world.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.i: cmake_force
@@ -3058,7 +3072,7 @@ CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/demo_world.cpp
 CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/demo_world.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.i: cmake_force
@@ -3072,7 +3086,7 @@ CMakeFiles/supertuxkart.dir/src/modes/demo_world.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/easter_egg_hunt.cpp
 CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/easter_egg_hunt.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.i: cmake_force
@@ -3086,7 +3100,7 @@ CMakeFiles/supertuxkart.dir/src/modes/easter_egg_hunt.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/follow_the_leader.cpp
 CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/follow_the_leader.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.i: cmake_force
@@ -3100,7 +3114,7 @@ CMakeFiles/supertuxkart.dir/src/modes/follow_the_leader.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/free_for_all.cpp
 CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/free_for_all.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.i: cmake_force
@@ -3114,7 +3128,7 @@ CMakeFiles/supertuxkart.dir/src/modes/free_for_all.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/lap_trial.cpp
 CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/lap_trial.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.i: cmake_force
@@ -3128,7 +3142,7 @@ CMakeFiles/supertuxkart.dir/src/modes/lap_trial.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/linear_world.cpp
 CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/linear_world.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.i: cmake_force
@@ -3142,7 +3156,7 @@ CMakeFiles/supertuxkart.dir/src/modes/linear_world.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/overworld.cpp
 CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/overworld.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.i: cmake_force
@@ -3156,7 +3170,7 @@ CMakeFiles/supertuxkart.dir/src/modes/overworld.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/profile_world.cpp
 CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/profile_world.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.i: cmake_force
@@ -3170,7 +3184,7 @@ CMakeFiles/supertuxkart.dir/src/modes/profile_world.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/soccer_world.cpp
 CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/soccer_world.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.i: cmake_force
@@ -3184,7 +3198,7 @@ CMakeFiles/supertuxkart.dir/src/modes/soccer_world.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/standard_race.cpp
 CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/standard_race.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.i: cmake_force
@@ -3198,7 +3212,7 @@ CMakeFiles/supertuxkart.dir/src/modes/standard_race.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/three_strikes_battle.cpp
 CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/three_strikes_battle.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.i: cmake_force
@@ -3212,7 +3226,7 @@ CMakeFiles/supertuxkart.dir/src/modes/three_strikes_battle.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/tutorial_world.cpp
 CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/tutorial_world.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.i: cmake_force
@@ -3226,7 +3240,7 @@ CMakeFiles/supertuxkart.dir/src/modes/tutorial_world.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world.cpp
 CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/world.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/world.cpp.i: cmake_force
@@ -3240,7 +3254,7 @@ CMakeFiles/supertuxkart.dir/src/modes/world.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world_status.cpp
 CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world_status.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.i: cmake_force
@@ -3254,7 +3268,7 @@ CMakeFiles/supertuxkart.dir/src/modes/world_status.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world_with_rank.cpp
 CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building CXX object CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.o -MF CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world_with_rank.cpp
 
 CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.i: cmake_force
@@ -3268,7 +3282,7 @@ CMakeFiles/supertuxkart.dir/src/modes/world_with_rank.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/child_loop.cpp
 CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/child_loop.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.i: cmake_force
@@ -3282,7 +3296,7 @@ CMakeFiles/supertuxkart.dir/src/network/child_loop.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/crypto_mbedtls.cpp
 CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/crypto_mbedtls.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.i: cmake_force
@@ -3296,7 +3310,7 @@ CMakeFiles/supertuxkart.dir/src/network/crypto_mbedtls.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/crypto_openssl.cpp
 CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/crypto_openssl.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.i: cmake_force
@@ -3310,7 +3324,7 @@ CMakeFiles/supertuxkart.dir/src/network/crypto_openssl.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/event.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/event.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/event.cpp
 CMakeFiles/supertuxkart.dir/src/network/event.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/event.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/event.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/event.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/event.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/event.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/event.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/event.cpp.i: cmake_force
@@ -3324,7 +3338,7 @@ CMakeFiles/supertuxkart.dir/src/network/event.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/event_rewinder.cpp
 CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/event_rewinder.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.i: cmake_force
@@ -3338,7 +3352,7 @@ CMakeFiles/supertuxkart.dir/src/network/event_rewinder.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/game_setup.cpp
 CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/game_setup.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.i: cmake_force
@@ -3352,7 +3366,7 @@ CMakeFiles/supertuxkart.dir/src/network/game_setup.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/kart_data.cpp
 CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/kart_data.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.i: cmake_force
@@ -3366,7 +3380,7 @@ CMakeFiles/supertuxkart.dir/src/network/kart_data.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/network.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/network.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network.cpp
 CMakeFiles/supertuxkart.dir/src/network/network.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/network.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/network.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/network.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/network.cpp.i: cmake_force
@@ -3380,7 +3394,7 @@ CMakeFiles/supertuxkart.dir/src/network/network.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network_config.cpp
 CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network_config.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.i: cmake_force
@@ -3394,7 +3408,7 @@ CMakeFiles/supertuxkart.dir/src/network/network_config.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network_console.cpp
 CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network_console.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.i: cmake_force
@@ -3408,7 +3422,7 @@ CMakeFiles/supertuxkart.dir/src/network/network_console.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network_player_profile.cpp
 CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network_player_profile.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.i: cmake_force
@@ -3422,7 +3436,7 @@ CMakeFiles/supertuxkart.dir/src/network/network_player_profile.cpp.s: cmake_forc
 CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network_string.cpp
 CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/network_string.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.i: cmake_force
@@ -3436,7 +3450,7 @@ CMakeFiles/supertuxkart.dir/src/network/network_string.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocol.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocol.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.i: cmake_force
@@ -3450,7 +3464,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocol.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocol_manager.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocol_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.i: cmake_force
@@ -3464,7 +3478,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocol_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/client_lobby.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_244) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/client_lobby.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.i: cmake_force
@@ -3478,7 +3492,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocols/client_lobby.cpp.s: cmake_forc
 CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/connect_to_peer.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_244) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_245) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/connect_to_peer.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.i: cmake_force
@@ -3492,7 +3506,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_peer.cpp.s: cmake_f
 CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/connect_to_server.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_245) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_246) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/connect_to_server.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.i: cmake_force
@@ -3506,7 +3520,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocols/connect_to_server.cpp.s: cmake
 CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/game_events_protocol.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_246) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_247) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/game_events_protocol.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.i: cmake_force
@@ -3520,7 +3534,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocols/game_events_protocol.cpp.s: cm
 CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/game_protocol.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_247) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_248) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/game_protocol.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.i: cmake_force
@@ -3534,7 +3548,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocols/game_protocol.cpp.s: cmake_for
 CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/lobby_protocol.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_248) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_249) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/lobby_protocol.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.i: cmake_force
@@ -3548,7 +3562,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocols/lobby_protocol.cpp.s: cmake_fo
 CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/server_lobby.cpp
 CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_249) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_250) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/protocols/server_lobby.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.i: cmake_force
@@ -3562,7 +3576,7 @@ CMakeFiles/supertuxkart.dir/src/network/protocols/server_lobby.cpp.s: cmake_forc
 CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/race_event_manager.cpp
 CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_250) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_251) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/race_event_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.i: cmake_force
@@ -3576,7 +3590,7 @@ CMakeFiles/supertuxkart.dir/src/network/race_event_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/remote_kart_info.cpp
 CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_251) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_252) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/remote_kart_info.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.i: cmake_force
@@ -3590,7 +3604,7 @@ CMakeFiles/supertuxkart.dir/src/network/remote_kart_info.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/rewind_info.cpp
 CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_252) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_253) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/rewind_info.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.i: cmake_force
@@ -3604,7 +3618,7 @@ CMakeFiles/supertuxkart.dir/src/network/rewind_info.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/rewind_manager.cpp
 CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_253) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_254) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/rewind_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.i: cmake_force
@@ -3618,7 +3632,7 @@ CMakeFiles/supertuxkart.dir/src/network/rewind_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/rewind_queue.cpp
 CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_254) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_255) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/rewind_queue.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.i: cmake_force
@@ -3632,7 +3646,7 @@ CMakeFiles/supertuxkart.dir/src/network/rewind_queue.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/rewinder.cpp
 CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_255) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_256) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/rewinder.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.i: cmake_force
@@ -3646,7 +3660,7 @@ CMakeFiles/supertuxkart.dir/src/network/rewinder.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/server.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/server.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/server.cpp
 CMakeFiles/supertuxkart.dir/src/network/server.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_256) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_257) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/server.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/server.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/server.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/server.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/server.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/server.cpp.i: cmake_force
@@ -3660,7 +3674,7 @@ CMakeFiles/supertuxkart.dir/src/network/server.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/server_config.cpp
 CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_257) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_258) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/server_config.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.i: cmake_force
@@ -3674,7 +3688,7 @@ CMakeFiles/supertuxkart.dir/src/network/server_config.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/servers_manager.cpp
 CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_258) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_259) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/servers_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.i: cmake_force
@@ -3688,7 +3702,7 @@ CMakeFiles/supertuxkart.dir/src/network/servers_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/smooth_network_body.cpp
 CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_259) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_260) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/smooth_network_body.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.i: cmake_force
@@ -3702,7 +3716,7 @@ CMakeFiles/supertuxkart.dir/src/network/smooth_network_body.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/socket_address.cpp
 CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_260) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_261) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/socket_address.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.i: cmake_force
@@ -3716,7 +3730,7 @@ CMakeFiles/supertuxkart.dir/src/network/socket_address.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/stk_host.cpp
 CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_261) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_262) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/stk_host.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.i: cmake_force
@@ -3730,7 +3744,7 @@ CMakeFiles/supertuxkart.dir/src/network/stk_host.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/stk_ipv6.cpp
 CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_262) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_263) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/stk_ipv6.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.i: cmake_force
@@ -3744,7 +3758,7 @@ CMakeFiles/supertuxkart.dir/src/network/stk_ipv6.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/stk_peer.cpp
 CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_263) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_264) "Building CXX object CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.o -MF CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/network/stk_peer.cpp
 
 CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.i: cmake_force
@@ -3758,7 +3772,7 @@ CMakeFiles/supertuxkart.dir/src/network/stk_peer.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/http_request.cpp
 CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_264) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_265) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.o -MF CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/http_request.cpp
 
 CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.i: cmake_force
@@ -3772,7 +3786,7 @@ CMakeFiles/supertuxkart.dir/src/online/http_request.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/link_helper.cpp
 CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_265) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_266) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.o -MF CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/link_helper.cpp
 
 CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.i: cmake_force
@@ -3786,7 +3800,7 @@ CMakeFiles/supertuxkart.dir/src/online/link_helper.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/online_player_profile.cpp
 CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_266) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_267) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.o -MF CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/online_player_profile.cpp
 
 CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.i: cmake_force
@@ -3800,7 +3814,7 @@ CMakeFiles/supertuxkart.dir/src/online/online_player_profile.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/online_profile.cpp
 CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_267) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_268) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.o -MF CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/online_profile.cpp
 
 CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.i: cmake_force
@@ -3814,7 +3828,7 @@ CMakeFiles/supertuxkart.dir/src/online/online_profile.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/profile_manager.cpp
 CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_268) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_269) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/profile_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.i: cmake_force
@@ -3828,7 +3842,7 @@ CMakeFiles/supertuxkart.dir/src/online/profile_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/online/request.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/online/request.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/request.cpp
 CMakeFiles/supertuxkart.dir/src/online/request.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_269) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/request.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_270) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/request.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/online/request.cpp.o -MF CMakeFiles/supertuxkart.dir/src/online/request.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/online/request.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/request.cpp
 
 CMakeFiles/supertuxkart.dir/src/online/request.cpp.i: cmake_force
@@ -3842,7 +3856,7 @@ CMakeFiles/supertuxkart.dir/src/online/request.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/request_manager.cpp
 CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_270) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_271) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/request_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.i: cmake_force
@@ -3856,7 +3870,7 @@ CMakeFiles/supertuxkart.dir/src/online/request_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/xml_request.cpp
 CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_271) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_272) "Building CXX object CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.o -MF CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/online/xml_request.cpp
 
 CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.i: cmake_force
@@ -3870,7 +3884,7 @@ CMakeFiles/supertuxkart.dir/src/online/xml_request.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/btKart.cpp
 CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_272) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_273) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.o -MF CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/btKart.cpp
 
 CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.i: cmake_force
@@ -3884,7 +3898,7 @@ CMakeFiles/supertuxkart.dir/src/physics/btKart.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/btKartRaycast.cpp
 CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_273) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_274) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.o -MF CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/btKartRaycast.cpp
 
 CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.i: cmake_force
@@ -3898,7 +3912,7 @@ CMakeFiles/supertuxkart.dir/src/physics/btKartRaycast.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/irr_debug_drawer.cpp
 CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_274) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_275) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.o -MF CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/irr_debug_drawer.cpp
 
 CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.i: cmake_force
@@ -3912,7 +3926,7 @@ CMakeFiles/supertuxkart.dir/src/physics/irr_debug_drawer.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/physical_object.cpp
 CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_275) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_276) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.o -MF CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/physical_object.cpp
 
 CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.i: cmake_force
@@ -3926,7 +3940,7 @@ CMakeFiles/supertuxkart.dir/src/physics/physical_object.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/physics.cpp
 CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_276) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_277) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.o -MF CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/physics.cpp
 
 CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.i: cmake_force
@@ -3940,7 +3954,7 @@ CMakeFiles/supertuxkart.dir/src/physics/physics.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/triangle_mesh.cpp
 CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_277) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_278) "Building CXX object CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.o -MF CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/physics/triangle_mesh.cpp
 
 CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.i: cmake_force
@@ -3954,7 +3968,7 @@ CMakeFiles/supertuxkart.dir/src/physics/triangle_mesh.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/grand_prix_data.cpp
 CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_278) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_279) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.o -MF CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/grand_prix_data.cpp
 
 CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.i: cmake_force
@@ -3968,7 +3982,7 @@ CMakeFiles/supertuxkart.dir/src/race/grand_prix_data.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/grand_prix_manager.cpp
 CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_279) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_280) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/grand_prix_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.i: cmake_force
@@ -3982,7 +3996,7 @@ CMakeFiles/supertuxkart.dir/src/race/grand_prix_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/highscore_manager.cpp
 CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_280) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_281) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/highscore_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.i: cmake_force
@@ -3996,7 +4010,7 @@ CMakeFiles/supertuxkart.dir/src/race/highscore_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/highscores.cpp
 CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_281) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_282) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.o -MF CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/highscores.cpp
 
 CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.i: cmake_force
@@ -4010,7 +4024,7 @@ CMakeFiles/supertuxkart.dir/src/race/highscores.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/race/history.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/race/history.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/history.cpp
 CMakeFiles/supertuxkart.dir/src/race/history.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_282) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/history.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_283) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/history.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/race/history.cpp.o -MF CMakeFiles/supertuxkart.dir/src/race/history.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/race/history.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/history.cpp
 
 CMakeFiles/supertuxkart.dir/src/race/history.cpp.i: cmake_force
@@ -4024,7 +4038,7 @@ CMakeFiles/supertuxkart.dir/src/race/history.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/race_manager.cpp
 CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_283) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_284) "Building CXX object CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/race_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.i: cmake_force
@@ -4038,7 +4052,7 @@ CMakeFiles/supertuxkart.dir/src/race/race_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/replay/replay_base.cpp
 CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_284) "Building CXX object CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_285) "Building CXX object CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.o -MF CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/replay/replay_base.cpp
 
 CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.i: cmake_force
@@ -4052,7 +4066,7 @@ CMakeFiles/supertuxkart.dir/src/replay/replay_base.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/replay/replay_play.cpp
 CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_285) "Building CXX object CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_286) "Building CXX object CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.o -MF CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/replay/replay_play.cpp
 
 CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.i: cmake_force
@@ -4066,7 +4080,7 @@ CMakeFiles/supertuxkart.dir/src/replay/replay_play.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/replay/replay_recorder.cpp
 CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_286) "Building CXX object CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_287) "Building CXX object CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.o -MF CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/replay/replay_recorder.cpp
 
 CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.i: cmake_force
@@ -4080,7 +4094,7 @@ CMakeFiles/supertuxkart.dir/src/replay/replay_recorder.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/property_animator.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_287) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_288) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/property_animator.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.i: cmake_force
@@ -4094,7 +4108,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/property_animator.cpp.s: cmake_forc
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_audio.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_288) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_289) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_audio.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.i: cmake_force
@@ -4108,7 +4122,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/script_audio.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_challenges.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_289) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_290) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_challenges.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.i: cmake_force
@@ -4122,7 +4136,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/script_challenges.cpp.s: cmake_forc
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_engine.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_290) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_291) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_engine.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.i: cmake_force
@@ -4136,7 +4150,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/script_engine.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_gui.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_291) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_292) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_gui.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.i: cmake_force
@@ -4150,7 +4164,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/script_gui.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_kart.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_292) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_293) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_kart.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.i: cmake_force
@@ -4164,7 +4178,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/script_kart.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_physics.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_293) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_294) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_physics.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.i: cmake_force
@@ -4178,7 +4192,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/script_physics.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_track.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_294) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_295) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_track.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.i: cmake_force
@@ -4192,7 +4206,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/script_track.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_utils.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_295) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_296) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/script_utils.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.i: cmake_force
@@ -4206,7 +4220,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/script_utils.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/scriptarray.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_296) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_297) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/scriptarray.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.i: cmake_force
@@ -4220,7 +4234,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/scriptarray.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/scriptstdstring.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_297) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_298) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/scriptstdstring.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.i: cmake_force
@@ -4234,7 +4248,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/scriptstdstring_utils.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_298) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_299) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/scriptstdstring_utils.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.i: cmake_force
@@ -4248,7 +4262,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/scriptstdstring_utils.cpp.s: cmake_
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/scriptvec3.cpp
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_299) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_300) "Building CXX object CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.o -MF CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/scriptengine/scriptvec3.cpp
 
 CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.i: cmake_force
@@ -4262,7 +4276,7 @@ CMakeFiles/supertuxkart.dir/src/scriptengine/scriptvec3.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/addons_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_300) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_301) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/addons_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.i: cmake_force
@@ -4276,7 +4290,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/addons_screen.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/arenas_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_301) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_302) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/arenas_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.i: cmake_force
@@ -4290,7 +4304,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/arenas_screen.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/credits.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_302) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_303) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/credits.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.i: cmake_force
@@ -4304,7 +4318,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/credits.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/cutscene_general.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_303) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_304) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/cutscene_general.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.i: cmake_force
@@ -4318,7 +4332,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_general.cpp.s: cmake_for
 CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/cutscene_gui.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_304) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_305) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/cutscene_gui.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.i: cmake_force
@@ -4332,7 +4346,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/cutscene_gui.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/achievement_progress_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_305) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_306) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/achievement_progress_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dialog.cpp.i: cmake_force
@@ -4346,7 +4360,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/achievement_progress_dial
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/add_device_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_306) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_307) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/add_device_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.i: cmake_force
@@ -4360,7 +4374,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/add_device_dialog.cpp.s: 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/addons_loading.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_307) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_308) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/addons_loading.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.i: cmake_force
@@ -4374,7 +4388,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_loading.cpp.s: cma
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/addons_pack.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_308) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_309) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/addons_pack.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.i: cmake_force
@@ -4388,7 +4402,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/addons_pack.cpp.s: cmake_
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/change_password_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_309) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_310) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/change_password_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cpp.i: cmake_force
@@ -4402,7 +4416,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/change_password_dialog.cp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/confirm_resolution_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_310) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_311) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/confirm_resolution_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog.cpp.i: cmake_force
@@ -4416,7 +4430,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/confirm_resolution_dialog
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/custom_camera_settings.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_311) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_312) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/custom_camera_settings.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cpp.i: cmake_force
@@ -4430,7 +4444,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_camera_settings.cp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/custom_video_settings.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_312) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_313) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/custom_video_settings.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp.i: cmake_force
@@ -4444,7 +4458,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/custom_video_settings.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/debug_slider.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_313) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_314) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/debug_slider.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.i: cmake_force
@@ -4458,7 +4472,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/debug_slider.cpp.s: cmake
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/download_assets.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_314) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_315) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/download_assets.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.i: cmake_force
@@ -4472,7 +4486,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/download_assets.cpp.s: cm
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/enter_address_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_315) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_316) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/enter_address_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.i: cmake_force
@@ -4486,7 +4500,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/enter_address_dialog.cpp.
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/general_text_field_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_316) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_317) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/general_text_field_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog.cpp.i: cmake_force
@@ -4500,7 +4514,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/general_text_field_dialog
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/ghost_replay_info_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_317) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_318) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/ghost_replay_info_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.cpp.i: cmake_force
@@ -4514,7 +4528,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/ghost_replay_info_dialog.
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/high_score_info_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_318) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_319) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/high_score_info_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cpp.i: cmake_force
@@ -4528,7 +4542,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/high_score_info_dialog.cp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/init_android_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_319) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_320) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/init_android_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.i: cmake_force
@@ -4542,7 +4556,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/init_android_dialog.cpp.s
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/kart_color_slider_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_320) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_321) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/kart_color_slider_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.cpp.i: cmake_force
@@ -4556,7 +4570,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/kart_color_slider_dialog.
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/message_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_321) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_322) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/message_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.i: cmake_force
@@ -4570,7 +4584,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/message_dialog.cpp.s: cma
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/multitouch_settings_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_322) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_323) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/multitouch_settings_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialog.cpp.i: cmake_force
@@ -4584,7 +4598,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/multitouch_settings_dialo
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/network_player_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_323) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_324) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/network_player_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp.i: cmake_force
@@ -4598,7 +4612,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/network_player_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/player_rankings_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_324) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_325) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/player_rankings_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cpp.i: cmake_force
@@ -4612,7 +4626,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/player_rankings_dialog.cp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/press_a_key_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_325) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_326) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/press_a_key_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.i: cmake_force
@@ -4626,7 +4640,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/press_a_key_dialog.cpp.s:
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/race_paused_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_326) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_327) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/race_paused_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.i: cmake_force
@@ -4640,7 +4654,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/race_paused_dialog.cpp.s:
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/recovery_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_327) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_328) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/recovery_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.i: cmake_force
@@ -4654,7 +4668,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/recovery_dialog.cpp.s: cm
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/registration_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_328) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_329) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/registration_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.i: cmake_force
@@ -4668,7 +4682,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/registration_dialog.cpp.s
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/select_challenge.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_329) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_330) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/select_challenge.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.i: cmake_force
@@ -4682,7 +4696,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/select_challenge.cpp.s: c
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/server_configuration_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_330) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_331) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/server_configuration_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dialog.cpp.i: cmake_force
@@ -4696,7 +4710,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_configuration_dial
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/server_info_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_331) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_332) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/server_info_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.i: cmake_force
@@ -4710,7 +4724,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/server_info_dialog.cpp.s:
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/splitscreen_player_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_332) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_333) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/splitscreen_player_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog.cpp.i: cmake_force
@@ -4724,7 +4738,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/splitscreen_player_dialog
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/tutorial_message_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_333) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_334) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/tutorial_message_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.cpp.i: cmake_force
@@ -4738,7 +4752,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/tutorial_message_dialog.c
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/user_info_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_334) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_335) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/user_info_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.i: cmake_force
@@ -4752,7 +4766,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/user_info_dialog.cpp.s: c
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/vote_dialog.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_335) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_336) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/dialogs/vote_dialog.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.i: cmake_force
@@ -4766,7 +4780,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/dialogs/vote_dialog.cpp.s: cmake_
 CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/easter_egg_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_336) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_337) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/easter_egg_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.i: cmake_force
@@ -4780,7 +4794,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/easter_egg_screen.cpp.s: cmake_fo
 CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/edit_gp_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_337) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_338) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/edit_gp_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.i: cmake_force
@@ -4794,7 +4808,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/edit_gp_screen.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/edit_track_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_338) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_339) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/edit_track_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.i: cmake_force
@@ -4808,7 +4822,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/edit_track_screen.cpp.s: cmake_fo
 CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/feature_unlocked.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_339) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_340) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/feature_unlocked.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.i: cmake_force
@@ -4822,7 +4836,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/feature_unlocked.cpp.s: cmake_for
 CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/ghost_replay_selection.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_340) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_341) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/ghost_replay_selection.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.i: cmake_force
@@ -4836,7 +4850,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/ghost_replay_selection.cpp.s: cma
 CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/gp_info_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_341) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_342) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/gp_info_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.i: cmake_force
@@ -4850,7 +4864,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/gp_info_screen.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/grand_prix_cutscene.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_342) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_343) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/grand_prix_cutscene.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.i: cmake_force
@@ -4864,7 +4878,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_cutscene.cpp.s: cmake_
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/grand_prix_editor_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_343) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_344) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/grand_prix_editor_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.i: cmake_force
@@ -4878,7 +4892,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_editor_screen.cpp.s: c
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/grand_prix_lose.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_344) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_345) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/grand_prix_lose.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.i: cmake_force
@@ -4892,7 +4906,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_lose.cpp.s: cmake_forc
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/grand_prix_win.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_345) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_346) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/grand_prix_win.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.i: cmake_force
@@ -4906,7 +4920,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/grand_prix_win.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_1.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_346) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_347) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_1.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.i: cmake_force
@@ -4920,7 +4934,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_1.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_2.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_347) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_348) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_2.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.i: cmake_force
@@ -4934,7 +4948,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_2.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_3.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_348) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_349) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_3.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.i: cmake_force
@@ -4948,7 +4962,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_3.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_4.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_349) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_350) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_4.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.i: cmake_force
@@ -4962,7 +4976,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_4.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_5.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_350) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_351) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_5.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.i: cmake_force
@@ -4976,7 +4990,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_5.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_6.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_351) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_352) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_6.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.i: cmake_force
@@ -4990,7 +5004,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_6.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_7.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_352) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_353) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/help_screen_7.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.i: cmake_force
@@ -5004,7 +5018,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/help_screen_7.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/high_score_selection.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_353) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_354) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/high_score_selection.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.i: cmake_force
@@ -5018,7 +5032,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/high_score_selection.cpp.s: cmake
 CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/kart_selection.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_354) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_355) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/kart_selection.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.i: cmake_force
@@ -5032,7 +5046,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/kart_selection.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/main_menu_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_355) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_356) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/main_menu_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.i: cmake_force
@@ -5046,7 +5060,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/main_menu_screen.cpp.s: cmake_for
 CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/offline_kart_selection.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_356) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_357) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/offline_kart_selection.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.i: cmake_force
@@ -5060,7 +5074,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/offline_kart_selection.cpp.s: cma
 CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/create_server_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_357) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_358) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/create_server_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.i: cmake_force
@@ -5074,7 +5088,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/create_server_screen.cpp.s
 CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/network_kart_selection.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_358) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_359) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/network_kart_selection.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp.i: cmake_force
@@ -5088,7 +5102,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/network_kart_selection.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/networking_lobby.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_359) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_360) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/networking_lobby.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.i: cmake_force
@@ -5102,7 +5116,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/networking_lobby.cpp.s: cm
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_lan.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_360) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_361) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_lan.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.i: cmake_force
@@ -5116,7 +5130,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/online_lan.cpp.s: cmake_fo
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_achievements.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_361) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_362) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_achievements.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievements.cpp.i: cmake_force
@@ -5130,7 +5144,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_achievement
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_base.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_362) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_363) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_base.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.i: cmake_force
@@ -5144,7 +5158,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_base.cpp.s:
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_friends.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_363) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_364) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_friends.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp.i: cmake_force
@@ -5158,7 +5172,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_friends.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_servers.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_364) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_365) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_servers.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp.i: cmake_force
@@ -5172,7 +5186,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_servers.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_settings.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_365) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_366) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_profile_settings.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cpp.i: cmake_force
@@ -5186,7 +5200,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/online_profile_settings.cp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_366) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_367) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.i: cmake_force
@@ -5200,7 +5214,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/online_screen.cpp.s: cmake
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_user_search.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_367) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_368) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/online_user_search.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.i: cmake_force
@@ -5214,7 +5228,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/online_user_search.cpp.s: 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/register_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_368) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_369) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/register_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.i: cmake_force
@@ -5228,7 +5242,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/register_screen.cpp.s: cma
 CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/server_selection.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_369) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_370) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/server_selection.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.i: cmake_force
@@ -5242,7 +5256,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/server_selection.cpp.s: cm
 CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/tracks_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_370) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_371) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/online/tracks_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.i: cmake_force
@@ -5256,7 +5270,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/online/tracks_screen.cpp.s: cmake
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_audio.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_371) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_372) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_audio.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.i: cmake_force
@@ -5270,7 +5284,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_audio.cpp.
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_device.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_372) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_373) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_device.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp.i: cmake_force
@@ -5284,7 +5298,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_device.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_general.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_373) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_374) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_general.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cpp.i: cmake_force
@@ -5298,7 +5312,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_general.cp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_input.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_374) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_375) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_input.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.i: cmake_force
@@ -5312,7 +5326,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_input.cpp.
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_language.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_375) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_376) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_language.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.cpp.i: cmake_force
@@ -5326,7 +5340,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_language.c
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_ui.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_376) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_377) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_ui.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.i: cmake_force
@@ -5340,7 +5354,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_ui.cpp.s: 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_video.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_377) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_378) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/options_screen_video.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.i: cmake_force
@@ -5354,7 +5368,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/options/options_screen_video.cpp.
 CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/user_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_378) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_379) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/options/user_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.i: cmake_force
@@ -5368,7 +5382,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/options/user_screen.cpp.s: cmake_
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_379) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_380) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.i: cmake_force
@@ -5382,7 +5396,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/race_gui.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui_base.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_380) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_381) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui_base.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.i: cmake_force
@@ -5396,7 +5410,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_base.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui_multitouch.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_381) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_382) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui_multitouch.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.i: cmake_force
@@ -5410,7 +5424,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_multitouch.cpp.s: cmake_
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui_overworld.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_382) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_383) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui_overworld.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.i: cmake_force
@@ -5424,7 +5438,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/race_gui_overworld.cpp.s: cmake_f
 CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_result_gui.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_383) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_384) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_result_gui.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.i: cmake_force
@@ -5438,7 +5452,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/race_result_gui.cpp.s: cmake_forc
 CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_setup_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_384) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_385) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_setup_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.i: cmake_force
@@ -5452,7 +5466,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/race_setup_screen.cpp.s: cmake_fo
 CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/soccer_setup_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_385) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_386) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/soccer_setup_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.i: cmake_force
@@ -5466,7 +5480,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/soccer_setup_screen.cpp.s: cmake_
 CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/state_manager.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_386) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_387) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/state_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.i: cmake_force
@@ -5480,7 +5494,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/state_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/track_info_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_387) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_388) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/track_info_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.i: cmake_force
@@ -5494,7 +5508,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/track_info_screen.cpp.s: cmake_fo
 CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/tracks_and_gp_screen.cpp
 CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_388) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_389) "Building CXX object CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.o -MF CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/tracks_and_gp_screen.cpp
 
 CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.i: cmake_force
@@ -5508,7 +5522,7 @@ CMakeFiles/supertuxkart.dir/src/states_screens/tracks_and_gp_screen.cpp.s: cmake
 CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tips/tips_manager.cpp
 CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_389) "Building CXX object CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_390) "Building CXX object CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tips/tips_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.i: cmake_force
@@ -5522,7 +5536,7 @@ CMakeFiles/supertuxkart.dir/src/tips/tips_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/arena_graph.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_390) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_391) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/arena_graph.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.i: cmake_force
@@ -5536,7 +5550,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/arena_graph.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/arena_node.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_391) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_392) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/arena_node.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.i: cmake_force
@@ -5550,7 +5564,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/arena_node.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/bezier_curve.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_392) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_393) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/bezier_curve.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.i: cmake_force
@@ -5564,7 +5578,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/bezier_curve.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_cannon.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_393) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_394) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_cannon.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.i: cmake_force
@@ -5578,7 +5592,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_cannon.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_cylinder.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_394) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_395) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_cylinder.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.i: cmake_force
@@ -5592,7 +5606,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_cylinder.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_goal.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_395) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_396) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_goal.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.i: cmake_force
@@ -5606,7 +5620,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_goal.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_lap.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_396) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_397) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_lap.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.i: cmake_force
@@ -5620,7 +5634,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_lap.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_line.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_397) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_398) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_line.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.i: cmake_force
@@ -5634,7 +5648,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_line.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_manager.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_398) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_399) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.i: cmake_force
@@ -5648,7 +5662,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_sphere.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_399) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_400) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_sphere.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.i: cmake_force
@@ -5662,7 +5676,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_sphere.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_structure.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_400) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_401) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_structure.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.i: cmake_force
@@ -5676,7 +5690,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_structure.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_trigger.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_401) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_402) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/check_trigger.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.i: cmake_force
@@ -5690,7 +5704,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/check_trigger.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_graph.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_402) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_403) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_graph.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.i: cmake_force
@@ -5704,7 +5718,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/drive_graph.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_node.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_403) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_404) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_node.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.i: cmake_force
@@ -5718,7 +5732,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/drive_node.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_node_2d.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_404) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_405) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_node_2d.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.i: cmake_force
@@ -5732,7 +5746,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/drive_node_2d.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_node_3d.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_405) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_406) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/drive_node_3d.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.i: cmake_force
@@ -5746,7 +5760,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/drive_node_3d.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/graph.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_406) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_407) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/graph.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.i: cmake_force
@@ -5760,7 +5774,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/graph.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/model_definition_loader.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_407) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_408) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/model_definition_loader.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.i: cmake_force
@@ -5774,7 +5788,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/model_definition_loader.cpp.s: cmake_forc
 CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/quad.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_408) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_409) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/quad.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.i: cmake_force
@@ -5788,7 +5802,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/quad.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/terrain_info.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_409) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_410) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/terrain_info.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.i: cmake_force
@@ -5802,7 +5816,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/terrain_info.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_410) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_411) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.i: cmake_force
@@ -5816,7 +5830,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/track.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_manager.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_411) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_412) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.i: cmake_force
@@ -5830,7 +5844,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/track_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_object.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_412) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_413) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_object.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.i: cmake_force
@@ -5844,7 +5858,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/track_object.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_object_manager.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_413) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_414) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_object_manager.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.i: cmake_force
@@ -5858,7 +5872,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/track_object_manager.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_object_presentation.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_414) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_415) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_object_presentation.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.i: cmake_force
@@ -5872,7 +5886,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/track_object_presentation.cpp.s: cmake_fo
 CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_sector.cpp
 CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_415) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_416) "Building CXX object CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.o -MF CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/tracks/track_sector.cpp
 
 CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.i: cmake_force
@@ -5886,7 +5900,7 @@ CMakeFiles/supertuxkart.dir/src/tracks/track_sector.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/command_line.cpp
 CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_416) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_417) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/command_line.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.i: cmake_force
@@ -5900,7 +5914,7 @@ CMakeFiles/supertuxkart.dir/src/utils/command_line.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/constants.cpp
 CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_417) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_418) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/constants.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.i: cmake_force
@@ -5914,7 +5928,7 @@ CMakeFiles/supertuxkart.dir/src/utils/constants.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/crash_reporting.cpp
 CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_418) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_419) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/crash_reporting.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.i: cmake_force
@@ -5928,7 +5942,7 @@ CMakeFiles/supertuxkart.dir/src/utils/crash_reporting.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/debug.cpp
 CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_419) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_420) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/debug.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.i: cmake_force
@@ -5942,7 +5956,7 @@ CMakeFiles/supertuxkart.dir/src/utils/debug.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/extract_mobile_assets.cpp
 CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_420) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_421) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/extract_mobile_assets.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.i: cmake_force
@@ -5956,7 +5970,7 @@ CMakeFiles/supertuxkart.dir/src/utils/extract_mobile_assets.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/file_utils.cpp
 CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_421) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_422) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/file_utils.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.i: cmake_force
@@ -5970,7 +5984,7 @@ CMakeFiles/supertuxkart.dir/src/utils/file_utils.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/helpers.cpp
 CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_422) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_423) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/helpers.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.i: cmake_force
@@ -5984,7 +5998,7 @@ CMakeFiles/supertuxkart.dir/src/utils/helpers.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/leak_check.cpp
 CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_423) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_424) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/leak_check.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.i: cmake_force
@@ -5998,7 +6012,7 @@ CMakeFiles/supertuxkart.dir/src/utils/leak_check.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/log.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/log.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/log.cpp
 CMakeFiles/supertuxkart.dir/src/utils/log.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_424) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_425) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/log.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/log.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/log.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/log.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/log.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/log.cpp.i: cmake_force
@@ -6012,7 +6026,7 @@ CMakeFiles/supertuxkart.dir/src/utils/log.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/mini_glm.cpp
 CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_425) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_426) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/mini_glm.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.i: cmake_force
@@ -6026,7 +6040,7 @@ CMakeFiles/supertuxkart.dir/src/utils/mini_glm.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/profiler.cpp
 CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_426) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_427) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/profiler.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.i: cmake_force
@@ -6040,7 +6054,7 @@ CMakeFiles/supertuxkart.dir/src/utils/profiler.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/progress_bar_android.cpp
 CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_427) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_428) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/progress_bar_android.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.i: cmake_force
@@ -6054,7 +6068,7 @@ CMakeFiles/supertuxkart.dir/src/utils/progress_bar_android.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/random_generator.cpp
 CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_428) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_429) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/random_generator.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.i: cmake_force
@@ -6068,7 +6082,7 @@ CMakeFiles/supertuxkart.dir/src/utils/random_generator.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/stk_process.cpp
 CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_429) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_430) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/stk_process.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.i: cmake_force
@@ -6082,7 +6096,7 @@ CMakeFiles/supertuxkart.dir/src/utils/stk_process.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/string_utils.cpp
 CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_430) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_431) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/string_utils.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.i: cmake_force
@@ -6096,7 +6110,7 @@ CMakeFiles/supertuxkart.dir/src/utils/string_utils.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/time.cpp
 CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_431) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_432) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/time.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/time.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/time.cpp.i: cmake_force
@@ -6110,7 +6124,7 @@ CMakeFiles/supertuxkart.dir/src/utils/time.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/translation.cpp
 CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_432) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_433) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/translation.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.i: cmake_force
@@ -6124,7 +6138,7 @@ CMakeFiles/supertuxkart.dir/src/utils/translation.cpp.s: cmake_force
 CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o: CMakeFiles/supertuxkart.dir/flags.make
 CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o: /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/vec3.cpp
 CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o: CMakeFiles/supertuxkart.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_433) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_434) "Building CXX object CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o -MF CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o.d -o CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.o -c /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/vec3.cpp
 
 CMakeFiles/supertuxkart.dir/src/utils/vec3.cpp.i: cmake_force
@@ -6347,6 +6361,7 @@ supertuxkart_OBJECTS = \
 "CMakeFiles/supertuxkart.dir/src/main.cpp.o" \
 "CMakeFiles/supertuxkart.dir/src/main_android.cpp.o" \
 "CMakeFiles/supertuxkart.dir/src/main_loop.cpp.o" \
+"CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o" \
 "CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o" \
 "CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o" \
 "CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o" \
@@ -6784,6 +6799,7 @@ bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/sr
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/main.cpp.o
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/main_android.cpp.o
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/main_loop.cpp.o
+bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/src/modes/cutscene_world.cpp.o
@@ -7047,7 +7063,7 @@ bin/supertuxkart.app/Contents/MacOS/supertuxkart: ../dependencies-macosx/lib/lib
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: lib/libsquish/libsquish.a
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: ../dependencies-macosx/lib/libastcenc.dylib
 bin/supertuxkart.app/Contents/MacOS/supertuxkart: CMakeFiles/supertuxkart.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_434) "Linking CXX executable bin/supertuxkart.app/Contents/MacOS/supertuxkart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_435) "Linking CXX executable bin/supertuxkart.app/Contents/MacOS/supertuxkart"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/supertuxkart.dir/link.txt --verbose=$(VERBOSE)
 	ln -f -s /Users/marcel/desktop/SuperTuxKartAI/stk-code/data /Users/marcel/desktop/SuperTuxKartAI/stk-code/cmake_build/bin/supertuxkart.app/Contents/Resources
 

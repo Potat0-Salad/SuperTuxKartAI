@@ -419,6 +419,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/supertuxkart.dir/src/main_android.cpp.o.d"
   "CMakeFiles/supertuxkart.dir/src/main_loop.cpp.o"
   "CMakeFiles/supertuxkart.dir/src/main_loop.cpp.o.d"
+  "CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o"
+  "CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o.d"
   "CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o"
   "CMakeFiles/supertuxkart.dir/src/modes/capture_the_flag.cpp.o.d"
   "CMakeFiles/supertuxkart.dir/src/modes/ctf_flag.cpp.o"

@@ -71,6 +71,8 @@
 #include <string>
 #include <utility>
 
+#include <random>    // Include the random header for std::default_random_engine
+
 STKHost *STKHost::m_stk_host[PT_COUNT];
 bool     STKHost::m_enable_console = false;
 

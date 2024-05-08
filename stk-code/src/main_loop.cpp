@@ -59,6 +59,8 @@
 #include "utils/translation.hpp"
 #include "io/rich_presence.hpp"
 
+#include "model_manager.hpp"
+
 #include <thread>
 
 #include <IrrlichtDevice.h>
@@ -403,6 +405,8 @@ void MainLoop::run()
     // DT keeps track of the leftover time, since the race update
     // happens in fixed timesteps
     double left_over_time = 0;
+
+    // load_model();
 
 #ifdef WIN32
     HANDLE parent = 0;

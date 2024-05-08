@@ -5396,6 +5396,30 @@ src/main_loop.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/src/main_loop.cpp.s
 .PHONY : src/main_loop.cpp.s
 
+src/model_manager.o: src/model_manager.cpp.o
+.PHONY : src/model_manager.o
+
+# target to build an object file
+src/model_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o
+.PHONY : src/model_manager.cpp.o
+
+src/model_manager.i: src/model_manager.cpp.i
+.PHONY : src/model_manager.i
+
+# target to preprocess a source file
+src/model_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/src/model_manager.cpp.i
+.PHONY : src/model_manager.cpp.i
+
+src/model_manager.s: src/model_manager.cpp.s
+.PHONY : src/model_manager.s
+
+# target to generate assembly for a file
+src/model_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supertuxkart.dir/build.make CMakeFiles/supertuxkart.dir/src/model_manager.cpp.s
+.PHONY : src/model_manager.cpp.s
+
 src/modes/capture_the_flag.o: src/modes/capture_the_flag.cpp.o
 .PHONY : src/modes/capture_the_flag.o
 
@@ -11405,6 +11429,9 @@ help:
 	@echo "... src/main_loop.o"
 	@echo "... src/main_loop.i"
 	@echo "... src/main_loop.s"
+	@echo "... src/model_manager.o"
+	@echo "... src/model_manager.i"
+	@echo "... src/model_manager.s"
 	@echo "... src/modes/capture_the_flag.o"
 	@echo "... src/modes/capture_the_flag.i"
 	@echo "... src/modes/capture_the_flag.s"

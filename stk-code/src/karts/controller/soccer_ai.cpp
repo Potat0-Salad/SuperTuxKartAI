@@ -20,6 +20,9 @@
 #include <fstream>
 #include <cmath>
 
+
+#include <torch/script.h>
+
 #include "karts/controller/soccer_ai.hpp"
 
 #include "items/attachment.hpp"
@@ -30,6 +33,9 @@
 #include "modes/soccer_world.hpp"
 #include "tracks/arena_graph.hpp"
 #include "tracks/track.hpp"
+
+#include "model_manager.hpp"
+
 
 #ifdef AI_DEBUG
 #include "irrlicht.h"
@@ -68,6 +74,8 @@ SoccerAI::SoccerAI(AbstractKart *kart)
     m_cur_team = m_world->getKartTeam(m_kart->getWorldKartId());
     m_opp_team = (m_cur_team == KART_TEAM_BLUE ?
         KART_TEAM_RED : KART_TEAM_BLUE);
+
+    load_model();
 
     // Don't call our own setControllerName, since this will add a
     // billboard showing 'AIBaseController' to the kart.
@@ -218,22 +226,44 @@ void SoccerAI::writeBufToDisk(){
             DataInstance dataPoint = dataQueue.front();
             dataQueue.pop();
 
-            outputFile << dataPoint.kart_id << "," 
-                << dataPoint.ball_pos.getX() << "," 
-                << dataPoint.ball_pos.getZ() << "," 
-                << dataPoint.kart_pos.getX() << "," 
-                << dataPoint.kart_pos.getZ() << "," 
-                << dataPoint.kart_vel.getX() << "," 
+            outputFile << dataPoint.kart_id << ","
+                << dataPoint.ball_pos.getX() << ","
+                << dataPoint.ball_pos.getZ() << ","
+                << dataPoint.kart_pos.getX() << ","
+                << dataPoint.kart_pos.getZ() << ","
+                << dataPoint.kart_vel.getX() << ","
                 << dataPoint.kart_vel.getZ() << ","
                 << dataPoint.kart_speed << ","
                 << dataPoint.kart_steer << ","
-                << dataPoint.kart_accel << "," 
+                << dataPoint.kart_accel << ","
                 << dataPoint.kart_brake << ","
                 << (int)dataPoint.kart_skid << ","
-                << (int)dataPoint.target_encoded << "," 
+                << (int)dataPoint.target_encoded << ","
                 << dataPoint.target_pos.getX() << ","
                 << dataPoint.target_pos.getZ() << ","
-                << std::endl;
+                << 1 << std::endl;
+        }
+
+        while(!dataQueue.empty()){
+            DataInstance dataPoint = dataQueue.front();
+            dataQueue.pop();
+
+            outputFile << dataPoint.kart_id << ","
+                       << dataPoint.ball_pos.getX() << ","
+                       << dataPoint.ball_pos.getZ() << ","
+                       << dataPoint.kart_pos.getX() << ","
+                       << dataPoint.kart_pos.getZ() << ","
+                       << dataPoint.kart_vel.getX() << ","
+                       << dataPoint.kart_vel.getZ() << ","
+                       << dataPoint.kart_speed << ","
+                       << dataPoint.kart_steer << ","
+                       << dataPoint.kart_accel << ","
+                       << dataPoint.kart_brake << ","
+                       << (int)dataPoint.kart_skid << ","
+                       << (int)dataPoint.target_encoded << ","
+                       << dataPoint.target_pos.getX() << ","
+                       << dataPoint.target_pos.getZ() << ","
+                       << 0 << std::endl;
         }
         outputFile.close();
     }
@@ -275,9 +305,6 @@ void SoccerAI::update(int ticks)
         else if(m_world->getScore(m_opp_team) > old_opp_score)
             old_opp_score = m_world->getScore(m_opp_team);
 
-        std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-        log_file << "G";
-
         clearAIData();
 
         resetAfterStop();
@@ -286,10 +313,6 @@ void SoccerAI::update(int ticks)
         AIBaseController::update(ticks);
         return;
     }
-
-    //LOG BALL POS
-    std::string ball = toString(m_world->getBallPosition());
-    Log::info("ball:", ball.c_str());
 
     ArenaAI::update(ticks);
 }   // update
@@ -320,8 +343,8 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
         if (kart->getWorldKartId() == m_kart->getWorldKartId())
             continue; // Skip the same kart
 
-        if (kart->getWorldKartId() == 3)
-            continue; // skip the player
+        if (kart->getWorldKartId() == 2)
+            continue;
 
         if (m_world->getKartTeam(kart
             ->getWorldKartId()) == m_world->getKartTeam(m_kart
@@ -342,6 +365,8 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
 
     std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
     log_file << "BotIndex: " << m_kart->getWorldKartId() << " ClosestKartIndex: " << m_closest_kart->getWorldKartId() << '\n';
+    torch::Tensor tensor = torch::rand({2, 3});
+    log_file << "Tensor: " << tensor << std::endl;
     log_file.close();
 
     //PRINT TO STDOUTLOG

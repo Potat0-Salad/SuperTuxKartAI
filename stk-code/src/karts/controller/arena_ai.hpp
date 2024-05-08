@@ -29,6 +29,7 @@
 
 class ArenaGraph;
 class ItemManager;
+class SoccerWorld;
 
 namespace irr
 {
@@ -132,6 +133,9 @@ private:
 
     /** The \ref ArenaNode at which the forward point located on. */
     int m_current_forward_node;
+
+    /** Keep a pointer to world. */
+    SoccerWorld *m_world;
 
     void          configSpeed();
     // ------------------------------------------------------------------------

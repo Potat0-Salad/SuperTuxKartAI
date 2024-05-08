@@ -48,6 +48,8 @@
 
 #include <iostream>
 
+#include <random>    // Include the random header for std::default_random_engine
+
 using namespace GUIEngine;
 using namespace irr::core;
 using namespace irr::video;
@@ -644,7 +646,7 @@ void TracksScreen::buildTrackList()
                            IconButtonWidget::ICON_PATH_TYPE_RELATIVE);
 
     tracks_widget->updateItemDisplay();
-    std::random_shuffle( m_random_track_list.begin(), m_random_track_list.end() );
+    std::shuffle(m_random_track_list.begin(), m_random_track_list.end(), std::default_random_engine(std::random_device{}()));
 }   // buildTrackList
 
 // -----------------------------------------------------------------------------

@@ -46,7 +46,7 @@
 #  define _P(Singular, Plural, Num, ...) (StringUtils::insertValues(translations->STK_NGETTEXT(Singular, Plural, Num), Num, ##__VA_ARGS__))
 #  define _CP(Ctx, Singular, Plural, Num, ...) (StringUtils::insertValues(translations->STK_NGETTEXT(Singular, Plural, Num, Ctx), Num, ##__VA_ARGS__))
 #  define gettext_noop(String)  (String)
-#  define N_(String)            (gettext_noop (String))
+#  define STKN_(String)            (gettext_noop (String))
 // libintl defines its own fprintf, which doesn't work properly
 #  if defined(WIN32) && !defined(__CYGWIN__)
 #    undef fprintf

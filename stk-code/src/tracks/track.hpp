@@ -31,6 +31,8 @@
 #include <memory>
 #include <string>
 #include <vector>
+    #include <algorithm>
+    #include <random>  
 
 #include <irrString.h>
 #include <rect.h>
@@ -51,6 +53,7 @@ namespace irr
 using namespace irr;
 
 #include "LinearMath/btTransform.h"
+
 
 #include "utils/aligned_array.hpp"
 #include "utils/log.hpp"
@@ -561,9 +564,11 @@ public:
     // ------------------------------------------------------------------------
     /** Shuffles the start transformations
     */
+ 
     void shuffleStartTransforms()
     {
-        std::random_shuffle(m_start_transforms.begin(), m_start_transforms.end());
+        std::default_random_engine rng(std::random_device{}());
+        std::shuffle(m_start_transforms.begin(), m_start_transforms.end(), rng);
     }
     // ------------------------------------------------------------------------
     /** Sets pointer to the aabb of this track. */
