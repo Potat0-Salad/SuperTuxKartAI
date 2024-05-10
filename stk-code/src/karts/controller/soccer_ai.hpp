@@ -57,6 +57,7 @@ private:
         int kart_id;
         Vec3 ball_pos;
         Vec3 kart_pos;
+        float dist_to_ball;
         btVector3 kart_vel;
         int kart_speed;
         float kart_steer;
@@ -69,7 +70,7 @@ private:
 
     std::queue<DataInstance> dataQueue;
 
-    const float RECORD_SAMPLE_RATE = 1.0;
+    const float RECORD_SAMPLE_RATE = 2.0;
     const int SECONDS_BEFORE_GOAL = 10;
 
     /** Keeps track of the scorer's team score. */

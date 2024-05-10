@@ -463,7 +463,7 @@ void MainLoop::run()
 
         left_over_time += getLimitedDt();
         int num_steps   = stk_config->time2Ticks(left_over_time);
-        float dt = stk_config->ticks2Time(1);
+        float dt = stk_config->ticks2Time(1); //speed
         left_over_time -= num_steps * dt;
 
         // Shutdown next frame if shutdown request is sent while loading the
