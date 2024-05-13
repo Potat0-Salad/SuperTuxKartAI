@@ -115,13 +115,8 @@ void SoccerAI::reset()
 }   // reset
 
 // USED TO PRINT TO STDOUTLOG
-// std::string toString(const Vec3& vec) {
-//     return "(" + std::to_string(vec.getX()) + ", " + std::to_string(vec.getY()) + ", " + std::to_string(vec.getZ()) + ")";
-// }
-
-//calculate distance between 2 points on the map
-double calculateDist(double x1, double y1, double x2, double y2) {
-    return std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
+std::string toString(const Vec3& vec) {
+    return "(" + std::to_string(vec.getX()) + ", " + std::to_string(vec.getY()) + ", " + std::to_string(vec.getZ()) + ")";
 }
 
 void SoccerAI::updateDataBuf(){
@@ -187,7 +182,6 @@ void SoccerAI::updateDataBuf(){
     dataPoint.kart_skid = m_controls->getSkidControl();
     dataPoint.target_encoded = target_encoded;
     dataPoint.target_pos = m_target_point;
-    dataPoint.dist_to_ball = calculateDist(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
 
     dataQueue.push(dataPoint);
 
@@ -237,7 +231,6 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","
-                << dataPoint.dist_to_ball << ","
                 << dataPoint.kart_vel.getX() << ","
                 << dataPoint.kart_vel.getZ() << ","
                 << dataPoint.kart_speed << ","
@@ -260,7 +253,6 @@ void SoccerAI::writeBufToDisk(){
                        << dataPoint.ball_pos.getZ() << ","
                        << dataPoint.kart_pos.getX() << ","
                        << dataPoint.kart_pos.getZ() << ","
-                       << dataPoint.dist_to_ball << ","
                        << dataPoint.kart_vel.getX() << ","
                        << dataPoint.kart_vel.getZ() << ","
                        << dataPoint.kart_speed << ","
@@ -370,6 +362,12 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
     m_closest_kart = m_world->getKart(closest_kart_num);
     m_closest_kart_node = m_world->getSectorForKart(m_closest_kart);
     m_closest_kart_point = m_closest_kart->getXYZ();
+
+    std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
+    log_file << "BotIndex: " << m_kart->getWorldKartId() << " ClosestKartIndex: " << m_closest_kart->getWorldKartId() << '\n';
+    torch::Tensor tensor = torch::rand({2, 3});
+    log_file << "Tensor: " << tensor << std::endl;
+    log_file.close();
 
     //PRINT TO STDOUTLOG
     // std::string m_closest_kart_point_1 = toString(m_closest_kart_point);

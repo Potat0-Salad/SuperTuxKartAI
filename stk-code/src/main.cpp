@@ -1629,7 +1629,7 @@ int handleCmdLine(bool has_server_config, bool has_parent_process)
             // Add 1 for the player kart
             RaceManager::get()->setNumKarts(5);
             RaceManager::get()->setMinorMode(RaceManager::MINOR_MODE_SOCCER);
-            RaceManager::get()->setMaxGoal(10000);
+            RaceManager::get()->setMaxGoal(1000);
         }
     }   // --track
 
