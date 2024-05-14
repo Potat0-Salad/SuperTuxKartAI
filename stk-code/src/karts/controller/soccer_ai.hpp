@@ -56,6 +56,8 @@ private:
     struct DataInstance {
         int kart_id;
         Vec3 ball_pos;
+        float ball_aim_X;
+        float ball_aim_Z;
         Vec3 kart_pos;
         btVector3 kart_vel;
         int kart_speed;

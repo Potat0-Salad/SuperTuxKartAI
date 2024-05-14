@@ -135,74 +135,28 @@ void ArenaAI::update(int ticks)
     if (gettingUnstuck(ticks))
         return;
 
-        std::vector<torch::Tensor> inputs;
-        std::vector<torch::Tensor> outputs;
+    std::vector<torch::Tensor> inputs;
 
-        tick_counter++;
-        // if(tick_counter >= 3){
-            //ML model    
-            // Add your input tensors to the vector
+    auto input_tensor = prepare_input(
+        m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
+        m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+        m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, 1,
+        0, 0);
 
-            //forward staight
-            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
-                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, 1,
-                            0, 0));
-            //reverse staight
-            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
-                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, -1,
-                            0, 0));
-            //forward left
-            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
-                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, 1,
-                            0, 0));
-            //forward right
-            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
-                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, 1,
-                            0, 0));
-            //reverse left
-            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
-                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, -1,
-                            0, 0));
-            //reverse right
-            inputs.push_back(prepare_input(m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(), m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
-                            m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, -1,
-                            0, 0));
+    inputs.push_back(input_tensor);
+    // Add other action states similarly if needed
 
-            outputs = evaluate_actions(inputs);
+    auto outputs = evaluate_actions(inputs);
 
+    // Apply the best control from the output
+    if (!outputs.empty()) {
+        auto output = outputs[0]; // Assuming we just deal with one output for simplicity here
+        float steer_value = output[0][0].item<float>();
+        float accel_value = output[0][1].item<float>();
 
-            // Identify the best overall input based on the model's evaluations
-            int best_input_index = -1;
-            float highest_score = -std::numeric_limits<float>::infinity();
-
-            for (size_t i = 0; i < outputs.size(); ++i) {
-                auto scores = torch::softmax(outputs[i], 1); // Apply softmax if your model outputs logits
-                auto max_result = scores.max(1); // Get the maximum result along dimension 1
-                auto max_values = std::get<0>(max_result); // Correctly access the max values tensor
-                auto max_indices = std::get<1>(max_result); // Correctly access the indices tensor (if needed)
-                float score = max_values.item<float>(); // Access the maximum value as a float
-
-                if (score > highest_score) {
-                    highest_score = score;
-                    best_input_index = i;
-                }
-            }
-
-            // Apply controls based on the best input index
-            if (best_input_index != -1) {
-                // Assuming inputs are structured as [batch, features] and the 8th and 9th feature positions are for steering and acceleration
-                torch::Tensor steerTensor = inputs[best_input_index][0][7]; // Steering value
-                torch::Tensor accelTensor = inputs[best_input_index][0][8]; // Acceleration value
-
-                float steer_value = steerTensor.item<float>();
-                float accel_value = accelTensor.item<float>();
-
-                m_controls->setAccel(accel_value);
-                m_controls->setSteer(steer_value);
-            }
-        // }
-
-
+        m_controls->setSteer(steer_value);
+        m_controls->setAccel(accel_value);
+    }
 
     // AIBaseController::update(ticks);
 

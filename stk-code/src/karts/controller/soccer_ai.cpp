@@ -173,6 +173,8 @@ void SoccerAI::updateDataBuf(){
     DataInstance dataPoint;
     dataPoint.kart_id = m_kart->getWorldKartId();
     dataPoint.ball_pos = m_world->getBallPosition();
+    dataPoint.ball_aim_X = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX();
+    dataPoint.ball_aim_Z = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ();
     dataPoint.kart_pos = m_kart->getXYZ();
     dataPoint.kart_vel = m_kart->getVelocity();
     dataPoint.kart_speed = m_kart->getSpeed();
@@ -229,6 +231,8 @@ void SoccerAI::writeBufToDisk(){
             outputFile << dataPoint.kart_id << ","
                 << dataPoint.ball_pos.getX() << ","
                 << dataPoint.ball_pos.getZ() << ","
+                << dataPoint.ball_aim_X << ","
+                << dataPoint.ball_aim_Z << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","
                 << dataPoint.kart_vel.getX() << ","
@@ -238,9 +242,9 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_accel << ","
                 << dataPoint.kart_brake << ","
                 << (int)dataPoint.kart_skid << ","
-                << (int)dataPoint.target_encoded << ","
-                << dataPoint.target_pos.getX() << ","
-                << dataPoint.target_pos.getZ() << ","
+                // << (int)dataPoint.target_encoded << ","
+                // << dataPoint.target_pos.getX() << ","
+                // << dataPoint.target_pos.getZ() << ","
                 << 1 << std::endl;
         }
 
@@ -251,6 +255,8 @@ void SoccerAI::writeBufToDisk(){
             outputFile << dataPoint.kart_id << ","
                        << dataPoint.ball_pos.getX() << ","
                        << dataPoint.ball_pos.getZ() << ","
+                       << dataPoint.ball_aim_X << ","
+                       << dataPoint.ball_aim_Z << ","
                        << dataPoint.kart_pos.getX() << ","
                        << dataPoint.kart_pos.getZ() << ","
                        << dataPoint.kart_vel.getX() << ","
@@ -260,9 +266,9 @@ void SoccerAI::writeBufToDisk(){
                        << dataPoint.kart_accel << ","
                        << dataPoint.kart_brake << ","
                        << (int)dataPoint.kart_skid << ","
-                       << (int)dataPoint.target_encoded << ","
-                       << dataPoint.target_pos.getX() << ","
-                       << dataPoint.target_pos.getZ() << ","
+                    //    << (int)dataPoint.target_encoded << ","
+                    //    << dataPoint.target_pos.getX() << ","
+                    //    << dataPoint.target_pos.getZ() << ","
                        << 0 << std::endl;
         }
         outputFile.close();
