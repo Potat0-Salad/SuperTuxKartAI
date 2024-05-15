@@ -143,8 +143,7 @@ void ArenaAI::update(int ticks)
         m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
         m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
         calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
-        m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, 1,
-        0, 0);
+        m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), m_controls->getSteer(), m_controls->getAccel(), m_controls->getBrake(), m_controls->getSkidControl());
 
     inputs.push_back(input_tensor);
     // Add other action states similarly if needed
