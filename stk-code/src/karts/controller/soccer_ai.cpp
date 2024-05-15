@@ -119,6 +119,10 @@ std::string toString(const Vec3& vec) {
     return "(" + std::to_string(vec.getX()) + ", " + std::to_string(vec.getY()) + ", " + std::to_string(vec.getZ()) + ")";
 }
 
+double calculateDist(double x1, double y1, double x2, double y2) {
+    return std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
+}
+
 void SoccerAI::updateDataBuf(){
     //inside controller
 
@@ -175,6 +179,7 @@ void SoccerAI::updateDataBuf(){
     dataPoint.ball_pos = m_world->getBallPosition();
     dataPoint.ball_aim_X = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX();
     dataPoint.ball_aim_Z = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ();
+    dataPoint.dist_to_ball = calculateDist(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
     dataPoint.kart_pos = m_kart->getXYZ();
     dataPoint.kart_vel = m_kart->getVelocity();
     dataPoint.kart_speed = m_kart->getSpeed();
@@ -233,6 +238,7 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << ","
                 << dataPoint.ball_aim_X << ","
                 << dataPoint.ball_aim_Z << ","
+                << dataPoint.dist_to_ball << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","
                 << dataPoint.kart_vel.getX() << ","
@@ -253,23 +259,24 @@ void SoccerAI::writeBufToDisk(){
             dataQueue.pop();
 
             outputFile << dataPoint.kart_id << ","
-                       << dataPoint.ball_pos.getX() << ","
-                       << dataPoint.ball_pos.getZ() << ","
-                       << dataPoint.ball_aim_X << ","
-                       << dataPoint.ball_aim_Z << ","
-                       << dataPoint.kart_pos.getX() << ","
-                       << dataPoint.kart_pos.getZ() << ","
-                       << dataPoint.kart_vel.getX() << ","
-                       << dataPoint.kart_vel.getZ() << ","
-                       << dataPoint.kart_speed << ","
-                       << dataPoint.kart_steer << ","
-                       << dataPoint.kart_accel << ","
-                       << dataPoint.kart_brake << ","
-                       << (int)dataPoint.kart_skid << ","
-                    //    << (int)dataPoint.target_encoded << ","
-                    //    << dataPoint.target_pos.getX() << ","
-                    //    << dataPoint.target_pos.getZ() << ","
-                       << 0 << std::endl;
+                << dataPoint.ball_pos.getX() << ","
+                << dataPoint.ball_pos.getZ() << ","
+                << dataPoint.ball_aim_X << ","
+                << dataPoint.ball_aim_Z << ","
+                << dataPoint.dist_to_ball << ","
+                << dataPoint.kart_pos.getX() << ","
+                << dataPoint.kart_pos.getZ() << ","
+                << dataPoint.kart_vel.getX() << ","
+                << dataPoint.kart_vel.getZ() << ","
+                << dataPoint.kart_speed << ","
+                << dataPoint.kart_steer << ","
+                << dataPoint.kart_accel << ","
+                << dataPoint.kart_brake << ","
+                << (int)dataPoint.kart_skid << ","
+            //    << (int)dataPoint.target_encoded << ","
+            //    << dataPoint.target_pos.getX() << ","
+            //    << dataPoint.target_pos.getZ() << ","
+                << 0 << std::endl;
         }
         outputFile.close();
     }

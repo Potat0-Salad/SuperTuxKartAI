@@ -83,7 +83,9 @@ void ArenaAI::reset()
  *  \param ticks Number of physics time steps - should be 1.
  */
 
-int tick_counter = 0;
+double calculateDistance(double x1, double y1, double x2, double y2) {
+    return std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
+}
 
 void ArenaAI::update(int ticks)
 {
@@ -140,6 +142,7 @@ void ArenaAI::update(int ticks)
     auto input_tensor = prepare_input(
         m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
         m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+        calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
         m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, 1,
         0, 0);
 
