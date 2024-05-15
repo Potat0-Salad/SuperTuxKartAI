@@ -356,7 +356,7 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
         if (kart->getWorldKartId() == m_kart->getWorldKartId())
             continue; // Skip the same kart
 
-        if (kart->getWorldKartId() == 2)
+        if (kart->getWorldKartId() == 4)
             continue;
 
         if (m_world->getKartTeam(kart

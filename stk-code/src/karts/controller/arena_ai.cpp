@@ -138,26 +138,80 @@ void ArenaAI::update(int ticks)
         return;
 
     std::vector<torch::Tensor> inputs;
+    std::vector<torch::Tensor> outputs;
 
-    auto input_tensor = prepare_input(
-        m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
-        m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
-        calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
-        m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), m_controls->getSteer(), m_controls->getAccel(), m_controls->getBrake(), m_controls->getSkidControl());
+    //ML model    
+    // Add your input tensors to the vector
 
-    inputs.push_back(input_tensor);
-    // Add other action states similarly if needed
+    //forward staight
+    inputs.push_back(prepare_input(
+                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
+                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
+                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, 1,
+                    0, 0));
+    //reverse staight
+    inputs.push_back(prepare_input(
+                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
+                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
+                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, -1,
+                    0, 0));
+    //forward left
+    inputs.push_back(prepare_input(
+                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
+                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
+                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, 1,
+                    0, 0));
+    //forward right
+    inputs.push_back(prepare_input(
+                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
+                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
+                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, 1,
+                    0, 0));
+    //reverse left
+    inputs.push_back(prepare_input(
+                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
+                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
+                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, -1,
+                    0, 0));
+    //reverse right
+    inputs.push_back(prepare_input(
+                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
+                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
+                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, -1,
+                    0, 0));
 
-    auto outputs = evaluate_actions(inputs);
+    outputs = evaluate_actions(inputs);
 
-    // Apply the best control from the output
-    if (!outputs.empty()) {
-        auto output = outputs[0]; // Assuming we just deal with one output for simplicity here
-        float steer_value = output[0][0].item<float>();
-        float accel_value = output[0][1].item<float>();
+    // Identify the best overall input based on the model's evaluations
+    int best_input_index = -1;
+    float highest_score = -std::numeric_limits<float>::infinity();
 
-        m_controls->setSteer(steer_value);
+    for (size_t i = 0; i < outputs.size(); ++i) {
+        float score = outputs[i].item<float>(); // Access the output as a float directly
+
+        if (score > highest_score) {
+            highest_score = score;
+            best_input_index = i;
+        }
+    }
+
+    // Apply controls based on the best input index
+    if (best_input_index != -1) {
+        // Assuming inputs are structured as [batch, features] and the 8th and 9th feature positions are for steering and acceleration
+        torch::Tensor steerTensor = inputs[best_input_index][0][10]; // Steering value
+        torch::Tensor accelTensor = inputs[best_input_index][0][11]; // Acceleration value
+
+        float steer_value = steerTensor.item<float>();
+        float accel_value = accelTensor.item<float>();
+
         m_controls->setAccel(accel_value);
+        m_controls->setSteer(steer_value);
     }
 
     // AIBaseController::update(ticks);
