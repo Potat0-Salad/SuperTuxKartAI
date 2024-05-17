@@ -179,6 +179,7 @@ void SoccerAI::updateDataBuf(){
     dataPoint.ball_pos = m_world->getBallPosition();
     dataPoint.ball_aim_X = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX();
     dataPoint.ball_aim_Z = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ();
+    dataPoint.ball_approaching_goal = static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId())));
     dataPoint.dist_to_ball = calculateDist(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
     dataPoint.kart_pos = m_kart->getXYZ();
     dataPoint.kart_vel = m_kart->getVelocity();
@@ -238,6 +239,7 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << ","
                 << dataPoint.ball_aim_X << ","
                 << dataPoint.ball_aim_Z << ","
+                << dataPoint.ball_approaching_goal << ","
                 << dataPoint.dist_to_ball << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","
@@ -263,6 +265,7 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << ","
                 << dataPoint.ball_aim_X << ","
                 << dataPoint.ball_aim_Z << ","
+                << dataPoint.ball_approaching_goal << ","
                 << dataPoint.dist_to_ball << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","

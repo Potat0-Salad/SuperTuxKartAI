@@ -147,6 +147,7 @@ void ArenaAI::update(int ticks)
     inputs.push_back(prepare_input(
                     m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
                     m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
                     calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
                     m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, 1,
                     0, 0));
@@ -154,6 +155,7 @@ void ArenaAI::update(int ticks)
     inputs.push_back(prepare_input(
                     m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
                     m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
                     calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
                     m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, -1,
                     0, 0));
@@ -161,6 +163,7 @@ void ArenaAI::update(int ticks)
     inputs.push_back(prepare_input(
                     m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
                     m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
                     calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
                     m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, 1,
                     0, 0));
@@ -168,6 +171,7 @@ void ArenaAI::update(int ticks)
     inputs.push_back(prepare_input(
                     m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
                     m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
                     calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
                     m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, 1,
                     0, 0));
@@ -175,6 +179,7 @@ void ArenaAI::update(int ticks)
     inputs.push_back(prepare_input(
                     m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
                     m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
                     calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
                     m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, -1,
                     0, 0));
@@ -182,6 +187,7 @@ void ArenaAI::update(int ticks)
     inputs.push_back(prepare_input(
                     m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
                     m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
                     calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
                     m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, -1,
                     0, 0));

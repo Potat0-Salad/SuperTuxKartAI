@@ -11,9 +11,9 @@ void load_model() {
 
 }
 
-torch::Tensor prepare_input(float ball_X, float ball_Z, float ball_aim_X, float ball_aim_Z, float dist_to_ball, float kart_X, float kart_Z, float vel_X, float vel_Z,
+torch::Tensor prepare_input(float ball_X, float ball_Z, float ball_aim_X, float ball_aim_Z, float ball_appr_goal,float dist_to_ball, float kart_X, float kart_Z, float vel_X, float vel_Z,
                             float speed, float steer, float accel, float brake, float skid) {
-    torch::Tensor input_tensor = torch::tensor({ball_X, ball_Z, ball_aim_X, ball_aim_Z, dist_to_ball, kart_X, kart_Z, vel_X, vel_Z, speed, steer, accel, brake, skid}, torch::dtype(torch::kFloat32));
+    torch::Tensor input_tensor = torch::tensor({ball_X, ball_Z, ball_aim_X, ball_aim_Z, ball_appr_goal, dist_to_ball, kart_X, kart_Z, vel_X, vel_Z, speed, steer, accel, brake, skid}, torch::dtype(torch::kFloat32));
     input_tensor = input_tensor.unsqueeze(0); // Add a batch dimension
     return input_tensor;
 }
