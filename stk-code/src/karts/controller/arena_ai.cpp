@@ -83,10 +83,6 @@ void ArenaAI::reset()
  *  \param ticks Number of physics time steps - should be 1.
  */
 
-double calculateDistance(double x1, double y1, double x2, double y2) {
-    return std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
-}
-
 void ArenaAI::update(int ticks)
 {
     if (!m_graph)
@@ -144,53 +140,17 @@ void ArenaAI::update(int ticks)
     // Add your input tensors to the vector
 
     //forward staight
-    inputs.push_back(prepare_input(
-                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
-                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
-                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
-                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
-                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, 1,
-                    0, 0));
+    inputs.push_back(prepare_input(m_kart, 0, 1, 0, 0));
     //reverse staight
-    inputs.push_back(prepare_input(
-                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
-                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
-                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
-                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
-                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 0, -1,
-                    0, 0));
+    inputs.push_back(prepare_input(m_kart, 0, -1, 0, 0));
     //forward left
-    inputs.push_back(prepare_input(
-                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
-                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
-                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
-                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
-                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, 1,
-                    0, 0));
+    inputs.push_back(prepare_input(m_kart, -1, 1, 0, 0));
     //forward right
-    inputs.push_back(prepare_input(
-                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
-                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
-                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
-                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
-                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, 1,
-                    0, 0));
+    inputs.push_back(prepare_input(m_kart, 1, 1, 0, 0));
     //reverse left
-    inputs.push_back(prepare_input(
-                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
-                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
-                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
-                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
-                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), -1, -1,
-                    0, 0));
+    inputs.push_back(prepare_input(m_kart, -1, -1, 0, 0));
     //reverse right
-    inputs.push_back(prepare_input(
-                    m_world->getBallPosition().getX(), m_world->getBallPosition().getZ(),
-                    m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
-                    static_cast<float>(m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()))),
-                    calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()),
-                    m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_kart->getVelocity().getX(), m_kart->getVelocity().getZ(), m_kart->getSpeed(), 1, -1,
-                    0, 0));
+    inputs.push_back(prepare_input(m_kart, 1, -1, 0, 0));
 
     outputs = evaluate_actions(inputs);
 

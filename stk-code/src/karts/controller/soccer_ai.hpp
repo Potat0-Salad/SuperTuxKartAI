@@ -58,7 +58,6 @@ private:
         Vec3 ball_pos;
         float ball_aim_X;
         float ball_aim_Z;
-        float ball_approaching_goal;
         float dist_to_ball;
         Vec3 kart_pos;
         btVector3 kart_vel;
