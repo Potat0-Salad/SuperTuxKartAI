@@ -136,7 +136,7 @@ void ArenaAI::update(int ticks)
     std::vector<torch::Tensor> inputs;
     std::vector<torch::Tensor> outputs;
 
-    //ML model    
+    //ML model
     // Add your input tensors to the vector
 
     //forward staight

@@ -58,6 +58,7 @@ private:
         Vec3 ball_pos;
         float ball_aim_X;
         float ball_aim_Z;
+        Vec3 previousXYZ;
         float dist_to_ball;
         Vec3 kart_pos;
         btVector3 kart_vel;
@@ -68,6 +69,7 @@ private:
         KartControl::SkidControl kart_skid;
         TargetEncode target_encoded;
         Vec3 target_pos;
+        float time_ticks;
     };
 
     std::queue<DataInstance> dataQueue;

@@ -179,6 +179,7 @@ void SoccerAI::updateDataBuf(){
     dataPoint.ball_pos = m_world->getBallPosition();
     dataPoint.ball_aim_X = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX();
     dataPoint.ball_aim_Z = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ();
+    dataPoint.previousXYZ = m_kart->getPreviousXYZ();
     dataPoint.dist_to_ball = calculateDist(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
     dataPoint.kart_pos = m_kart->getXYZ();
     dataPoint.kart_vel = m_kart->getVelocity();
@@ -189,37 +190,9 @@ void SoccerAI::updateDataBuf(){
     dataPoint.kart_skid = m_controls->getSkidControl();
     dataPoint.target_encoded = target_encoded;
     dataPoint.target_pos = m_target_point;
+    dataPoint.time_ticks = m_world->getTimeTicks();
 
     dataQueue.push(dataPoint);
-
-    /**
-     * Printing
-     * 
-     */
-
-    // std::cout << "  The ball position at this time: (" << dataPoint.ball_pos.getX() << ", " << dataPoint.ball_pos.getY() << ", " << dataPoint.ball_pos.getZ() << ")" << std::endl;
-    // std::cout << "  pos: (" << dataPoint.kart_pos.getX() << ", " << dataPoint.kart_pos.getY() << ", " << dataPoint.kart_pos.getZ() << ")" << std::endl;
-    // std::cout << "  speed: " << dataPoint.kart_speed << std::endl;
-    // std::cout << "  velocity: (" << dataPoint.kart_vel.getX() << ", " << dataPoint.kart_vel.getY() << ", " << dataPoint.kart_vel.getZ() << ")" << std::endl;
-    // std::cout << "  steer: " << dataPoint.kart_steer  << std::endl;
-    // // std::cout << "  nitro: " << k_control.getNitro()  << std::endl;
-    // // Controller* k_controller = kart->getController();
-    // std::cout << "  closest kart: " << m_closest_kart->getWorldKartId() << std::endl;
-    // std::cout << "  target node: " << m_target_node << std::endl;
-    // if(dataPoint.target_encoded == TargetEncode::Ball){
-    //     std::cout << "  targeting the ball" << std::endl;
-    // }
-    // else if(dataPoint.target_encoded == TargetEncode::OppChaser){
-    //     std::cout << "  targeting the opp ball chaser" << std::endl;
-    // }
-    // else if (dataPoint.target_encoded == TargetEncode::ClosestOpp){
-    //     std::cout << "  targeting the closeset kart" << std::endl;
-    // }
-    // else{
-    //     std::cout << "  targeting the powerup OR NOT idk" << std::endl;
-    // }
-    // std::cout << "  target pos: (" << dataPoint.target_pos.getX() << ", " << dataPoint.target_pos.getY() << ", " << dataPoint.target_pos.getZ() << ")" << std::endl;
-
 }
 
 void SoccerAI::writeBufToDisk(){
@@ -238,6 +211,8 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << ","
                 << dataPoint.ball_aim_X << ","
                 << dataPoint.ball_aim_Z << ","
+                << dataPoint.previousXYZ.getX() << ","
+                << dataPoint.previousXYZ.getZ() << ","
                 << dataPoint.dist_to_ball << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","
@@ -248,9 +223,7 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_accel << ","
                 << dataPoint.kart_brake << ","
                 << (int)dataPoint.kart_skid << ","
-                // << (int)dataPoint.target_encoded << ","
-                // << dataPoint.target_pos.getX() << ","
-                // << dataPoint.target_pos.getZ() << ","
+                << dataPoint.time_ticks << ","
                 << 1 << std::endl;
         }
 
@@ -263,6 +236,8 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << ","
                 << dataPoint.ball_aim_X << ","
                 << dataPoint.ball_aim_Z << ","
+                << dataPoint.previousXYZ.getX() << ","
+                << dataPoint.previousXYZ.getZ() << ","
                 << dataPoint.dist_to_ball << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","
@@ -273,9 +248,7 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_accel << ","
                 << dataPoint.kart_brake << ","
                 << (int)dataPoint.kart_skid << ","
-            //    << (int)dataPoint.target_encoded << ","
-            //    << dataPoint.target_pos.getX() << ","
-            //    << dataPoint.target_pos.getZ() << ","
+                << dataPoint.time_ticks << ","
                 << 0 << std::endl;
         }
         outputFile.close();
