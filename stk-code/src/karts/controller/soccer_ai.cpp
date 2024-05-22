@@ -133,32 +133,6 @@ void SoccerAI::updateDataBuf(){
     // its commands. */
     // KartControl  *m_controls;
 
-    /**
-     * Currently getting the following
-     * Kart ID
-     * Ball position X
-     * Ball position Z
-     * Kart position X
-     * Kart position Z
-     * Kart Velocity X
-     * Kart Velocity Z
-     * Kart speed
-     * Kart steer
-     * Kart acceleration
-     * Kart brake
-     * Kart skid
-     * Target (encoded)
-     * Target X
-     * Target Z
-     * 
-     * 
-     * 
-     * 
-     * todo:
-     * powerups
-     * 
-     */
-
     TargetEncode target_encoded;
 
     if(m_target_node == m_world->getBallNode()){
@@ -348,12 +322,6 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
     m_closest_kart = m_world->getKart(closest_kart_num);
     m_closest_kart_node = m_world->getSectorForKart(m_closest_kart);
     m_closest_kart_point = m_closest_kart->getXYZ();
-
-    std::ofstream log_file("/Users/marcel/Desktop/project/ailogs.txt", std::ios::app);
-    log_file << "BotIndex: " << m_kart->getWorldKartId() << " ClosestKartIndex: " << m_closest_kart->getWorldKartId() << '\n';
-    torch::Tensor tensor = torch::rand({2, 3});
-    log_file << "Tensor: " << tensor << std::endl;
-    log_file.close();
 
     //PRINT TO STDOUTLOG
     // std::string m_closest_kart_point_1 = toString(m_closest_kart_point);

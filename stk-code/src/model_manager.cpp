@@ -37,7 +37,7 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float 
                                     accel, 
                                     brake, 
                                     skid,
-                                    // world->getTimeTicks()
+                                    (float)world->getTimeTicks()
                                 }, torch::dtype(torch::kFloat32));
 
     input_tensor = input_tensor.unsqueeze(0); // Add a batch dimension
