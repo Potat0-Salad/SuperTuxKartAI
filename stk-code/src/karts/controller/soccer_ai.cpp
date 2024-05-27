@@ -149,6 +149,9 @@ void SoccerAI::updateDataBuf(){
     dataPoint.ball_pos = m_world->getBallPosition();
     dataPoint.ball_aim_X = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX();
     dataPoint.ball_aim_Z = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ();
+    dataPoint.ball_heading = m_world->getBallHeading();
+    dataPoint.kart_heading = m_kart->getHeading();
+    dataPoint.current_steer = m_kart->getSteerPercent();
     dataPoint.previousXYZ = m_kart->getPreviousXYZ();
     dataPoint.kart_heading = m_kart->getHeading();
     dataPoint.dist_to_ball = calculateDist(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
@@ -185,6 +188,8 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << ","
                 << dataPoint.ball_aim_X << ","
                 << dataPoint.ball_aim_Z << ","
+                << dataPoint.ball_heading << ","
+                << dataPoint.current_steer << ","
                 << dataPoint.previousXYZ.getX() << ","
                 << dataPoint.previousXYZ.getZ() << ","
                 << dataPoint.kart_heading << ","
@@ -213,6 +218,8 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_pos.getZ() << ","
                 << dataPoint.ball_aim_X << ","
                 << dataPoint.ball_aim_Z << ","
+                << dataPoint.ball_heading << ","
+                << dataPoint.current_steer << ","
                 << dataPoint.previousXYZ.getX() << ","
                 << dataPoint.previousXYZ.getZ() << ","
                 << dataPoint.kart_heading << ","

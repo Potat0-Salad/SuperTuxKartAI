@@ -23,19 +23,6 @@ void load_scaler_parameters() {
     scaler_file >> scaler_json;
     mean = scaler_json["mean"].get<std::vector<float>>();
     scale = scaler_json["scale"].get<std::vector<float>>();
-    
-    // Print the loaded parameters for verification
-    std::stringstream ss_mean, ss_scale;
-    ss_mean << "Mean: ";
-    ss_scale << "Scale: ";
-    for (const auto& val : mean) {
-        ss_mean << val << " ";
-    }
-    for (const auto& val : scale) {
-        ss_scale << val << " ";
-    }
-    Log::info("", ss_mean.str().c_str());
-    Log::info("", ss_scale.str().c_str());
 }
 
 torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float brake, float skid) {
@@ -43,11 +30,13 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float 
 
     std::vector<float> input_values = {
         (float)kart->getWorldKartId(),
-        world->getBallPosition().getX(), 
+        world->getBallPosition().getX(),
         world->getBallPosition().getZ(),
         world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getX(), 
         world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getZ(),
-        kart->getPreviousXYZ().getX(), 
+        world->getBallHeading(),
+        kart->getSteerPercent(),
+        kart->getPreviousXYZ().getX(),
         kart->getPreviousXYZ().getZ(),
         calculateDistance(kart->getXYZ().getX(), kart->getXYZ().getZ(), world->getBallPosition().getX(), world->getBallPosition().getZ()),
         kart->getXYZ().getX(), 
@@ -93,4 +82,3 @@ std::vector<torch::Tensor> evaluate_actions(std::vector<torch::Tensor> inputs)
 
     return outputs;
 }
-

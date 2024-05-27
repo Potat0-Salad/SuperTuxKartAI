@@ -147,29 +147,29 @@ void ArenaAI::update(int ticks)
         inputs.push_back(prepare_input(m_kart, -1, -1, 0, 0)); // reverse left
         inputs.push_back(prepare_input(m_kart, 1, -1, 0, 0));  // reverse right
 
-        // Validate input tensors
-        for (size_t i = 0; i < inputs.size(); ++i) {
-        auto input_tensor = inputs[i];
-        auto data = input_tensor.accessor<float, 2>(); // Assuming 2D tensor
-        for (int j = 0; j < data.size(1); ++j) {
-            if (std::isnan(data[0][j]) || std::isinf(data[0][j])) {
-                Log::error("Invalid input value detected at index ", std::to_string(j).c_str());
-                Log::error(":", std::to_string(data[0][j]).c_str());
-            }
-        }
-        std::stringstream ss;
-        ss << input_tensor;
-        Log::info("Input tensor passed to the model: ", ss.str().c_str());
-        }
+                                // Validate input tensors
+                                for (size_t i = 0; i < inputs.size(); ++i) {
+                                auto input_tensor = inputs[i];
+                                auto data = input_tensor.accessor<float, 2>(); // Assuming 2D tensor
+                                for (int j = 0; j < data.size(1); ++j) {
+                                    if (std::isnan(data[0][j]) || std::isinf(data[0][j])) {
+                                        Log::error("Invalid input value detected at index ", std::to_string(j).c_str());
+                                        Log::error(":", std::to_string(data[0][j]).c_str());
+                                    }
+                                }
+                                std::stringstream ss;
+                                ss << input_tensor;
+                                Log::info("Input tensor passed to the model: ", ss.str().c_str());
+                                }
 
         // Evaluate actions
         outputs = evaluate_actions(inputs);
 
-        for (size_t i = 0; i < outputs.size(); ++i) {
-            float score = outputs[i].item<float>();
-            Log::info("Action:", std::to_string(i).c_str());
-            Log::info("Score:", std::to_string(score).c_str());
-        }
+                                for (size_t i = 0; i < outputs.size(); ++i) {
+                                    float score = outputs[i].item<float>();
+                                    Log::info("Action:", std::to_string(i).c_str());
+                                    Log::info("Score:", std::to_string(score).c_str());
+                                }
 
         // Identify the best overall input based on the model's evaluations
         int best_input_index = -1;
@@ -194,7 +194,7 @@ void ArenaAI::update(int ticks)
 
             // PRINT TO STDOUTLOG
             Log::info("best action index: ", std::to_string(best_input_index).c_str());
-            
+
             switch (best_input_index)
             {
             case 0:

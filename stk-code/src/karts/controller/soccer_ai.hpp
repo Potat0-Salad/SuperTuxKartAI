@@ -58,6 +58,8 @@ private:
         Vec3 ball_pos;
         float ball_aim_X;
         float ball_aim_Z;
+        float ball_heading;
+        float current_steer;
         Vec3 previousXYZ;
         float kart_heading;
         float dist_to_ball;
