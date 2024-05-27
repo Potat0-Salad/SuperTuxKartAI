@@ -133,6 +133,7 @@ void ArenaAI::update(int ticks)
     if (gettingUnstuck(ticks))
         return;
 
+    //is read team
     if(m_world->getKartTeam(m_kart->getWorldKartId()) == 0){
         std::vector<torch::Tensor> inputs;
         std::vector<torch::Tensor> outputs;
@@ -142,34 +143,33 @@ void ArenaAI::update(int ticks)
         inputs.push_back(prepare_input(m_kart, 0, 1, 0, 0));  // forward straight
         inputs.push_back(prepare_input(m_kart, 0, -1, 0, 0)); // reverse straight
         inputs.push_back(prepare_input(m_kart, -1, 1, 0, 0)); // forward left
-        inputs.push_back(prepare_input(m_kart, 1, 1, 0, 0));  // forward right
+        inputs.push_back(prepare_input(m_kart, 1, 1, 0, 0));  // forward right        
         inputs.push_back(prepare_input(m_kart, -1, -1, 0, 0)); // reverse left
         inputs.push_back(prepare_input(m_kart, 1, -1, 0, 0));  // reverse right
 
-
-                                // Validate input tensors
-                                for (size_t i = 0; i < inputs.size(); ++i) {
-                                auto input_tensor = inputs[i];
-                                auto data = input_tensor.accessor<float, 2>(); // Assuming 2D tensor
-                                for (int j = 0; j < data.size(1); ++j) {
-                                    if (std::isnan(data[0][j]) || std::isinf(data[0][j])) {
-                                        Log::error("Invalid input value detected at index ", std::to_string(j).c_str());
-                                        Log::error(":", std::to_string(data[0][j]).c_str());
-                                    }
-                                }
-                                std::stringstream ss;
-                                ss << input_tensor;
-                                Log::info("Input tensor passed to the model: ", ss.str().c_str());
-                                }
+        // Validate input tensors
+        for (size_t i = 0; i < inputs.size(); ++i) {
+        auto input_tensor = inputs[i];
+        auto data = input_tensor.accessor<float, 2>(); // Assuming 2D tensor
+        for (int j = 0; j < data.size(1); ++j) {
+            if (std::isnan(data[0][j]) || std::isinf(data[0][j])) {
+                Log::error("Invalid input value detected at index ", std::to_string(j).c_str());
+                Log::error(":", std::to_string(data[0][j]).c_str());
+            }
+        }
+        std::stringstream ss;
+        ss << input_tensor;
+        Log::info("Input tensor passed to the model: ", ss.str().c_str());
+        }
 
         // Evaluate actions
         outputs = evaluate_actions(inputs);
 
-                                for (size_t i = 0; i < outputs.size(); ++i) {
-                                    float score = outputs[i].item<float>();
-                                    Log::info("Action:", std::to_string(i).c_str());
-                                    Log::info("Score:", std::to_string(score).c_str());
-                                }
+        for (size_t i = 0; i < outputs.size(); ++i) {
+            float score = outputs[i].item<float>();
+            Log::info("Action:", std::to_string(i).c_str());
+            Log::info("Score:", std::to_string(score).c_str());
+        }
 
         // Identify the best overall input based on the model's evaluations
         int best_input_index = -1;
@@ -187,16 +187,43 @@ void ArenaAI::update(int ticks)
         // Apply controls based on the best input index
         if (best_input_index != -1) {
             // Assuming inputs are structured as [batch, features]
-            float steer_value = inputs[best_input_index][0][13].item<float>();  // Steering value
-            float accel_value = inputs[best_input_index][0][14].item<float>();  // Acceleration value
+            // float steer_value = inputs[best_input_index][0][13].item<float>();  // Steering value
+            // float accel_value = inputs[best_input_index][0][14].item<float>();  // Acceleration value
+            // m_controls->setAccel(accel_value);
+            // m_controls->setSteer(steer_value);
 
-                                // PRINT TO STDOUTLOG
-                                Log::info("best action index: ", std::to_string(best_input_index).c_str());
-                                Log::info("best action steer: ", std::to_string(steer_value).c_str());
-                                Log::info("best action accel: ", std::to_string(accel_value).c_str());
+            // PRINT TO STDOUTLOG
+            Log::info("best action index: ", std::to_string(best_input_index).c_str());
             
-            m_controls->setAccel(accel_value);
-            m_controls->setSteer(steer_value);
+            switch (best_input_index)
+            {
+            case 0:
+                m_controls->setSteer(0);
+                m_controls->setAccel(1);
+                break;
+            case 1:
+                m_controls->setSteer(0);
+                m_controls->setAccel(-1);
+                break;
+            case 2:
+                m_controls->setSteer(-1);
+                m_controls->setAccel(1);
+                break;
+            case 3:
+                m_controls->setSteer(1);
+                m_controls->setAccel(1);
+                break;
+            case 4:
+                m_controls->setSteer(-1);
+                m_controls->setAccel(-1);
+                break;
+            case 5:
+                m_controls->setSteer(1);
+                m_controls->setAccel(-1);
+                break;
+            default:
+                break;
+            }
         }
     }
     else{

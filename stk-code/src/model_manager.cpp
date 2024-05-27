@@ -23,6 +23,19 @@ void load_scaler_parameters() {
     scaler_file >> scaler_json;
     mean = scaler_json["mean"].get<std::vector<float>>();
     scale = scaler_json["scale"].get<std::vector<float>>();
+    
+    // Print the loaded parameters for verification
+    std::stringstream ss_mean, ss_scale;
+    ss_mean << "Mean: ";
+    ss_scale << "Scale: ";
+    for (const auto& val : mean) {
+        ss_mean << val << " ";
+    }
+    for (const auto& val : scale) {
+        ss_scale << val << " ";
+    }
+    Log::info("", ss_mean.str().c_str());
+    Log::info("", ss_scale.str().c_str());
 }
 
 torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float brake, float skid) {

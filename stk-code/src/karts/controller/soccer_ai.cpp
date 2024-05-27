@@ -78,14 +78,6 @@ SoccerAI::SoccerAI(AbstractKart *kart)
     load_model();
     load_scaler_parameters();
 
-    std::stringstream ss;
-    ss << mean;
-    Log::info("Mean:", ss.str().c_str());
-
-    ss << scale;
-    Log::info("Scale:", ss.str().c_str());
-
-
     // Don't call our own setControllerName, since this will add a
     // billboard showing 'AIBaseController' to the kart.
     Controller::setControllerName("SoccerAI");
