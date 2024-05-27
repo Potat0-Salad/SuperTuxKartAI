@@ -76,6 +76,15 @@ SoccerAI::SoccerAI(AbstractKart *kart)
         KART_TEAM_RED : KART_TEAM_BLUE);
 
     load_model();
+    load_scaler_parameters();
+
+    std::stringstream ss;
+    ss << mean;
+    Log::info("Mean:", ss.str().c_str());
+
+    ss << scale;
+    Log::info("Scale:", ss.str().c_str());
+
 
     // Don't call our own setControllerName, since this will add a
     // billboard showing 'AIBaseController' to the kart.
@@ -114,11 +123,6 @@ void SoccerAI::reset()
 
 }   // reset
 
-// USED TO PRINT TO STDOUTLOG
-std::string toString(const Vec3& vec) {
-    return "(" + std::to_string(vec.getX()) + ", " + std::to_string(vec.getY()) + ", " + std::to_string(vec.getZ()) + ")";
-}
-
 double calculateDist(double x1, double y1, double x2, double y2) {
     return std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
 }
@@ -154,6 +158,7 @@ void SoccerAI::updateDataBuf(){
     dataPoint.ball_aim_X = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX();
     dataPoint.ball_aim_Z = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ();
     dataPoint.previousXYZ = m_kart->getPreviousXYZ();
+    dataPoint.kart_heading = m_kart->getHeading();
     dataPoint.dist_to_ball = calculateDist(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
     dataPoint.kart_pos = m_kart->getXYZ();
     dataPoint.kart_vel = m_kart->getVelocity();
@@ -166,7 +171,10 @@ void SoccerAI::updateDataBuf(){
     dataPoint.target_pos = m_target_point;
     dataPoint.time_ticks = m_world->getTimeTicks();
 
-    dataQueue.push(dataPoint);
+    //if team red
+    if(m_world->getKartTeam(dataPoint.kart_id) == 0){
+        dataQueue.push(dataPoint);
+    }
 }
 
 void SoccerAI::writeBufToDisk(){
@@ -187,6 +195,7 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_aim_Z << ","
                 << dataPoint.previousXYZ.getX() << ","
                 << dataPoint.previousXYZ.getZ() << ","
+                << dataPoint.kart_heading << ","
                 << dataPoint.dist_to_ball << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","
@@ -199,6 +208,8 @@ void SoccerAI::writeBufToDisk(){
                 << (int)dataPoint.kart_skid << ","
                 << dataPoint.time_ticks << ","
                 << 1 << std::endl;
+
+                m_kart->getHeading();
         }
 
         while(!dataQueue.empty()){
@@ -212,6 +223,7 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.ball_aim_Z << ","
                 << dataPoint.previousXYZ.getX() << ","
                 << dataPoint.previousXYZ.getZ() << ","
+                << dataPoint.kart_heading << ","
                 << dataPoint.dist_to_ball << ","
                 << dataPoint.kart_pos.getX() << ","
                 << dataPoint.kart_pos.getZ() << ","
@@ -304,7 +316,7 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
             continue; // Skip the same kart
 
         if (kart->getWorldKartId() == 4)
-            continue;
+            continue; // Skip the player kart
 
         if (m_world->getKartTeam(kart
             ->getWorldKartId()) == m_world->getKartTeam(m_kart

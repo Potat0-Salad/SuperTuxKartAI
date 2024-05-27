@@ -5581,4 +5581,52 @@ CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o: \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/lib/irrlicht/include/EGUIAlignment.h \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/random_generator.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/stk_process.hpp \
-  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/tls.hpp
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/tls.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/json.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/adl_serializer.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/abi_macros.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/conversions/from_json.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/forward_list \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/valarray \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/exceptions.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/value_t.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/macro_scope.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/detected.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/void_t.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/thirdparty/hedley/hedley.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/string_escape.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/input/position_t.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/cpp_future.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/type_traits.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/iterators/iterator_traits.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/call_std/begin.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/call_std/end.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/json_fwd.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/string_concat.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/identity_tag.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/std_fs.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/conversions/to_json.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/byte_container_with_subtype.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/hash.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/input/binary_reader.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/input/input_adapters.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/input/json_sax.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/input/lexer.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/meta/is_sax.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/input/parser.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/iterators/internal_iterator.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/iterators/iter_impl.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/json_custom_base_class.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/json_pointer.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/json_ref.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/output/binary_writer.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/output/output_adapters.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/output/serializer.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/conversions/to_chars.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/ordered_map.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/any \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/macro_unscope.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/thirdparty/hedley/hedley_undef.hpp
