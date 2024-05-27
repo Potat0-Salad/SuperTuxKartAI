@@ -34,8 +34,6 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float 
         world->getBallPosition().getZ(),
         world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getX(), 
         world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getZ(),
-        world->getBallHeading(),
-        kart->getSteerPercent(),
         kart->getPreviousXYZ().getX(),
         kart->getPreviousXYZ().getZ(),
         calculateDistance(kart->getXYZ().getX(), kart->getXYZ().getZ(), world->getBallPosition().getX(), world->getBallPosition().getZ()),
