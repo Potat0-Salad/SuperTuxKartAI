@@ -72,8 +72,6 @@ private:
         TargetEncode target_encoded;
         Vec3 target_pos;
         float time_ticks;
-        float kart_sector;
-        int ball_approaching_goal;
     };
 
     std::queue<DataInstance> dataQueue;

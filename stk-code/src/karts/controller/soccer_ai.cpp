@@ -148,7 +148,7 @@ void SoccerAI::updateDataBuf(){
     dataPoint.kart_id = m_kart->getWorldKartId();
     dataPoint.ball_pos = m_world->getBallPosition();
     dataPoint.ball_aim_X = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getX(), 
-    dataPoint.ball_aim_Z = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(),
+    dataPoint.ball_aim_Z = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())).getZ(), 
     dataPoint.ball_node = m_world->getBallNode();
     dataPoint.previousXYZ = m_kart->getPreviousXYZ();
     dataPoint.ball_heading = m_world->getBallHeading();
@@ -163,8 +163,6 @@ void SoccerAI::updateDataBuf(){
     dataPoint.target_encoded = target_encoded;
     dataPoint.target_pos = m_target_point;
     dataPoint.time_ticks = m_world->getTimeTicks();
-    dataPoint.kart_sector = m_world->getSectorForKart(m_kart);
-    dataPoint.ball_approaching_goal = (float)m_world->ballApproachingGoal(m_world->getKartTeam(m_kart->getWorldKartId()));
 
     //if team red
     if(m_world->getKartTeam(dataPoint.kart_id) == 0){
@@ -203,8 +201,6 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_brake << ","
                 << (int)dataPoint.kart_skid << ","
                 << dataPoint.time_ticks << ","
-                << dataPoint.kart_sector << ","
-                << dataPoint.ball_approaching_goal << ","
                 << 1 << std::endl;
         }
 
@@ -232,8 +228,6 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_brake << ","
                 << (int)dataPoint.kart_skid << ","
                 << dataPoint.time_ticks << ","
-                << dataPoint.kart_sector << ","
-                << dataPoint.ball_approaching_goal << ","
                 << 0 << std::endl;
         }
         outputFile.close();

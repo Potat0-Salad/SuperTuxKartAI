@@ -61,9 +61,7 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float 
         accel, 
         brake, 
         skid,
-        (float)world->getTimeTicks(),
-        (float)world->getSectorForKart(kart),
-        (float)world->ballApproachingGoal(world->getKartTeam(kart->getWorldKartId())),
+        (float)world->getTimeTicks()
     };
 
     // Normalize the input values
