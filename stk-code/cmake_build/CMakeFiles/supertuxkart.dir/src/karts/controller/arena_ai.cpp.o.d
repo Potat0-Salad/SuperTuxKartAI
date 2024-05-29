@@ -5647,4 +5647,6 @@ CMakeFiles/supertuxkart.dir/src/karts/controller/arena_ai.cpp.o: \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world_status.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/highscores.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui_base.hpp \
-  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/random_generator.hpp
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/random_generator.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/soccer_ai.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/queue

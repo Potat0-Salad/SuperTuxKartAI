@@ -32,6 +32,7 @@
 
 #include "model_manager.hpp"
 #include "modes/soccer_world.hpp"
+#include "karts/controller/soccer_ai.hpp"
 
 
 #include <algorithm>
@@ -194,6 +195,7 @@ void ArenaAI::update(int ticks)
 
             // PRINT TO STDOUTLOG
             Log::info("best action index: ", std::to_string(best_input_index).c_str());
+        
 
             switch (best_input_index)
             {

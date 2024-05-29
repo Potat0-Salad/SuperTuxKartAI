@@ -58,8 +58,9 @@ private:
         Vec3 ball_pos;
         float ball_aim_X;
         float ball_aim_Z;
+        int ball_node;
         Vec3 previousXYZ;
-        float kart_heading;
+        float ball_heading;
         float dist_to_ball;
         Vec3 kart_pos;
         btVector3 kart_vel;
@@ -71,6 +72,8 @@ private:
         TargetEncode target_encoded;
         Vec3 target_pos;
         float time_ticks;
+        float kart_sector;
+        int ball_approaching_goal;
     };
 
     std::queue<DataInstance> dataQueue;
