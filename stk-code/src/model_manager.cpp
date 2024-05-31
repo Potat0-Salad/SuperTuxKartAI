@@ -54,14 +54,16 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float 
         calculateDistance(kart->getXYZ().getX(), kart->getXYZ().getZ(), world->getBallPosition().getX(), world->getBallPosition().getZ()),
         kart->getXYZ().getX(), 
         kart->getXYZ().getZ(),
-        kart->getVelocity().getX(), 
+        kart->getVelocity().getX(),
         kart->getVelocity().getZ(),
         kart->getSpeed(), 
         steer,
         accel, 
         brake, 
         skid,
-        (float)world->getTimeTicks()
+        (float)world->getTimeTicks(),
+        (float)world->getSectorForKart(kart)
+        // kart->getHeading()
     };
 
     // Normalize the input values

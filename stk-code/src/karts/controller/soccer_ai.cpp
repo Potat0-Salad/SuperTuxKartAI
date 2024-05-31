@@ -163,6 +163,8 @@ void SoccerAI::updateDataBuf(){
     dataPoint.target_encoded = target_encoded;
     dataPoint.target_pos = m_target_point;
     dataPoint.time_ticks = m_world->getTimeTicks();
+    dataPoint.kart_node = m_world->getSectorForKart(m_kart);
+    dataPoint.kart_heading = m_kart->getHeading();
 
     //if team red
     if(m_world->getKartTeam(dataPoint.kart_id) == 0){
@@ -201,6 +203,8 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_brake << ","
                 << (int)dataPoint.kart_skid << ","
                 << dataPoint.time_ticks << ","
+                << dataPoint.kart_node << ","
+                << dataPoint.kart_heading << ","
                 << 1 << std::endl;
         }
 
@@ -228,6 +232,8 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_brake << ","
                 << (int)dataPoint.kart_skid << ","
                 << dataPoint.time_ticks << ","
+                << dataPoint.kart_node << ","
+                << dataPoint.kart_heading << ","
                 << 0 << std::endl;
         }
         outputFile.close();
