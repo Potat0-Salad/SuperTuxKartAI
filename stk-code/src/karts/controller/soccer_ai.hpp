@@ -27,6 +27,8 @@
 
 #include "kart_control.hpp"
 
+// #include "model_manager.hpp"
+
 #undef BALL_AIM_DEBUG
 #ifdef BALL_AIM_DEBUG
 #include "graphics/irr_driver.hpp"
@@ -46,12 +48,12 @@ private:
     irr::scene::ISceneNode *m_blue_sphere;
 #endif
 
-    enum class TargetEncode : int {
-        Ball = 0,
-        Powerup = 1,
-        OppChaser = 2,
-        ClosestOpp = 3
-    };
+    // enum class TargetEncode : int {
+    //     Ball = 0,
+    //     Powerup = 1,
+    //     OppChaser = 2,
+    //     ClosestOpp = 3
+    // };
 
     struct DataInstance {
         int kart_id;
@@ -69,7 +71,7 @@ private:
         float kart_accel;
         bool kart_brake;
         KartControl::SkidControl kart_skid;
-        TargetEncode target_encoded;
+        int target_encoded;
         Vec3 target_pos;
         float time_ticks;
         int kart_node;

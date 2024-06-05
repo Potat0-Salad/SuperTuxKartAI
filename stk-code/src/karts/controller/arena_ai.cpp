@@ -30,10 +30,10 @@
 #include "tracks/arena_node.hpp"
 #include "tracks/track.hpp"
 
-#include "model_manager.hpp"
 #include "modes/soccer_world.hpp"
 #include "karts/controller/soccer_ai.hpp"
 
+#include "model_manager.hpp"
 
 #include <algorithm>
 
@@ -134,101 +134,97 @@ void ArenaAI::update(int ticks)
     if (gettingUnstuck(ticks))
         return;
 
-    //is read team
-    if(m_world->getKartTeam(m_kart->getWorldKartId()) == 0){
+    //is red team
+    if (m_world->getKartTeam(m_kart->getWorldKartId()) == 0) {
         std::vector<torch::Tensor> inputs;
         std::vector<torch::Tensor> outputs;
 
-        //ML model
-        // Prepare inputs
-        inputs.push_back(prepare_input(m_kart, 0, 1, 0, 0));  // forward straight
-        inputs.push_back(prepare_input(m_kart, 0, -1, 0, 0)); // reverse straight
-        inputs.push_back(prepare_input(m_kart, -1, 1, 0, 0)); // forward left
-        inputs.push_back(prepare_input(m_kart, 1, 1, 0, 0));  // forward right        
-        inputs.push_back(prepare_input(m_kart, -1, -1, 0, 0)); // reverse left
-        inputs.push_back(prepare_input(m_kart, 1, -1, 0, 0));  // reverse right
+        TargetEncode target_encoded;
 
-                                // Validate input tensors
-                                for (size_t i = 0; i < inputs.size(); ++i) {
-                                auto input_tensor = inputs[i];
-                                auto data = input_tensor.accessor<float, 2>(); // Assuming 2D tensor
-                                for (int j = 0; j < data.size(1); ++j) {
-                                    if (std::isnan(data[0][j]) || std::isinf(data[0][j])) {
-                                        Log::error("Invalid input value detected at index ", std::to_string(j).c_str());
-                                        Log::error(":", std::to_string(data[0][j]).c_str());
-                                    }
-                                }
-                                std::stringstream ss;
-                                ss << input_tensor;
-                                Log::info("Input tensor passed to the model: ", ss.str().c_str());
-                                }
-
-        // Evaluate actions
-        outputs = evaluate_actions(inputs);
-
-                                for (size_t i = 0; i < outputs.size(); ++i) {
-                                    float score = outputs[i].item<float>();
-                                    Log::info("Action:", std::to_string(i).c_str());
-                                    Log::info("Score:", std::to_string(score).c_str());
-                                }
-
-        // Identify the best overall input based on the model's evaluations
-        int best_input_index = -1;
-        float highest_score = -std::numeric_limits<float>::infinity();
-
-        for (size_t i = 0; i < outputs.size(); ++i) {
-            float score = outputs[i].item<float>(); // Access the output as a float directly
-
-            if (score > highest_score) {
-                highest_score = score;
-                best_input_index = i;
-            }
+        if (m_target_node == m_world->getBallNode()) {
+            target_encoded = TargetEncode::Ball;
+        } else if (m_target_node == m_world->getSectorForKart(m_world->getKart(m_world->getBallChaser(KART_TEAM_BLUE)))) {
+            target_encoded = TargetEncode::OppChaser;
+        } else if (m_target_node == m_closest_kart_node) {
+            target_encoded = TargetEncode::ClosestOpp;
+        } else {
+            target_encoded = TargetEncode::Powerup;
         }
 
-        // Apply controls based on the best input index
-        if (best_input_index != -1) {
-            // Assuming inputs are structured as [batch, features]
-            // float steer_value = inputs[best_input_index][0][13].item<float>();  // Steering value
-            // float accel_value = inputs[best_input_index][0][14].item<float>();  // Acceleration value
-            // m_controls->setAccel(accel_value);
-            // m_controls->setSteer(steer_value);
+        // Prepare input tensor
+        torch::Tensor input_tensor = prepare_input(m_kart, target_encoded, m_target_point);
 
-            // PRINT TO STDOUTLOG
-            Log::info("best action index: ", std::to_string(best_input_index).c_str());
-        
+        // Evaluate action
+        torch::Tensor output = evaluate_action(input_tensor);
 
-            switch (best_input_index)
-            {
-            case 0:
-                m_controls->setSteer(0);
-                m_controls->setAccel(1);
+        // Choose the best target based on the model's output
+        int best_target_index = output.argmax().item<int>();
+
+        int id;
+        const AbstractKart* kart;
+
+        // Interpret the model's output to determine the target
+        int target_predicted = best_target_index; // Using the best_target_index directly as the predicted target
+        Log::info("Predicted target:", std::to_string(target_predicted).c_str());
+
+        // Apply controls based on the predicted target
+        switch (target_predicted) {
+            case (int)TargetEncode::Ball:
+                m_target_node = m_world->getBallNode();
+                m_target_point = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())); //TODO: should be determineballaimingposition()
                 break;
-            case 1:
-                m_controls->setSteer(0);
-                m_controls->setAccel(-1);
+            case (int)TargetEncode::OppChaser:
+                id = m_world->getBallChaser(KART_TEAM_BLUE);
+                kart = m_world->getKart(id);
+                m_target_point = kart->getXYZ();
+                m_target_node  = m_world->getSectorForKart(kart);
                 break;
-            case 2:
-                m_controls->setSteer(-1);
-                m_controls->setAccel(1);
+            case (int)TargetEncode::ClosestOpp:
+                m_target_point = m_closest_kart_point;
+                m_target_node  = m_closest_kart_node;
                 break;
-            case 3:
-                m_controls->setSteer(1);
-                m_controls->setAccel(1);
-                break;
-            case 4:
-                m_controls->setSteer(-1);
-                m_controls->setAccel(-1);
-                break;
-            case 5:
-                m_controls->setSteer(1);
-                m_controls->setAccel(-1);
+            case (int)TargetEncode::Powerup:
+                m_target_node = m_world->getBallNode();     //TODO: SHOULD BE POWERUP
+                m_target_point = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())); //TODO: should be determineballaimingposition()
                 break;
             default:
                 break;
-            }
         }
+
+    // After found target, convert it to local coordinate, used for skidding or
+    // u-turn
+    if (!m_is_uturn)
+    {
+        m_target_point_lc = m_kart->getTrans().inverse()(m_target_point);
+        doSkiddingTest();
+        configSteering();
     }
-    else{
+    else
+    {
+        m_target_point_lc = m_kart->getTrans().inverse()(m_reverse_point);
+    }
+    useItems(dt);
+
+    if (m_kart->getSpeed() > 15.0f && !m_is_uturn && m_turn_radius > 30.0f &&
+        !ignorePathFinding())
+    {
+        // Only use nitro when turn angle is big (180 - angle)
+        m_controls->setNitro(true);
+    }
+
+    if (m_is_uturn)
+    {
+        resetAfterStop();
+        doUTurn(dt);
+    }
+    else
+    {
+        configSpeed();
+        setSteering(m_steering_angle, dt);
+    }
+    AIBaseController::update(ticks);
+}
+else{
         
         // Don't do anything if there is currently a kart animations shown.
         if (m_kart->getKartAnimation())

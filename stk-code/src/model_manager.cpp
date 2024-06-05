@@ -38,8 +38,46 @@ void load_scaler_parameters() {
     Log::info("", ss_scale.str().c_str());
 }
 
-torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float brake, float skid) {
+torch::Tensor prepare_input(AbstractKart *kart, TargetEncode target_encoded, Vec3 target_point) {
+    // Check if the kart pointer is null
+    if (!kart) {
+        Log::error("prepare_input", "Null pointer for kart");
+        return torch::Tensor();
+    }
+    
+    // Get the world pointer and check if it is null
     SoccerWorld *world = dynamic_cast<SoccerWorld*>(World::getWorld());
+    if (!world) {
+        Log::error("prepare_input", "Null pointer for world");
+        return torch::Tensor();
+    }
+    
+    // Log values for debugging
+    Log::info("prepare_input", "kart ID: ", kart->getWorldKartId());
+    Log::info("prepare_input", "Ball Position X: ", world->getBallPosition().getX());
+    Log::info("prepare_input", "Ball Position Z: ", world->getBallPosition().getZ());
+
+    int kartTeam = world->getKartTeam(kart->getWorldKartId());
+    Log::info("prepare_input", "Kart Team: ", kartTeam);
+    Log::info("prepare_input", "Ball Aim Position X: ", world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getX());
+    Log::info("prepare_input", "Ball Aim Position Z: ", world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getZ());
+    
+    Log::info("prepare_input", "Ball Node: ", world->getBallNode());
+    Log::info("prepare_input", "Previous XYZ X: ", kart->getPreviousXYZ().getX());
+    Log::info("prepare_input", "Previous XYZ Z: ", kart->getPreviousXYZ().getZ());
+    
+    Log::info("prepare_input", "Ball Heading: ", world->getBallHeading());
+    Log::info("prepare_input", "Distance to Ball: ", calculateDistance(kart->getXYZ().getX(), kart->getXYZ().getZ(), world->getBallPosition().getX(), world->getBallPosition().getZ()));
+    
+    Log::info("prepare_input", "Current XYZ X: ", kart->getXYZ().getX());
+    Log::info("prepare_input", "Current XYZ Z: ", kart->getXYZ().getZ());
+    Log::info("prepare_input", "Velocity X: ", kart->getVelocity().getX());
+    Log::info("prepare_input", "Velocity Z: ", kart->getVelocity().getZ());
+    Log::info("prepare_input", "Speed: ", kart->getSpeed());
+    Log::info("prepare_input", "Sector for Kart: ", world->getSectorForKart(kart));
+    Log::info("prepare_input", "Target Encoded: ", (float)target_encoded);
+    Log::info("prepare_input", "Target Point X: ", target_point.getX());
+    Log::info("prepare_input", "Target Point Z: ", target_point.getZ());
 
     std::vector<float> input_values = {
         (float)kart->getWorldKartId(),
@@ -57,21 +95,23 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float 
         kart->getVelocity().getX(),
         kart->getVelocity().getZ(),
         kart->getSpeed(), 
-        steer,
-        accel, 
-        brake, 
-        skid,
-        (float)world->getTimeTicks(),
-        (float)world->getSectorForKart(kart)
-        // kart->getHeading()
+        (float)world->getSectorForKart(kart),
+        (float)target_encoded,
+        target_point.getX(),
+        target_point.getZ()
     };
 
     // Normalize the input values
     for (size_t i = 0; i < input_values.size(); ++i) {
+        if (i >= mean.size() || i >= scale.size()) {
+            Log::error("prepare_input", "Index out of bounds during normalization");
+            return torch::Tensor();
+        }
         input_values[i] = (input_values[i] - mean[i]) / scale[i];
     }
 
     torch::Tensor input_tensor = torch::from_blob(input_values.data(), {1, (int)input_values.size()}, torch::kFloat32);
+    Log::info("Input tensor created successfully", " ");
 
     std::stringstream ss;
     ss << input_tensor;
@@ -81,20 +121,15 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, float 
 }
 
 
-std::vector<torch::Tensor> evaluate_actions(std::vector<torch::Tensor> inputs)
-{
-    std::vector<torch::Tensor> outputs;
+
+torch::Tensor evaluate_action(torch::Tensor input) {
     model.eval(); // Ensure the model is in evaluation mode
-    for (const auto& input_tensor : inputs) {
-        // Forward pass through the model
-        torch::Tensor output = model.forward({input_tensor}).toTensor();
-        outputs.push_back(output);
-
-        std::stringstream ss;
-        ss << output;
-        Log::info("Output tensor:", ss.str().c_str());
-    }
-
-    return outputs;
+    // Forward pass through the model
+    torch::Tensor output = model.forward({input}).toTensor();
+    std::stringstream ss;
+    ss << output;
+    Log::info("Output tensor:", ss.str().c_str());
+    return output;
 }
+
 

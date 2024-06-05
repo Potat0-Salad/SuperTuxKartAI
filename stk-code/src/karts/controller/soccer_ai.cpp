@@ -156,15 +156,15 @@ void SoccerAI::updateDataBuf(){
     dataPoint.kart_pos = m_kart->getXYZ();
     dataPoint.kart_vel = m_kart->getVelocity();
     dataPoint.kart_speed = m_kart->getSpeed();
-    dataPoint.kart_steer = m_controls->getSteer();
-    dataPoint.kart_accel = m_controls->getAccel();
-    dataPoint.kart_brake = m_controls->getBrake();
-    dataPoint.kart_skid = m_controls->getSkidControl();
-    dataPoint.target_encoded = target_encoded;
-    dataPoint.target_pos = m_target_point;
-    dataPoint.time_ticks = m_world->getTimeTicks();
+    // dataPoint.kart_steer = m_controls->getSteer();
+    // dataPoint.kart_accel = m_controls->getAccel();
+    // dataPoint.kart_brake = m_controls->getBrake();
+    // dataPoint.kart_skid = m_controls->getSkidControl();
+    // dataPoint.time_ticks = m_world->getTimeTicks();
     dataPoint.kart_node = m_world->getSectorForKart(m_kart);
-    dataPoint.kart_heading = m_kart->getHeading();
+    // dataPoint.kart_heading = m_kart->getHeading();
+    dataPoint.target_encoded = (int)target_encoded;
+    dataPoint.target_pos = m_target_point;
 
     //if team red
     if(m_world->getKartTeam(dataPoint.kart_id) == 0){
@@ -198,13 +198,16 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_vel.getX() << ","
                 << dataPoint.kart_vel.getZ() << ","
                 << dataPoint.kart_speed << ","
-                << dataPoint.kart_steer << ","
-                << dataPoint.kart_accel << ","
-                << dataPoint.kart_brake << ","
-                << (int)dataPoint.kart_skid << ","
-                << dataPoint.time_ticks << ","
+                // << dataPoint.kart_steer << ","
+                // << dataPoint.kart_accel << ","
+                // << dataPoint.kart_brake << ","
+                // << (int)dataPoint.kart_skid << ","
+                // << dataPoint.time_ticks << ","
                 << dataPoint.kart_node << ","
-                << dataPoint.kart_heading << ","
+                // << dataPoint.kart_heading << ","
+                << dataPoint.target_encoded << ","
+                << dataPoint.target_pos.getX() << ","
+                << dataPoint.target_pos.getZ() << ","
                 << 1 << std::endl;
         }
 
@@ -227,13 +230,16 @@ void SoccerAI::writeBufToDisk(){
                 << dataPoint.kart_vel.getX() << ","
                 << dataPoint.kart_vel.getZ() << ","
                 << dataPoint.kart_speed << ","
-                << dataPoint.kart_steer << ","
-                << dataPoint.kart_accel << ","
-                << dataPoint.kart_brake << ","
-                << (int)dataPoint.kart_skid << ","
-                << dataPoint.time_ticks << ","
+                // << dataPoint.kart_steer << ","
+                // << dataPoint.kart_accel << ","
+                // << dataPoint.kart_brake << ","
+                // << (int)dataPoint.kart_skid << ","
+                // << dataPoint.time_ticks << ","
                 << dataPoint.kart_node << ","
-                << dataPoint.kart_heading << ","
+                // << dataPoint.kart_heading << ","
+                << dataPoint.target_encoded << ","
+                << dataPoint.target_pos.getX() << ","
+                << dataPoint.target_pos.getZ() << ","
                 << 0 << std::endl;
         }
         outputFile.close();
@@ -350,42 +356,39 @@ void SoccerAI::findClosestKart(bool consider_difficulty, bool find_sta)
  */
 
 void SoccerAI::findTarget()
-{
+{       
+    findClosestKart(true/*consider_difficulty*/, false/*find_sta*/);
+    // Check if this AI kart is the one who will chase the ball
+    if (m_world->getBallChaser(m_cur_team) == (signed)m_kart->getWorldKartId())
+    {
         m_target_point = determineBallAimingPosition();
         m_target_node  = m_world->getBallNode();
-        
-    // findClosestKart(true/*consider_difficulty*/, false/*find_sta*/);
-    // // Check if this AI kart is the one who will chase the ball
-    // if (m_world->getBallChaser(m_cur_team) == (signed)m_kart->getWorldKartId())
-    // {
-    //     m_target_point = determineBallAimingPosition();
-    //     m_target_node  = m_world->getBallNode();
-    //     return;
-    // }
+        return;
+    }
 
-    // // Always reset this flag,
-    // // in case the ball chaser lost the ball somehow
-    // m_overtake_ball = false;
+    // Always reset this flag,
+    // in case the ball chaser lost the ball somehow
+    m_overtake_ball = false;
 
-    // if (m_kart->getPowerup()->getType() == PowerupManager::POWERUP_NOTHING &&
-    //     m_kart->getAttachment()->getType() != Attachment::ATTACH_SWATTER)
-    // {
-    //     tryCollectItem(&m_target_point , &m_target_node);
-    // }
-    // else if (m_world->getAttacker(m_cur_team) == (signed)m_kart
-    //     ->getWorldKartId())
-    // {
-    //     // This AI will attack the other team ball chaser
-    //     int id = m_world->getBallChaser(m_opp_team);
-    //     const AbstractKart* kart = m_world->getKart(id);
-    //     m_target_point = kart->getXYZ();
-    //     m_target_node  = m_world->getSectorForKart(kart);
-    // }
-    // else
-    // {
-    //     m_target_point = m_closest_kart_point;
-    //     m_target_node  = m_closest_kart_node;
-    // }
+    if (m_kart->getPowerup()->getType() == PowerupManager::POWERUP_NOTHING &&
+        m_kart->getAttachment()->getType() != Attachment::ATTACH_SWATTER)
+    {
+        tryCollectItem(&m_target_point , &m_target_node);
+    }
+    else if (m_world->getAttacker(m_cur_team) == (signed)m_kart
+        ->getWorldKartId())
+    {
+        // This AI will attack the other team ball chaser
+        int id = m_world->getBallChaser(m_opp_team);
+        const AbstractKart* kart = m_world->getKart(id);
+        m_target_point = kart->getXYZ();
+        m_target_node  = m_world->getSectorForKart(kart);
+    }
+    else
+    {
+        m_target_point = m_closest_kart_point;
+        m_target_node  = m_closest_kart_node;
+    }
 
 }   // findTarget
 
