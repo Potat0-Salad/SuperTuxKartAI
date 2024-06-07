@@ -1139,6 +1139,9 @@ CMakeFiles/supertuxkart.dir/src/karts/controller/arena_ai.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/sstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/soccer_ai.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/queue \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/deque \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/soccer_world.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world_with_rank.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/modes/world.hpp \
@@ -1148,9 +1151,6 @@ CMakeFiles/supertuxkart.dir/src/karts/controller/arena_ai.cpp.o: \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/race/highscores.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/states_screens/race_gui_base.hpp \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/utils/random_generator.hpp \
-  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/soccer_ai.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/queue \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/deque \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/model_manager.hpp \
   /Users/marcel/desktop/pytorch/torch/include/torch/script.h \
   /Users/marcel/desktop/pytorch/torch/include/torch/csrc/api/include/torch/types.h \

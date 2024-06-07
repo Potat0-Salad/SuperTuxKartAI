@@ -21,7 +21,6 @@
 
 #include "karts/controller/ai_base_controller.hpp"
 #include "race/race_manager.hpp"
-// #include "model_manager.hpp"
 
 #undef AI_DEBUG
 #ifdef AI_DEBUG
@@ -151,6 +150,8 @@ private:
     void          doUTurn(const float dt);
     // ------------------------------------------------------------------------
     bool          gettingUnstuck(int ticks);
+    
+    Vec3 determineBallAimingPosition();
     // ------------------------------------------------------------------------
     bool          updateAimingPosition(Vec3* target_point);
     // ------------------------------------------------------------------------

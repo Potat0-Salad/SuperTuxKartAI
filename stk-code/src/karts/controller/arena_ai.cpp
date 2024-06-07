@@ -29,13 +29,15 @@
 #include "tracks/arena_graph.hpp"
 #include "tracks/arena_node.hpp"
 #include "tracks/track.hpp"
+#include "karts/controller/soccer_ai.hpp"
 
 #include "modes/soccer_world.hpp"
-#include "karts/controller/soccer_ai.hpp"
+
 
 #include "model_manager.hpp"
 
 #include <algorithm>
+#include "soccer_ai.hpp"
 
 ArenaAI::ArenaAI(AbstractKart *kart)
        : AIBaseController(kart)
@@ -83,6 +85,10 @@ void ArenaAI::reset()
  *  the AI, e.g. steering, accelerating/braking, firing.
  *  \param ticks Number of physics time steps - should be 1.
  */
+
+std::string toString(const Vec3& vec) {
+    return "(" + std::to_string(vec.getX()) + ", " + std::to_string(vec.getY()) + ", " + std::to_string(vec.getZ()) + ")";
+}
 
 void ArenaAI::update(int ticks)
 {
@@ -151,8 +157,12 @@ void ArenaAI::update(int ticks)
             target_encoded = TargetEncode::Powerup;
         }
 
+        Log::info("TARGET POINT:", toString(m_target_point).c_str());
+
+        SoccerAI* soccerAI = dynamic_cast<SoccerAI*>(this);
+
         // Prepare input tensor
-        torch::Tensor input_tensor = prepare_input(m_kart, target_encoded, m_target_point);
+        torch::Tensor input_tensor = prepare_input(m_kart, target_encoded, m_target_point, soccerAI->determineBallAimingPosition());
 
         // Evaluate action
         torch::Tensor output = evaluate_action(input_tensor);
@@ -171,7 +181,7 @@ void ArenaAI::update(int ticks)
         switch (target_predicted) {
             case (int)TargetEncode::Ball:
                 m_target_node = m_world->getBallNode();
-                m_target_point = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())); //TODO: should be determineballaimingposition()
+                m_target_point = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId()));
                 break;
             case (int)TargetEncode::OppChaser:
                 id = m_world->getBallChaser(KART_TEAM_BLUE);
@@ -184,8 +194,8 @@ void ArenaAI::update(int ticks)
                 m_target_node  = m_closest_kart_node;
                 break;
             case (int)TargetEncode::Powerup:
-                m_target_node = m_world->getBallNode();     //TODO: SHOULD BE POWERUP
-                m_target_point = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())); //TODO: should be determineballaimingposition()
+                m_target_node = m_world->getBallNode();
+                m_target_point = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId()));
                 break;
             default:
                 break;
@@ -543,7 +553,6 @@ bool ArenaAI::gettingUnstuck(int ticks)
     }
     AIBaseController::update(ticks);
     return true;
-
 }   // gettingUnstuck
 
 //-----------------------------------------------------------------------------

@@ -41,7 +41,7 @@ class SoccerWorld;
  */
 class SoccerAI : public ArenaAI
 {
-private:
+public:
 
 #ifdef BALL_AIM_DEBUG
     irr::scene::ISceneNode *m_red_sphere;
@@ -76,6 +76,20 @@ private:
         float time_ticks;
         int kart_node;
         float kart_heading;
+
+        Vec3 closest_kart;
+        int kart0;
+        int kart1;
+        int kart2;
+        int kart3;
+
+        Vec3 kart0V;
+        Vec3 kart1V;
+        Vec3 kart2V;
+        Vec3 kart3V;
+
+        int has_powerup;
+        // Vec3 closest_powerup;
     };
 
     std::queue<DataInstance> dataQueue;
@@ -115,7 +129,7 @@ private:
     void writeBufToDisk();
     void updateDataBuf();
     // ------------------------------------------------------------------------
-    Vec3  determineBallAimingPosition();
+    // Vec3  determineBallAimingPosition();
     // ------------------------------------------------------------------------
     bool  determineOvertakePosition(const Vec3& ball_lc, const Vec3& aim_lc,
                                     Vec3* overtake_lc);
@@ -147,11 +161,12 @@ private:
     // ------------------------------------------------------------------------
     virtual void  resetAfterStop() OVERRIDE        { m_overtake_ball = false; }
 
-public:
                  SoccerAI(AbstractKart *kart);
                 ~SoccerAI();
     virtual void update (int ticks) OVERRIDE;
     virtual void reset() OVERRIDE;
+
+    Vec3  determineBallAimingPosition();
 
     std::queue<DataInstance>& getAIData() {return dataQueue;}
 
