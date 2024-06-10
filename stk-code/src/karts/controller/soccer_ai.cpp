@@ -198,6 +198,9 @@ void SoccerAI::updateDataBuf(){
 void SoccerAI::writeBufToDisk(){
     std::ofstream outputFile("/Users/marcel/Desktop/project/goal_ticks.csv", std::ios::app);
 
+ // Seed for random number generator
+    std::srand(std::time(0));
+
     if(outputFile.is_open()){
         for(int i = 0; i < SECONDS_BEFORE_GOAL/RECORD_SAMPLE_RATE; i++){
             if(dataQueue.empty())
@@ -247,44 +250,68 @@ void SoccerAI::writeBufToDisk(){
                 << 1 << std::endl;
         }
 
-        // Remove elements until we are left with the last 20
-        while (dataQueue.size() > SECONDS_BEFORE_GOAL/RECORD_SAMPLE_RATE) {
+        std::vector<DataInstance> allDataPoints;
+
+        while(!dataQueue.empty()){
+            allDataPoints.push_back(dataQueue.front());
             dataQueue.pop();
         }
 
-        // Write the last 20 elements
-        while (!dataQueue.empty()) {
-            DataInstance dataPoint = dataQueue.front();
-            dataQueue.pop();
+        int totalPoints = allDataPoints.size();
+        if (totalPoints > 10) {
+            std::vector<int> selectedIndices;
+            while (selectedIndices.size() < 10) {
+                int randomIndex = std::rand() % totalPoints;
+                if (std::find(selectedIndices.begin(), selectedIndices.end(), randomIndex) == selectedIndices.end()) {
+                    selectedIndices.push_back(randomIndex);
+                }
+            }
 
-            outputFile << dataPoint.kart_id << ","
-                << dataPoint.ball_pos.getX() << ","
-                << dataPoint.ball_pos.getZ() << ","
-                << dataPoint.ball_aim_X << ","
-                << dataPoint.ball_aim_Z << ","
-                << dataPoint.ball_node << ","
-                << dataPoint.previousXYZ.getX() << ","
-                << dataPoint.previousXYZ.getZ() << ","
-                << dataPoint.ball_heading << ","
-                << dataPoint.dist_to_ball << ","
-                << dataPoint.kart_pos.getX() << ","
-                << dataPoint.kart_pos.getZ() << ","
-                << dataPoint.kart_vel.getX() << ","
-                << dataPoint.kart_vel.getZ() << ","
-                << dataPoint.kart_speed << ","
-                << dataPoint.kart_node << ","
-                << dataPoint.target_encoded << ","
-                << dataPoint.target_pos.getX() << ","
-                << dataPoint.target_pos.getZ() << ","
-                << dataPoint.kart0 << ","
-                << dataPoint.kart1 << ","
-                << dataPoint.kart0V.getX() << ","
-                << dataPoint.kart0V.getY() << ","
-                << dataPoint.kart1V.getX() << ","
-                << dataPoint.kart1V.getY() << ","
-                << (int)dataPoint.has_powerup << ","
-                << 0 << std::endl;
+            for (int index : selectedIndices) {
+                DataInstance dataPoint = allDataPoints[index];
+
+                outputFile << dataPoint.kart_id << ","
+                    << dataPoint.ball_pos.getX() << ","
+                    << dataPoint.ball_pos.getZ() << ","
+                    << dataPoint.ball_aim_X << ","
+                    << dataPoint.ball_aim_Z << ","
+                    << dataPoint.ball_node << ","
+                    << dataPoint.previousXYZ.getX() << ","
+                    << dataPoint.previousXYZ.getZ() << ","
+                    << dataPoint.ball_heading << ","
+                    << dataPoint.dist_to_ball << ","
+                    << dataPoint.kart_pos.getX() << ","
+                    << dataPoint.kart_pos.getZ() << ","
+                    << dataPoint.kart_vel.getX() << ","
+                    << dataPoint.kart_vel.getZ() << ","
+                    << dataPoint.kart_speed << ","
+                    // << dataPoint.kart_steer << ","
+                    // << dataPoint.kart_accel << ","
+                    // << dataPoint.kart_brake << ","
+                    // << (int)dataPoint.kart_skid << ","
+                    // << dataPoint.time_ticks << ","
+                    << dataPoint.kart_node << ","
+                    // << dataPoint.kart_heading << ","
+                    << dataPoint.target_encoded << ","
+                    << dataPoint.target_pos.getX() << ","
+                    << dataPoint.target_pos.getZ() << ","
+                    << dataPoint.kart0 << ","
+                    << dataPoint.kart1 << ","
+                    // << dataPoint.kart2 << ","
+                    // << dataPoint.kart3 << ","
+                    << dataPoint.kart0V.getX() << ","
+                    << dataPoint.kart0V.getZ() << ","
+                    << dataPoint.kart1V.getX() << ","
+                    << dataPoint.kart1V.getZ() << ","
+                    // << dataPoint.kart2V.getX() << ","
+                    // << dataPoint.kart2V.getZ() << ","
+                    // << dataPoint.kart3V.getX() << ","
+                    // << dataPoint.kart3V.getZ() << ","
+                    << (int)dataPoint.has_powerup << ","
+                    << 0 << std::endl;
+            }
         }
+
         outputFile.close();
     }
     else{
@@ -322,7 +349,7 @@ void SoccerAI::update(int ticks)
             writeBufToDisk();
             old_cur_score = m_world->getScore(KART_TEAM_RED);
         }
-        else if(m_world->getScore(KART_TEAM_BLUE) > old_opp_score)
+        else if(m_world->getScore(KART_TEAM_BLUE) > KART_TEAM_BLUE)
             old_opp_score = m_world->getScore(KART_TEAM_BLUE);
 
         clearAIData();
@@ -336,6 +363,7 @@ void SoccerAI::update(int ticks)
 
     ArenaAI::update(ticks);
 }   // update
+
 
 //-----------------------------------------------------------------------------
 /** Find the closest kart around this AI, it won't find the kart with same
