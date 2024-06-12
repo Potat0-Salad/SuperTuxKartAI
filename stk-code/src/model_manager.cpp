@@ -7,6 +7,10 @@
 #include "items/powerup.hpp"
 #include "karts/controller/soccer_ai.hpp"
 
+#include <algorithm>
+#include <random> // for std::default_random_engine
+
+
 torch::jit::script::Module model;
 std::vector<float> mean;
 std::vector<float> scale;
@@ -89,8 +93,6 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, Target
         (float)target_encoded,
         target_point.getX(),
         target_point.getZ(),
-
-
         (float)world->getSectorForKart(world->getKart(0)),
         (float)world->getSectorForKart(world->getKart(1)),
         world->getKart(0)->getXYZ().getX(),
@@ -135,3 +137,43 @@ std::vector<torch::Tensor> evaluate_actions(const std::vector<torch::Tensor> inp
     return outputs;
 }
 
+std::vector<Experience> sample_experiences(const std::vector<Experience>& experiences, int batch_size) {
+    std::vector<Experience> mini_batch;
+    std::vector<int> indices(experiences.size());
+    std::iota(indices.begin(), indices.end(), 0);
+    std::default_random_engine generator(std::random_device{}());
+    std::shuffle(indices.begin(), indices.end(), generator);
+
+    for (int i = 0; i < batch_size; ++i) {
+        mini_batch.push_back(experiences[indices[i]]);
+    }
+
+    return mini_batch;
+}
+
+void train_model(const std::vector<Experience>& mini_batch, float gamma) {
+    std::ofstream outputFile("/path/to/experiences.csv");
+
+    if (outputFile.is_open()) {
+        for (const auto& exp : mini_batch) {
+            // Serialize experience data to the file
+            // Adjust according to your actual tensor dimensions and types
+            std::stringstream state_ss;
+            state_ss << exp.state;
+            std::stringstream next_state_ss;
+            next_state_ss << exp.next_state;
+
+            outputFile << state_ss.str() << "," 
+                       << exp.action << "," 
+                       << exp.reward << "," 
+                       << next_state_ss.str() << "," 
+                       << exp.done << std::endl;
+        }
+        outputFile.close();
+
+        // Trigger the Python script to train the model
+        system("python /path/to/train_model.py /path/to/experiences.csv");
+    } else {
+        std::cerr << "Error opening the experiences file." << std::endl;
+    }
+}

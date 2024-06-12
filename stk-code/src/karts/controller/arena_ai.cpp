@@ -34,7 +34,7 @@
 #include "modes/soccer_world.hpp"
 #include "karts/controller/soccer_ai.hpp"
 
-
+#include <vector>
 #include <algorithm>
 
 ArenaAI::ArenaAI(AbstractKart *kart)
@@ -46,6 +46,8 @@ ArenaAI::ArenaAI(AbstractKart *kart)
     m_graph = ArenaGraph::get();
     m_world = dynamic_cast<SoccerWorld*>(World::getWorld());
 }   // ArenaAI
+
+std::vector<Experience> experiences;
 
 //-----------------------------------------------------------------------------
 /** Resets the AI when a race is restarted.
@@ -135,7 +137,7 @@ void ArenaAI::update(int ticks)
         return;
 
     //is read team
-    if(m_world->getKartTeam(m_kart->getWorldKartId()) == 0){
+    if (m_world->getKartTeam(m_kart->getWorldKartId()) == 0) {
         std::vector<torch::Tensor> inputs;
         std::vector<torch::Tensor> outputs;
 
@@ -153,7 +155,6 @@ void ArenaAI::update(int ticks)
 
         SoccerAI* soccerAI = dynamic_cast<SoccerAI*>(this);
 
-        //ML model
         // Prepare inputs
         inputs.push_back(prepare_input(m_kart, 0, 1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition()));  // forward straight
         inputs.push_back(prepare_input(m_kart, 0, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition())); // reverse straight
@@ -162,29 +163,23 @@ void ArenaAI::update(int ticks)
         inputs.push_back(prepare_input(m_kart, -1, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition())); // reverse left
         inputs.push_back(prepare_input(m_kart, 1, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition()));  // reverse right
 
-                                // Validate input tensors
-                                for (size_t i = 0; i < inputs.size(); ++i) {
-                                auto input_tensor = inputs[i];
-                                auto data = input_tensor.accessor<float, 2>(); // Assuming 2D tensor
-                                for (int j = 0; j < data.size(1); ++j) {
-                                    if (std::isnan(data[0][j]) || std::isinf(data[0][j])) {
-                                        Log::error("Invalid input value detected at index ", std::to_string(j).c_str());
-                                        Log::error(":", std::to_string(data[0][j]).c_str());
-                                    }
-                                }
-                                std::stringstream ss;
-                                ss << input_tensor;
-                                Log::info("Input tensor passed to the model: ", ss.str().c_str());
-                                }
+        // Validate input tensors
+        for (size_t i = 0; i < inputs.size(); ++i) {
+            auto input_tensor = inputs[i];
+            auto data = input_tensor.accessor<float, 2>(); // Assuming 2D tensor
+            for (int j = 0; j < data.size(1); ++j) {
+                if (std::isnan(data[0][j]) || std::isinf(data[0][j])) {
+                    Log::error("Invalid input value detected at index ", std::to_string(j).c_str());
+                    Log::error(":", std::to_string(data[0][j]).c_str());
+                }
+            }
+            std::stringstream ss;
+            ss << input_tensor;
+            Log::info("Input tensor passed to the model: ", ss.str().c_str());
+        }
 
         // Evaluate actions
         outputs = evaluate_actions(inputs);
-
-                                for (size_t i = 0; i < outputs.size(); ++i) {
-                                    float score = outputs[i].item<float>();
-                                    Log::info("Action:", std::to_string(i).c_str());
-                                    Log::info("Score:", std::to_string(score).c_str());
-                                }
 
         // Identify the best overall input based on the model's evaluations
         int best_input_index = -1;
@@ -192,6 +187,8 @@ void ArenaAI::update(int ticks)
 
         for (size_t i = 0; i < outputs.size(); ++i) {
             float score = outputs[i].item<float>(); // Access the output as a float directly
+            Log::info("Action:", std::to_string(i).c_str());
+            Log::info("Score:", std::to_string(score).c_str());
 
             if (score > highest_score) {
                 highest_score = score;
@@ -201,44 +198,63 @@ void ArenaAI::update(int ticks)
 
         // Apply controls based on the best input index
         if (best_input_index != -1) {
-            // Assuming inputs are structured as [batch, features]
-            // float steer_value = inputs[best_input_index][0][13].item<float>();  // Steering value
-            // float accel_value = inputs[best_input_index][0][14].item<float>();  // Acceleration value
-            // m_controls->setAccel(accel_value);
-            // m_controls->setSteer(steer_value);
-
             // PRINT TO STDOUTLOG
             Log::info("best action index: ", std::to_string(best_input_index).c_str());
-        
 
-            switch (best_input_index)
-            {
-            case 0:
-                m_controls->setSteer(0);
-                m_controls->setAccel(1);
-                break;
-            case 1:
-                m_controls->setSteer(0);
-                m_controls->setAccel(-1);
-                break;
-            case 2:
-                m_controls->setSteer(-1);
-                m_controls->setAccel(1);
-                break;
-            case 3:
-                m_controls->setSteer(1);
-                m_controls->setAccel(1);
-                break;
-            case 4:
-                m_controls->setSteer(-1);
-                m_controls->setAccel(-1);
-                break;
-            case 5:
-                m_controls->setSteer(1);
-                m_controls->setAccel(-1);
-                break;
-            default:
-                break;
+            switch (best_input_index) {
+                case 0:
+                    m_controls->setSteer(0);
+                    m_controls->setAccel(1);
+                    break;
+                case 1:
+                    m_controls->setSteer(0);
+                    m_controls->setAccel(-1);
+                    break;
+                case 2:
+                    m_controls->setSteer(-1);
+                    m_controls->setAccel(1);
+                    break;
+                case 3:
+                    m_controls->setSteer(1);
+                    m_controls->setAccel(1);
+                    break;
+                case 4:
+                    m_controls->setSteer(-1);
+                    m_controls->setAccel(-1);
+                    break;
+                case 5:
+                    m_controls->setSteer(1);
+                    m_controls->setAccel(-1);
+                    break;
+                default:
+                    break;
+            }
+
+            // Get reward
+            float reward = 0.0;
+            if (m_world->ballApproachingGoal(KART_TEAM_RED)) {
+                reward = 1.0; // Reward for approaching goal
+            } else if (m_world->goalScoredBy(KART_TEAM_RED)) {
+                reward = 10.0; // High reward for scoring a goal
+            }
+
+            // Store experience
+            Experience exp;
+            exp.state = prepare_input(m_kart, 0, 0, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition());
+            exp.action = best_input_index;
+            exp.reward = reward;
+            exp.next_state = prepare_input(m_kart, 0, 0, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition());
+            exp.done = (reward == 10.0);
+
+            experiences.push_back(exp);
+
+            // Update model if enough experiences are collected
+            if (experiences.size() >= batch_size) {
+                // Sample random mini-batch from experiences
+                std::vector<Experience> mini_batch = sample_experiences(experiences, batch_size);
+
+                // Train the model using the sampled mini-batch
+                train_model(mini_batch, gamma);
             }
         }
     }
