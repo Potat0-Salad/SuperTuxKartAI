@@ -76,6 +76,7 @@ public:
         float time_ticks;
         int kart_node;
         float kart_heading;
+        bool ball_appr_goal;
 
         Vec3 closest_kart;
         int kart0;

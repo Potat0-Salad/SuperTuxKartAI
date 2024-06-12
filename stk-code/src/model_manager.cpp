@@ -76,6 +76,7 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, Target
         kart->getPreviousXYZ().getX(), 
         kart->getPreviousXYZ().getZ(),
         world->getBallHeading(),
+        (float)world->ballApproachingGoal(KART_TEAM_BLUE),
         calculateDistance(kart->getXYZ().getX(), kart->getXYZ().getZ(), world->getBallPosition().getX(), world->getBallPosition().getZ()),
         kart->getXYZ().getX(), 
         kart->getXYZ().getZ(),
