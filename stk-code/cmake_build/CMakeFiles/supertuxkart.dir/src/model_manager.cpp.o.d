@@ -5629,4 +5629,12 @@ CMakeFiles/supertuxkart.dir/src/model_manager.cpp.o: \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/ordered_map.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/any \
   /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/detail/macro_unscope.hpp \
-  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/thirdparty/hedley/hedley_undef.hpp
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/items/attachment.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/items/attachment_plugin.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/items/powerup.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/soccer_ai.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/queue \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/arena_ai.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/ai_base_controller.hpp \
+  /Users/marcel/desktop/SuperTuxKartAI/stk-code/src/karts/controller/controller.hpp

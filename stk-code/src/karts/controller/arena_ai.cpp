@@ -139,14 +139,28 @@ void ArenaAI::update(int ticks)
         std::vector<torch::Tensor> inputs;
         std::vector<torch::Tensor> outputs;
 
+        TargetEncode target_encoded;
+
+        if (m_target_node == m_world->getBallNode()) {
+            target_encoded = TargetEncode::Ball;
+        } else if (m_target_node == m_world->getSectorForKart(m_world->getKart(m_world->getBallChaser(KART_TEAM_BLUE)))) {
+            target_encoded = TargetEncode::OppChaser;
+        } else if (m_target_node == m_closest_kart_node) {
+            target_encoded = TargetEncode::ClosestOpp;
+        } else {
+            target_encoded = TargetEncode::Powerup;
+        }
+
+        SoccerAI* soccerAI = dynamic_cast<SoccerAI*>(this);
+
         //ML model
         // Prepare inputs
-        inputs.push_back(prepare_input(m_kart, 0, 1, 0, 0));  // forward straight
-        inputs.push_back(prepare_input(m_kart, 0, -1, 0, 0)); // reverse straight
-        inputs.push_back(prepare_input(m_kart, -1, 1, 0, 0)); // forward left
-        inputs.push_back(prepare_input(m_kart, 1, 1, 0, 0));  // forward right        
-        inputs.push_back(prepare_input(m_kart, -1, -1, 0, 0)); // reverse left
-        inputs.push_back(prepare_input(m_kart, 1, -1, 0, 0));  // reverse right
+        inputs.push_back(prepare_input(m_kart, 0, 1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition()));  // forward straight
+        inputs.push_back(prepare_input(m_kart, 0, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition())); // reverse straight
+        inputs.push_back(prepare_input(m_kart, -1, 1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition())); // forward left
+        inputs.push_back(prepare_input(m_kart, 1, 1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition()));  // forward right        
+        inputs.push_back(prepare_input(m_kart, -1, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition())); // reverse left
+        inputs.push_back(prepare_input(m_kart, 1, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition()));  // reverse right
 
                                 // Validate input tensors
                                 for (size_t i = 0; i < inputs.size(); ++i) {
