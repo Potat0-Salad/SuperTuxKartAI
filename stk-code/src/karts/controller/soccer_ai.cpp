@@ -36,7 +36,6 @@
 
 #include "model_manager.hpp"
 
-
 #ifdef AI_DEBUG
 #include "irrlicht.h"
 #endif
@@ -195,7 +194,6 @@ void SoccerAI::writeBufToDisk() {
     }
 
     // Write a fixed number of data points from the queue
-    int initial_points_written = 0;
     int points_to_write_initially = SECONDS_BEFORE_GOAL / RECORD_SAMPLE_RATE;
 
     for (int i = 0; i < points_to_write_initially; i++) {
@@ -237,11 +235,8 @@ void SoccerAI::writeBufToDisk() {
                    << (int)dataPoint.has_powerup << ","
                    << 1 << std::endl;
 
-        initial_points_written++;
         outputFile.flush(); // Flush after each write to avoid buffering issues
     }
-
-    Log::info("Initial points written to disk: ", std::to_string(initial_points_written).c_str());
 
     // Collect remaining data points into a vector
     std::vector<DataInstance> remainingDataPoints;
@@ -251,7 +246,6 @@ void SoccerAI::writeBufToDisk() {
     }
 
     int totalPoints = remainingDataPoints.size();
-    Log::info("Collected data points: ", std::to_string(totalPoints).c_str());
 
     // Randomly select and write 10 data points from the remaining data points
     if (totalPoints > 10) {
@@ -302,11 +296,7 @@ void SoccerAI::writeBufToDisk() {
         for (int index : selectedIndices) {
             ss << index << " ";
         }
-        Log::info("Selected indices for writing: ", ss.str().c_str());
     }
-
-    int final_points_written = initial_points_written + (totalPoints > 10 ? 10 : totalPoints);
-    Log::info("Final total points written to disk: ", std::to_string(final_points_written).c_str());
 
     outputFile.close();
 }

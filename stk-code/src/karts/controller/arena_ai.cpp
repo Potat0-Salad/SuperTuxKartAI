@@ -36,6 +36,8 @@
 
 #include <vector>
 #include <algorithm>
+#include <deque>
+#include <optional>
 
 ArenaAI::ArenaAI(AbstractKart *kart)
        : AIBaseController(kart)
@@ -45,9 +47,10 @@ ArenaAI::ArenaAI(AbstractKart *kart)
     m_debug_sphere_next = NULL;
     m_graph = ArenaGraph::get();
     m_world = dynamic_cast<SoccerWorld*>(World::getWorld());
-}   // ArenaAI
 
-std::vector<Experience> experiences;
+    load_experiences();
+    Log::info("EXPERIENCES LOADED: ", "");
+}   // ArenaAI
 
 //-----------------------------------------------------------------------------
 /** Resets the AI when a race is restarted.
@@ -136,7 +139,7 @@ void ArenaAI::update(int ticks)
     if (gettingUnstuck(ticks))
         return;
 
-    //is read team
+    //is red team
     if (m_world->getKartTeam(m_kart->getWorldKartId()) == 0) {
         std::vector<torch::Tensor> inputs;
         std::vector<torch::Tensor> outputs;
@@ -175,7 +178,7 @@ void ArenaAI::update(int ticks)
             }
             std::stringstream ss;
             ss << input_tensor;
-            Log::info("Input tensor passed to the model: ", ss.str().c_str());
+            // Log::info("Input tensor passed to the model: ", ss.str().c_str());
         }
 
         // Evaluate actions
@@ -198,7 +201,6 @@ void ArenaAI::update(int ticks)
 
         // Apply controls based on the best input index
         if (best_input_index != -1) {
-            // PRINT TO STDOUTLOG
             Log::info("best action index: ", std::to_string(best_input_index).c_str());
 
             switch (best_input_index) {
@@ -232,21 +234,45 @@ void ArenaAI::update(int ticks)
 
             // Get reward
             float reward = 0.0;
-            if (m_world->ballApproachingGoal(KART_TEAM_RED)) {
-                reward = 1.0; // Reward for approaching goal
-            } else if (m_world->goalScoredBy(KART_TEAM_RED)) {
-                reward = 10.0; // High reward for scoring a goal
+
+            if(calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()) < old_dist_to_ball) {
+                reward = 1.0;
+                old_dist_to_ball = calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
             }
 
-            // Store experience
-            Experience exp;
-            exp.state = prepare_input(m_kart, 0, 0, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition());
-            exp.action = best_input_index;
-            exp.reward = reward;
-            exp.next_state = prepare_input(m_kart, 0, 0, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition());
-            exp.done = (reward == 10.0);
+            if (m_world->ballApproachingGoal(KART_TEAM_BLUE)) {
+                reward = 3.0; // Reward for approaching goal
+            }
+            else if(m_world->getScore(KART_TEAM_RED) > old_cur_score) {
+                reward = 10.0; // High reward for scoring a goal
+                old_cur_score = m_world->getScore(KART_TEAM_RED);
+            }
+            else if(m_world->getScore(KART_TEAM_BLUE) > old_opp_score) {
+                reward = -10.0; // High penalty for loosing a goal
+                old_opp_score = m_world->getScore(KART_TEAM_BLUE);
+            }
 
-            experiences.push_back(exp);
+            // If there's a pending experience, complete it with the current state
+            if (pending_experience.has_value()) {
+                pending_experience->next_state = prepare_input(m_kart, 0, 0, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition());
+                pending_experience->done = (reward == 10.0);
+
+                experiences.push_back(*pending_experience);
+
+                // Ensure experiences buffer does not exceed maximum size
+                if (experiences.size() > max_buffer_size) {
+                    experiences.pop_front();
+                }
+
+                pending_experience = std::nullopt; // Clear the pending experience
+            }
+
+            // Store the new experience as pending
+            Experience new_exp;
+            new_exp.state = prepare_input(m_kart, 0, 0, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition());
+            new_exp.action = best_input_index;
+            new_exp.reward = reward;
+            pending_experience = std::make_optional(new_exp); // Store the new experience
 
             // Update model if enough experiences are collected
             if (experiences.size() >= batch_size) {

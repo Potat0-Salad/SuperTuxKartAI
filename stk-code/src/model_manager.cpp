@@ -5,19 +5,28 @@
 #include "nlohmann/json.hpp"
 #include "items/attachment.hpp"
 #include "items/powerup.hpp"
-#include "karts/controller/soccer_ai.hpp"
+#include "nlohmann/json.hpp"
+#include "karts/controller/arena_ai.hpp"
 
 #include <algorithm>
 #include <random> // for std::default_random_engine
+#include <fstream>
 
 
 torch::jit::script::Module model;
 std::vector<float> mean;
 std::vector<float> scale;
+float gamma = 0.99; // Define the discount factor
+int batch_size = 64;  // Define the batch size for training
+const int max_buffer_size = 10000;
+using json = nlohmann::json;
+
+std::deque<Experience> experiences;
+std::optional<Experience> pending_experience;
 
 void load_model() {
-        // Adjust the path as necessary
-        model = torch::jit::load("/Users/marcel/Desktop/project/model/soccer_ai_model.pt");
+    // Adjust the path as necessary
+    model = torch::jit::load("/Users/marcel/Desktop/project/model/soccer_ai_model.pt");
 }
 
 float calculateDistance(float x1, float y1, float x2, float y2) {
@@ -46,7 +55,6 @@ void load_scaler_parameters() {
 }
 
 torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, TargetEncode target_encoded, Vec3 target_point, int target_node, Vec3 ball_aim) {
-
     bool powerup;
 
     // Check if the kart pointer is null
@@ -112,15 +120,14 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, Target
     }
 
     torch::Tensor input_tensor = torch::from_blob(input_values.data(), {1, (int)input_values.size()}, torch::kFloat32);
-    Log::info("Input tensor created successfully", " ");
+    // Log::info("Input tensor created successfully", " ");
 
-    std::stringstream ss;
-    ss << input_tensor;
-    Log::info("Input tensor:", ss.str().c_str());
+    // std::stringstream ss;
+    // ss << input_tensor;
+    // Log::info("Input tensor:", ss.str().c_str());
 
     return input_tensor.clone(); // Ensure tensor is not referencing the original data buffer
 }
-
 
 std::vector<torch::Tensor> evaluate_actions(const std::vector<torch::Tensor> inputs) {
     std::vector<torch::Tensor> outputs;
@@ -137,7 +144,7 @@ std::vector<torch::Tensor> evaluate_actions(const std::vector<torch::Tensor> inp
     return outputs;
 }
 
-std::vector<Experience> sample_experiences(const std::vector<Experience>& experiences, int batch_size) {
+std::vector<Experience> sample_experiences(const std::deque<Experience>& experiences, int batch_size) {
     std::vector<Experience> mini_batch;
     std::vector<int> indices(experiences.size());
     std::iota(indices.begin(), indices.end(), 0);
@@ -152,28 +159,72 @@ std::vector<Experience> sample_experiences(const std::vector<Experience>& experi
 }
 
 void train_model(const std::vector<Experience>& mini_batch, float gamma) {
-    std::ofstream outputFile("/path/to/experiences.csv");
+    // Convert experiences to JSON
+    nlohmann::json j_experiences = nlohmann::json::array();
+    for (const auto& exp : mini_batch) {
+        nlohmann::json j_exp;
+        j_exp["state"] = std::vector<float>(exp.state.data_ptr<float>(), exp.state.data_ptr<float>() + exp.state.numel());
+        j_exp["action"] = exp.action;
+        j_exp["reward"] = exp.reward;
+        j_exp["next_state"] = std::vector<float>(exp.next_state.data_ptr<float>(), exp.next_state.data_ptr<float>() + exp.next_state.numel());
+        j_exp["done"] = exp.done;
+        j_experiences.push_back(j_exp);
+    }
 
-    if (outputFile.is_open()) {
-        for (const auto& exp : mini_batch) {
-            // Serialize experience data to the file
-            // Adjust according to your actual tensor dimensions and types
-            std::stringstream state_ss;
-            state_ss << exp.state;
-            std::stringstream next_state_ss;
-            next_state_ss << exp.next_state;
-
-            outputFile << state_ss.str() << "," 
-                       << exp.action << "," 
-                       << exp.reward << "," 
-                       << next_state_ss.str() << "," 
-                       << exp.done << std::endl;
-        }
-        outputFile.close();
-
-        // Trigger the Python script to train the model
-        system("python /path/to/train_model.py /path/to/experiences.csv");
+    // Write JSON to file
+    std::ofstream file("/Users/marcel/Desktop/project/model/experiences.json");
+    if (file.is_open()) {
+        file << j_experiences.dump(4); // Pretty print with 4 spaces indentation
+        file.close();
     } else {
-        std::cerr << "Error opening the experiences file." << std::endl;
+        Log::error("Unable to open file for saving experiences", " in train model");
+    }
+
+    // Trigger the Python script to train the model
+    system("python /Users/marcel/Desktop/project/model/train_model.py /Users/marcel/Desktop/project/model/experiences.json");
+}
+
+void save_experiences() {
+    // Convert experiences to JSON
+    nlohmann::json j_experiences = nlohmann::json::array();
+    for (const auto& exp : experiences) {
+        nlohmann::json j_exp;
+        j_exp["state"] = std::vector<float>(exp.state.data_ptr<float>(), exp.state.data_ptr<float>() + exp.state.numel());
+        j_exp["action"] = exp.action;
+        j_exp["reward"] = exp.reward;
+        j_exp["next_state"] = std::vector<float>(exp.next_state.data_ptr<float>(), exp.next_state.data_ptr<float>() + exp.next_state.numel());
+        j_exp["done"] = exp.done;
+        j_experiences.push_back(j_exp);
+    }
+
+    // Write JSON to file
+    std::ofstream file("/Users/marcel/Desktop/project/model/experiences.json");
+    if (file.is_open()) {
+        file << j_experiences.dump(4); // Pretty print with 4 spaces indentation
+        file.close();
+    } else {
+        Log::error("Unable to open file for saving experiences", " in save experiences");
+    }
+}
+
+void load_experiences() {
+    std::ifstream file("/Users/marcel/Desktop/project/model/experiences.json");
+    if (file.is_open()) {
+        nlohmann::json j_experiences;
+        file >> j_experiences;
+        file.close();
+
+        experiences.clear();
+        for (const auto& j_exp : j_experiences) {
+            Experience exp;
+            exp.state = torch::tensor(j_exp["state"].get<std::vector<float>>(), torch::kFloat32).view({1, -1});
+            exp.action = j_exp["action"];
+            exp.reward = j_exp["reward"];
+            exp.next_state = torch::tensor(j_exp["next_state"].get<std::vector<float>>(), torch::kFloat32).view({1, -1});
+            exp.done = j_exp["done"];
+            experiences.push_back(exp);
+        }
+    } else {
+        Log::error("Unable to open file for loading experiences", " in load experiences");
     }
 }

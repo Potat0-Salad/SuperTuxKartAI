@@ -293,6 +293,8 @@ extern "C" {
 #include "utils/translation.hpp"
 #include "io/rich_presence.hpp"
 
+#include "model_manager.hpp"
+
 #include <IrrlichtDevice.h>
 
 static void cleanSuperTuxKart();
