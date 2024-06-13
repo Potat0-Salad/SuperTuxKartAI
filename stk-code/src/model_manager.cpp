@@ -12,6 +12,9 @@
 #include <random> // for std::default_random_engine
 #include <fstream>
 
+#include <thread>
+#include <atomic>
+
 
 torch::jit::script::Module model;
 std::vector<float> mean;
@@ -159,6 +162,7 @@ std::vector<Experience> sample_experiences(const std::deque<Experience>& experie
 }
 
 void train_model(const std::vector<Experience>& mini_batch, float gamma) {
+    Log::info("Training model...", "");
     // Convert experiences to JSON
     nlohmann::json j_experiences = nlohmann::json::array();
     for (const auto& exp : mini_batch) {
@@ -182,9 +186,12 @@ void train_model(const std::vector<Experience>& mini_batch, float gamma) {
 
     // Trigger the Python script to train the model
     system("python /Users/marcel/Desktop/project/model/train_model.py /Users/marcel/Desktop/project/model/experiences.json");
+    Log::info("Model trained!", "");
 }
 
 void save_experiences() {
+
+    Log::info("Saving experiences...", "");
     // Convert experiences to JSON
     nlohmann::json j_experiences = nlohmann::json::array();
     for (const auto& exp : experiences) {
@@ -208,6 +215,7 @@ void save_experiences() {
 }
 
 void load_experiences() {
+    Log::info("Loading experiences...", "");
     std::ifstream file("/Users/marcel/Desktop/project/model/experiences.json");
     if (file.is_open()) {
         nlohmann::json j_experiences;

@@ -38,6 +38,8 @@
 #include <algorithm>
 #include <deque>
 #include <optional>
+#include <thread>
+
 
 ArenaAI::ArenaAI(AbstractKart *kart)
        : AIBaseController(kart)
@@ -47,9 +49,6 @@ ArenaAI::ArenaAI(AbstractKart *kart)
     m_debug_sphere_next = NULL;
     m_graph = ArenaGraph::get();
     m_world = dynamic_cast<SoccerWorld*>(World::getWorld());
-
-    load_experiences();
-    Log::info("EXPERIENCES LOADED: ", "");
 }   // ArenaAI
 
 //-----------------------------------------------------------------------------
@@ -88,6 +87,18 @@ void ArenaAI::reset()
  *  the AI, e.g. steering, accelerating/braking, firing.
  *  \param ticks Number of physics time steps - should be 1.
  */
+
+std::atomic<bool> training_in_progress(false);
+int frame_counter = 0;
+const int training_interval = 300; // Train every 300 frames (adjust as needed)
+
+void async_train_model(std::vector<Experience> mini_batch) {
+    training_in_progress = true;
+    std::thread([](std::vector<Experience> mini_batch) {
+        train_model(mini_batch, gamma);
+        training_in_progress = false;
+    }, mini_batch).detach();
+}
 
 void ArenaAI::update(int ticks)
 {
@@ -166,21 +177,6 @@ void ArenaAI::update(int ticks)
         inputs.push_back(prepare_input(m_kart, -1, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition())); // reverse left
         inputs.push_back(prepare_input(m_kart, 1, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition()));  // reverse right
 
-        // Validate input tensors
-        for (size_t i = 0; i < inputs.size(); ++i) {
-            auto input_tensor = inputs[i];
-            auto data = input_tensor.accessor<float, 2>(); // Assuming 2D tensor
-            for (int j = 0; j < data.size(1); ++j) {
-                if (std::isnan(data[0][j]) || std::isinf(data[0][j])) {
-                    Log::error("Invalid input value detected at index ", std::to_string(j).c_str());
-                    Log::error(":", std::to_string(data[0][j]).c_str());
-                }
-            }
-            std::stringstream ss;
-            ss << input_tensor;
-            // Log::info("Input tensor passed to the model: ", ss.str().c_str());
-        }
-
         // Evaluate actions
         outputs = evaluate_actions(inputs);
 
@@ -190,9 +186,6 @@ void ArenaAI::update(int ticks)
 
         for (size_t i = 0; i < outputs.size(); ++i) {
             float score = outputs[i].item<float>(); // Access the output as a float directly
-            Log::info("Action:", std::to_string(i).c_str());
-            Log::info("Score:", std::to_string(score).c_str());
-
             if (score > highest_score) {
                 highest_score = score;
                 best_input_index = i;
@@ -201,8 +194,6 @@ void ArenaAI::update(int ticks)
 
         // Apply controls based on the best input index
         if (best_input_index != -1) {
-            Log::info("best action index: ", std::to_string(best_input_index).c_str());
-
             switch (best_input_index) {
                 case 0:
                     m_controls->setSteer(0);
@@ -237,17 +228,15 @@ void ArenaAI::update(int ticks)
 
             if(calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()) < old_dist_to_ball) {
                 reward = 1.0;
-                old_dist_to_ball = calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
+                old_dist_to_ball = calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getX(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
             }
 
             if (m_world->ballApproachingGoal(KART_TEAM_BLUE)) {
                 reward = 3.0; // Reward for approaching goal
-            }
-            else if(m_world->getScore(KART_TEAM_RED) > old_cur_score) {
+            } else if(m_world->getScore(KART_TEAM_RED) > old_cur_score) {
                 reward = 10.0; // High reward for scoring a goal
                 old_cur_score = m_world->getScore(KART_TEAM_RED);
-            }
-            else if(m_world->getScore(KART_TEAM_BLUE) > old_opp_score) {
+            } else if(m_world->getScore(KART_TEAM_BLUE) > old_opp_score) {
                 reward = -10.0; // High penalty for loosing a goal
                 old_opp_score = m_world->getScore(KART_TEAM_BLUE);
             }
@@ -274,16 +263,16 @@ void ArenaAI::update(int ticks)
             new_exp.reward = reward;
             pending_experience = std::make_optional(new_exp); // Store the new experience
 
-            // Update model if enough experiences are collected
-            if (experiences.size() >= batch_size) {
+            // Update model if enough experiences are collected and training is not in progress
+            if (experiences.size() >= batch_size && !training_in_progress) {
                 // Sample random mini-batch from experiences
                 std::vector<Experience> mini_batch = sample_experiences(experiences, batch_size);
 
-                // Train the model using the sampled mini-batch
-                train_model(mini_batch, gamma);
+                // Train the model using the sampled mini-batch asynchronously
+                async_train_model(mini_batch);
             }
         }
-    }
+    }   
     else{
         
         // Don't do anything if there is currently a kart animations shown.

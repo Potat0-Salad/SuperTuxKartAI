@@ -76,6 +76,7 @@ SoccerAI::SoccerAI(AbstractKart *kart)
 
     load_model();
     load_scaler_parameters();
+    load_experiences();
 
     // Don't call our own setControllerName, since this will add a
     // billboard showing 'AIBaseController' to the kart.
