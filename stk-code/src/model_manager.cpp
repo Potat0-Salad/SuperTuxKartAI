@@ -28,9 +28,13 @@ std::deque<Experience> experiences;
 std::optional<Experience> pending_experience;
 
 void load_model() {
-    // Adjust the path as necessary
-    model = torch::jit::load("/Users/marcel/Desktop/project/model/soccer_ai_model.pt");
+    try {
+        model = torch::jit::load("/Users/marcel/Desktop/project/model/soccer_ai_model.pt");
+    } catch (const c10::Error& e) {
+        Log::error("Error loading the model: ", e.what());
+    }
 }
+
 
 float calculateDistance(float x1, float y1, float x2, float y2) {
     return std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
@@ -185,9 +189,15 @@ void train_model(const std::vector<Experience>& mini_batch, float gamma) {
     }
 
     // Trigger the Python script to train the model
-    system("python /Users/marcel/Desktop/project/model/train_model.py /Users/marcel/Desktop/project/model/experiences.json");
-    Log::info("Model trained!", "");
+    int result = system("python /Users/marcel/Desktop/project/model/train_model.py /Users/marcel/Desktop/project/model/experiences.json");
+    if (result == 0) {
+        Log::info("Model trained successfully!", "");
+    } else {
+        Log::error("Model training failed with error code: ", std::to_string(result).c_str());
+    }
 }
+
+
 
 void save_experiences() {
 

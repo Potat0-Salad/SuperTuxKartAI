@@ -86,7 +86,7 @@ protected:
     virtual void  findClosestKart(bool consider_difficulty, bool find_sta) = 0;
 
 private:
-    int old_dist_to_ball = 999999;
+    float old_dist_to_ball = 999999;
 
     /** Keeps track of the scorer's team score. */
     int old_cur_score = 0;

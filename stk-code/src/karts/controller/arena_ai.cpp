@@ -92,12 +92,12 @@ std::atomic<bool> training_in_progress(false);
 int frame_counter = 0;
 const int training_interval = 300; // Train every 300 frames (adjust as needed)
 
-void async_train_model(std::vector<Experience> mini_batch) {
+void async_train_model(const std::vector<Experience>& mini_batch) {
     training_in_progress = true;
-    std::thread([](std::vector<Experience> mini_batch) {
+    std::thread([mini_batch]() {
         train_model(mini_batch, gamma);
         training_in_progress = false;
-    }, mini_batch).detach();
+    }).detach();
 }
 
 void ArenaAI::update(int ticks)
@@ -146,11 +146,11 @@ void ArenaAI::update(int ticks)
         return;
     }
     float dt = stk_config->ticks2Time(ticks);
-    checkIfStuck(dt);
-    if (gettingUnstuck(ticks))
-        return;
+    // checkIfStuck(dt);
+    // if (gettingUnstuck(ticks))
+    //     return;
 
-    //is red team
+   //is red team
     if (m_world->getKartTeam(m_kart->getWorldKartId()) == 0) {
         std::vector<torch::Tensor> inputs;
         std::vector<torch::Tensor> outputs;
@@ -226,25 +226,57 @@ void ArenaAI::update(int ticks)
             // Get reward
             float reward = 0.0;
 
-            if(calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()) < old_dist_to_ball) {
-                reward = 1.0;
-                old_dist_to_ball = calculateDistance(m_kart->getXYZ().getX(), m_kart->getXYZ().getX(), m_world->getBallPosition().getX(), m_world->getBallPosition().getZ());
+            float new_dist_to_ball = calculateDistance(
+                m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
+                m_world->getBallPosition().getX(), m_world->getBallPosition().getZ()
+            );
+
+            if (new_dist_to_ball < old_dist_to_ball) {
+                reward += 1.0;
+            } else {
+                reward -= 1; // Penalize for moving away from the ball
             }
 
+            old_dist_to_ball = new_dist_to_ball; // Update the distance
+
             if (m_world->ballApproachingGoal(KART_TEAM_BLUE)) {
-                reward = 3.0; // Reward for approaching goal
-            } else if(m_world->getScore(KART_TEAM_RED) > old_cur_score) {
-                reward = 10.0; // High reward for scoring a goal
+                reward += 3.0; // Reward for approaching goal
+            } 
+            else if (m_world->ballApproachingGoal(KART_TEAM_RED)) {
+                reward -= 3.0; // Penalize for approaching own goal
+            } 
+            else if (m_world->getScore(KART_TEAM_RED) > old_cur_score) {
+                reward += 10.0; // High reward for scoring a goal
                 old_cur_score = m_world->getScore(KART_TEAM_RED);
-            } else if(m_world->getScore(KART_TEAM_BLUE) > old_opp_score) {
-                reward = -10.0; // High penalty for loosing a goal
+            } 
+            else if (m_world->getScore(KART_TEAM_BLUE) > old_opp_score) {
+                reward -= 10.0; // High penalty for losing a goal
                 old_opp_score = m_world->getScore(KART_TEAM_BLUE);
             }
+            
+            if(m_kart->getXYZ() == m_kart->getPreviousXYZ()){
+                reward -= 5.0;
+            }
+
+            // // Reward for effective defense (proximity to opponents when they have the ball)
+            // if (m_world->getBallChaser(KART_TEAM_BLUE) != -1) {
+            //     int opponent_kart_id = m_world->getBallChaser(KART_TEAM_BLUE);
+            //     AbstractKart* opponent_kart = m_world->getKart(opponent_kart_id);
+            //     if (opponent_kart) {
+            //         float dist_to_opponent = calculateDistance(
+            //             m_kart->getXYZ().getX(), m_kart->getXYZ().getZ(),
+            //             opponent_kart->getXYZ().getX(), opponent_kart->getXYZ().getZ()
+            //         );
+            //         if (dist_to_opponent < 5.0) {  // Arbitrary distance threshold
+            //             reward += 1.0;  // Reward for being close to the opponent with the ball
+            //         }
+            //     }
+            // }
 
             // If there's a pending experience, complete it with the current state
             if (pending_experience.has_value()) {
                 pending_experience->next_state = prepare_input(m_kart, 0, 0, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition());
-                pending_experience->done = (reward == 10.0);
+                pending_experience->done = (reward >= 10.0);
 
                 experiences.push_back(*pending_experience);
 
@@ -272,7 +304,7 @@ void ArenaAI::update(int ticks)
                 async_train_model(mini_batch);
             }
         }
-    }   
+    }
     else{
         
         // Don't do anything if there is currently a kart animations shown.
