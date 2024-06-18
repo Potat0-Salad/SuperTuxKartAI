@@ -17,6 +17,6 @@ enum class TargetEncode : int {
 
 // Function declarations
 void load_model();
-torch::Tensor prepare_input(AbstractKart *kart, TargetEncode target_encoded, Vec3 target_point);
+torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, TargetEncode target_encoded, Vec3 target_point, int target_node, Vec3 ball_aim);
 torch::Tensor evaluate_action(torch::Tensor input);  // Assuming you are using this function
 void load_scaler_parameters();

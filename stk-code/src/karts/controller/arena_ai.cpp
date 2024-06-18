@@ -32,6 +32,7 @@
 
 #include "modes/soccer_world.hpp"
 #include "karts/controller/soccer_ai.hpp"
+#include "karts/controller/soccer_ai.hpp"
 
 #include "model_manager.hpp"
 
@@ -150,9 +151,11 @@ void ArenaAI::update(int ticks)
         } else {
             target_encoded = TargetEncode::Powerup;
         }
+        
+        SoccerAI* soccerAI = dynamic_cast<SoccerAI*>(this);
 
         // Prepare input tensor
-        torch::Tensor input_tensor = prepare_input(m_kart, target_encoded, m_target_point);
+        torch::Tensor input_tensor = prepare_input(m_kart, -1, -1, target_encoded, m_target_point, m_target_node, soccerAI->determineBallAimingPosition());
 
         // Evaluate action
         torch::Tensor output = evaluate_action(input_tensor);
@@ -171,7 +174,7 @@ void ArenaAI::update(int ticks)
         switch (target_predicted) {
             case (int)TargetEncode::Ball:
                 m_target_node = m_world->getBallNode();
-                m_target_point = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())); //TODO: should be determineballaimingposition()
+                m_target_point = soccerAI->determineBallAimingPosition();
                 break;
             case (int)TargetEncode::OppChaser:
                 id = m_world->getBallChaser(KART_TEAM_BLUE);
@@ -185,7 +188,7 @@ void ArenaAI::update(int ticks)
                 break;
             case (int)TargetEncode::Powerup:
                 m_target_node = m_world->getBallNode();     //TODO: SHOULD BE POWERUP
-                m_target_point = m_world->getBallAimPosition(m_world->getKartTeam(m_kart->getWorldKartId())); //TODO: should be determineballaimingposition()
+                m_target_point = soccerAI->determineBallAimingPosition();
                 break;
             default:
                 break;

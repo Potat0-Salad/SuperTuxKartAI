@@ -3,6 +3,10 @@
 #include "modes/soccer_world.hpp"
 #include "karts/abstract_kart.hpp"
 #include "nlohmann/json.hpp"
+#include "karts/controller/arena_ai.hpp"
+#include "items/attachment.hpp"
+#include "items/powerup.hpp"
+
 
 torch::jit::script::Module model;
 std::vector<float> mean;
@@ -38,7 +42,9 @@ void load_scaler_parameters() {
     Log::info("", ss_scale.str().c_str());
 }
 
-torch::Tensor prepare_input(AbstractKart *kart, TargetEncode target_encoded, Vec3 target_point) {
+torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, TargetEncode target_encoded, Vec3 target_point, int target_node, Vec3 ball_aim) {
+    bool powerup;
+
     // Check if the kart pointer is null
     if (!kart) {
         Log::error("prepare_input", "Null pointer for kart");
@@ -51,54 +57,45 @@ torch::Tensor prepare_input(AbstractKart *kart, TargetEncode target_encoded, Vec
         Log::error("prepare_input", "Null pointer for world");
         return torch::Tensor();
     }
-    
-    // Log values for debugging
-    Log::info("prepare_input", "kart ID: ", kart->getWorldKartId());
-    Log::info("prepare_input", "Ball Position X: ", world->getBallPosition().getX());
-    Log::info("prepare_input", "Ball Position Z: ", world->getBallPosition().getZ());
 
-    int kartTeam = world->getKartTeam(kart->getWorldKartId());
-    Log::info("prepare_input", "Kart Team: ", kartTeam);
-    Log::info("prepare_input", "Ball Aim Position X: ", world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getX());
-    Log::info("prepare_input", "Ball Aim Position Z: ", world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getZ());
-    
-    Log::info("prepare_input", "Ball Node: ", world->getBallNode());
-    Log::info("prepare_input", "Previous XYZ X: ", kart->getPreviousXYZ().getX());
-    Log::info("prepare_input", "Previous XYZ Z: ", kart->getPreviousXYZ().getZ());
-    
-    Log::info("prepare_input", "Ball Heading: ", world->getBallHeading());
-    Log::info("prepare_input", "Distance to Ball: ", calculateDistance(kart->getXYZ().getX(), kart->getXYZ().getZ(), world->getBallPosition().getX(), world->getBallPosition().getZ()));
-    
-    Log::info("prepare_input", "Current XYZ X: ", kart->getXYZ().getX());
-    Log::info("prepare_input", "Current XYZ Z: ", kart->getXYZ().getZ());
-    Log::info("prepare_input", "Velocity X: ", kart->getVelocity().getX());
-    Log::info("prepare_input", "Velocity Z: ", kart->getVelocity().getZ());
-    Log::info("prepare_input", "Speed: ", kart->getSpeed());
-    Log::info("prepare_input", "Sector for Kart: ", world->getSectorForKart(kart));
-    Log::info("prepare_input", "Target Encoded: ", (float)target_encoded);
-    Log::info("prepare_input", "Target Point X: ", target_point.getX());
-    Log::info("prepare_input", "Target Point Z: ", target_point.getZ());
+    if(kart->getPowerup()->getType() == PowerupManager::POWERUP_NOTHING &&
+       kart->getAttachment()->getType() != Attachment::ATTACH_SWATTER){
+        powerup = false;
+    }
+    else{
+        powerup = true;
+    }
 
     std::vector<float> input_values = {
         (float)kart->getWorldKartId(),
         world->getBallPosition().getX(), 
         world->getBallPosition().getZ(),
-        world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getX(), 
-        world->getBallAimPosition(world->getKartTeam(kart->getWorldKartId())).getZ(),
+        ball_aim.getX(),
+        ball_aim.getY(),
         (float)world->getBallNode(),
         kart->getPreviousXYZ().getX(), 
         kart->getPreviousXYZ().getZ(),
         world->getBallHeading(),
+        (float)world->ballApproachingGoal(KART_TEAM_BLUE),
         calculateDistance(kart->getXYZ().getX(), kart->getXYZ().getZ(), world->getBallPosition().getX(), world->getBallPosition().getZ()),
         kart->getXYZ().getX(), 
         kart->getXYZ().getZ(),
         kart->getVelocity().getX(),
         kart->getVelocity().getZ(),
-        kart->getSpeed(), 
+        kart->getSpeed(),
+        // steer,
+        // accel,
         (float)world->getSectorForKart(kart),
-        (float)target_encoded,
-        target_point.getX(),
-        target_point.getZ()
+        // (float)target_encoded,
+        // target_point.getX(),
+        // target_point.getZ(),
+        (float)world->getSectorForKart(world->getKart(0)),
+        (float)world->getSectorForKart(world->getKart(1)),
+        world->getKart(0)->getXYZ().getX(),
+        world->getKart(0)->getXYZ().getZ(),
+        world->getKart(1)->getXYZ().getX(),
+        world->getKart(1)->getXYZ().getZ(),
+        (float)powerup
     };
 
     // Normalize the input values
@@ -111,11 +108,11 @@ torch::Tensor prepare_input(AbstractKart *kart, TargetEncode target_encoded, Vec
     }
 
     torch::Tensor input_tensor = torch::from_blob(input_values.data(), {1, (int)input_values.size()}, torch::kFloat32);
-    Log::info("Input tensor created successfully", " ");
+    // Log::info("Input tensor created successfully", " ");
 
-    std::stringstream ss;
-    ss << input_tensor;
-    Log::info("Input tensor:", ss.str().c_str());
+    // std::stringstream ss;
+    // ss << input_tensor;
+    // Log::info("Input tensor:", ss.str().c_str());
 
     return input_tensor.clone(); // Ensure tensor is not referencing the original data buffer
 }

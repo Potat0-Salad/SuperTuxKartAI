@@ -1617,8 +1617,8 @@ int handleCmdLine(bool has_server_config, bool has_parent_process)
         }
         else if (t->isSoccer())
         {
-            RaceManager::get()->setNumBlueAI(3);
-            RaceManager::get()->setNumRedAI(2);
+            RaceManager::get()->setNumBlueAI(2);
+            RaceManager::get()->setNumRedAI(1);
 
             std::vector<std::string> l;
             // l.push_back("kiki");
@@ -1627,9 +1627,9 @@ int handleCmdLine(bool has_server_config, bool has_parent_process)
 
             RaceManager::get()->setDefaultAIKartList(l);
             // Add 1 for the player kart
-            RaceManager::get()->setNumKarts(5);
+            RaceManager::get()->setNumKarts(3);
             RaceManager::get()->setMinorMode(RaceManager::MINOR_MODE_SOCCER);
-            RaceManager::get()->setMaxGoal(1000000);
+            RaceManager::get()->setMaxGoal(100);
         }
     }   // --track
 

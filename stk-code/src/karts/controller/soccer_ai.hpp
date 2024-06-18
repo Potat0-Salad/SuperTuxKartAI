@@ -115,7 +115,7 @@ private:
     void writeBufToDisk();
     void updateDataBuf();
     // ------------------------------------------------------------------------
-    Vec3  determineBallAimingPosition();
+
     // ------------------------------------------------------------------------
     bool  determineOvertakePosition(const Vec3& ball_lc, const Vec3& aim_lc,
                                     Vec3* overtake_lc);
@@ -148,6 +148,8 @@ private:
     virtual void  resetAfterStop() OVERRIDE        { m_overtake_ball = false; }
 
 public:
+    Vec3  determineBallAimingPosition();
+
                  SoccerAI(AbstractKart *kart);
                 ~SoccerAI();
     virtual void update (int ticks) OVERRIDE;
