@@ -9,7 +9,7 @@ import numpy as np
 
 # Define the neural network architecture
 class ScoringModel(nn.Module):
-    def __init__(self, num_inputs=29):
+    def __init__(self, num_inputs=26):  # Adjusted number of inputs
         super(ScoringModel, self).__init__()
         self.layer1 = nn.Linear(num_inputs, 512)
         self.layer2 = nn.Linear(512, 256)
@@ -41,7 +41,9 @@ def load_experiences(path):
     
     experiences = []
     for exp in experiences_json:
-        experiences.append((torch.tensor(exp['state']), exp['action'], exp['reward'], torch.tensor(exp['next_state']), exp['done']))
+        state = torch.tensor(exp['state'])
+        next_state = torch.tensor(exp['next_state'])
+        experiences.append((state, exp['action'], exp['reward'], next_state, exp['done']))
     return experiences
 
 # Function to prepare data from experiences
@@ -104,13 +106,16 @@ def main():
     states, actions, rewards, next_states, dones = prepare_data(experiences)
     print("Prepared data")
 
+    # Check the shape of the states tensor
+    print("States shape:", states.shape)
+
     # Convert to PyTorch DataLoader
     dataset = TensorDataset(states, rewards)  # Assuming rewards are used as labels for simplicity
     train_loader = DataLoader(dataset, batch_size=64, shuffle=True)
 
     # Initialize the model
     global model, optimizer
-    model = ScoringModel(num_inputs=29)
+    model = ScoringModel(num_inputs=26)  # Adjusted number of inputs
     print("Model initialized")
 
     # Load the model state if it exists

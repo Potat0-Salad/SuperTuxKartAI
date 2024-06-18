@@ -146,9 +146,17 @@ void ArenaAI::update(int ticks)
         return;
     }
     float dt = stk_config->ticks2Time(ticks);
-    // checkIfStuck(dt);
-    // if (gettingUnstuck(ticks))
-    //     return;
+    checkIfStuck(dt);
+    if (gettingUnstuck(ticks))
+        return;
+
+        // If the kart is stuck and needs to perform a U-turn
+    if (m_is_uturn)
+    {
+        doUTurn(dt);
+        AIBaseController::update(ticks);
+        return;
+    }
 
    //is red team
     if (m_world->getKartTeam(m_kart->getWorldKartId()) == 0) {
@@ -541,6 +549,7 @@ void ArenaAI::checkIfStuck(const float dt)
         m_time_since_driving = 0.0f;
         AIBaseController::reset();
         m_is_stuck = true;
+        m_is_uturn = true; // Set the flag to perform a U-turn
     }
     else if (m_time_since_driving >=
         (m_cur_difficulty == RaceManager::DIFFICULTY_EASY ? 2.0f : 1.5f))
@@ -548,8 +557,7 @@ void ArenaAI::checkIfStuck(const float dt)
         m_on_node.clear(); // Reset for any correct movement
         m_time_since_driving = 0.0f;
     }
-
-}   //  checkIfStuck
+}
 
 //-----------------------------------------------------------------------------
 /** Configure a suitable speed depends on current turn radius.
@@ -620,6 +628,7 @@ bool ArenaAI::gettingUnstuck(int ticks)
     if (m_ticks_since_reversing >= stk_config->time2Ticks(1.0f))
     {
         m_is_stuck = false;
+        m_is_uturn = false;
         m_ticks_since_reversing = 0;
     }
     AIBaseController::update(ticks);
