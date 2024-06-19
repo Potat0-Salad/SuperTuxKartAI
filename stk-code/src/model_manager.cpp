@@ -42,7 +42,6 @@ void load_scaler_parameters() {
 }
 
 torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, TargetEncode target_encoded, Vec3 target_point, int target_node, Vec3 ball_aim) {
-
     bool powerup;
 
     // Check if the kart pointer is null
@@ -86,11 +85,9 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, Target
         steer,
         accel,
         (float)world->getSectorForKart(kart),
-        (float)target_encoded,
-        target_point.getX(),
-        target_point.getZ(),
-
-
+        // (float)target_encoded,
+        // target_point.getX(),
+        // target_point.getZ(),
         (float)world->getSectorForKart(world->getKart(0)),
         (float)world->getSectorForKart(world->getKart(1)),
         world->getKart(0)->getXYZ().getX(),
@@ -110,15 +107,14 @@ torch::Tensor prepare_input(AbstractKart *kart, float steer, float accel, Target
     }
 
     torch::Tensor input_tensor = torch::from_blob(input_values.data(), {1, (int)input_values.size()}, torch::kFloat32);
-    Log::info("Input tensor created successfully", " ");
+    // Log::info("Input tensor created successfully", " ");
 
-    std::stringstream ss;
-    ss << input_tensor;
-    Log::info("Input tensor:", ss.str().c_str());
+    // std::stringstream ss;
+    // ss << input_tensor;
+    // Log::info("Input tensor:", ss.str().c_str());
 
     return input_tensor.clone(); // Ensure tensor is not referencing the original data buffer
 }
-
 
 std::vector<torch::Tensor> evaluate_actions(const std::vector<torch::Tensor> inputs) {
     std::vector<torch::Tensor> outputs;
