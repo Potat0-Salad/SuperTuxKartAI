@@ -1,4 +1,4 @@
-# Bachelor Thesis: Comparative Analysis of Machine Learning Approaches for AI in Supertuxkart Soccer Mode Bots
+Comparative Analysis of Machine Learning Approaches for AI in Supertuxkart Soccer Mode Bots
 
 This repository contains the code and resources used for my Bachelor Thesis at **Vrije Universiteit Amsterdam**. The research explores the effectiveness of three distinct machine learning approaches in developing AI bots for the soccer mode of the open-source game **Supertuxkart**. The full paper can be found on the "main" branch.
 
